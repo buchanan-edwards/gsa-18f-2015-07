@@ -1,0 +1,152 @@
+﻿@{
+	Layout = "~/Views/Shared/_ReportLayout.cshtml";
+    ViewBag.Title = ViewBag.ReportType = "Company Trending Report";
+    var defaultTitle = "Top Ten Reported Companies";
+}
+
+<p>
+  This report shows the Top 10 Companies based on number of recall reports trending over the years.
+</p>
+<div id="matrixContainer" class="graphContainer"></div>
+<div class="graphHelp">Hover over the company names to see number of recall reports</div>
+
+<script>
+    $(document).ready(function () {
+        $('#trendingNav').parent().addClass('active');
+        $("#filterSubmit").on("click", refreshGraph);
+        SetTitle('@defaultTitle');
+    });
+
+    // initialize svg elements
+	var rowHeight = 25,
+		columnWidth = 40,
+		width = 600,
+		height = 250,
+		margin = {top: 30, right: 20, bottom: 0, left:300};
+			
+	var c = d3.scale.category10();
+
+	var xScale = d3.scale.linear()
+				.range([0,width]);
+
+	var formatYears = d3.format("0000");
+	var xAxis = d3.svg.axis()
+					.scale(xScale)
+					.orient("top")
+					.tickFormat(formatYears);
+
+	var svg = d3.select("#matrixContainer").append("svg")
+		.attr("preserveAspectRatio", "xMinYMin meet")
+		.attr("viewBox", "0 0 920 310")
+		.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+		.attr("height", "100%");
+
+	refreshGraph();
+
+	function refreshGraph() {
+		// get filter form data
+		var formData = JSON.stringify($("#filterForm").serializeForm());
+
+		svg.selectAll("g").remove();
+		svg.append("g").append("text")
+			.text("Querying open.fda.gov...");
+
+		// post to get json data
+		d3.json("/Report/FinancialReport")
+			.header("Content-type", "application/json")
+			.post(formData, buildGraph);
+
+		return false;
+	}
+
+	// Callback function for the refreshGraph ajax post
+	function buildGraph(error, fin) {
+	// set subtitle
+		SetSubtitle(fin.Subtitle);
+
+	// example row in fin.data
+	// {"Name":"Garden-Fresh+Foods","TotalCount":629,"CountNonZero":3,"YearlyCounts":{"2008":0,"2009":0,"2010":0,"2011":0,"2012":94,"2013":534,"2014":1,"2015":0}}
+		var start_year = d3.min(fin.data, function(d) { return d3.min(d3.keys(d.YearlyCounts)); });
+		var end_year = d3.max(fin.data, function(d) { return d3.max(d3.keys(d.YearlyCounts)); });
+		var maxCount = d3.max(fin.data, function(d) { return d3.max(d3.values(d.YearlyCounts)); });
+		var years = d3.keys(fin.data[0].YearlyCounts).sort(d3.ascending);
+
+		xScale.domain([start_year, end_year]);
+		xAxis.tickValues(d3.range(start_year, end_year + 1, 1));
+
+		var rScale = d3.scale.log()
+			.domain([1, maxCount])
+			.range([2, 10]);
+
+		svg.selectAll("g").remove();
+		svg.append("g").selectAll("text")
+			.data(years)
+			.enter()
+			.append("text")
+				.attr("x", function (d, i) { return i * columnWidth })
+				.attr("text-anchor", "middle")
+				.text(String);
+
+		for (var j = 0; j < fin.data.length; j++) {
+			var companyData = fin.data[j];
+			var years = d3.keys(companyData.YearlyCounts).sort(d3.ascending);
+
+			var g = svg.append("g");
+
+			g.selectAll("circle")
+				.data(years)
+				.enter()
+				.append("circle")
+					.attr("cx", function(d, i){ return i * columnWidth; }) //return xScale(d); })
+					.attr("cy", j * rowHeight + 20)
+					.attr("r", function(d){ return rScale(companyData.YearlyCounts[d]); })
+					.style("fill", function(d){ return c(j); });
+
+			g.selectAll("text")
+				.data(years)
+				.enter()
+				.append("text")
+					.attr("y", j * rowHeight + 25)
+					.attr("x", function(d, i){ return i * columnWidth; }) //return xScale(d); })
+					.attr("class", "value")
+					.attr("text-anchor", "middle")
+					.style("font-size", "large")
+					.style("fill", function(d) { return c(j); })
+					.style("display", "none")
+					.text(function(d){ return companyData.YearlyCounts[d]; });
+
+			g.append("text")
+				.attr("y", j * rowHeight + 25)
+				.attr("x", -margin.left)
+				.style("font-size", "large")
+				.style("fill", function(d) { return c(j); })
+				.style("width", "200px")
+				.text(truncate(fin.data[j].Name, 30, "..."))
+				.on("mouseover", mouseover)
+				.on("mouseout", mouseout);
+		}
+	}
+
+	// mouse over will hide circles and show actual values
+	function mouseover(p) {
+		var g = d3.select(this).node().parentNode;
+		d3.select(g).selectAll("circle").style("display", "none");
+		d3.select(g).selectAll("text.value").style("display", "block");
+	}
+
+	function mouseout(p) {
+		var g = d3.select(this).node().parentNode;
+		d3.select(g).selectAll("circle").style("display", "block");
+		d3.select(g).selectAll("text.value").style("display", "none");
+	}
+
+	$('#reportTitleInput').on('input', function() {
+		if ($(this).val() != '') {
+			SetTitle($(this).val());
+		}
+		else {
+			SetTitle('@defaultTitle');
+		}
+	});
+</script>

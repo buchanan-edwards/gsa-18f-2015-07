@@ -1,0 +1,43 @@
+Install and Run FDA.ninja Locally
+=================================
+
+# These steps will walk you through installing our app from a clean install of 
+# OSX Yosemite and walks through all the steps for getting the app up and running.
+
+# install xcode via app store, then run
+$ sudo xcodebuild -license
+
+# install homebrew
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# add rvm gpg key so you can download rvm
+$ brew install gpg
+$ gpg --keyserver hkp://keys.gnupg.net:80 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+
+# install rvm
+$ \curl -sSL https://get.rvm.io | bash -s stable
+
+# add api key to the environment
+$ echo "export FDA_API_KEY=<Your API key" >> ~/.bash_profile
+
+# source bash profile so rvm and your api key are available
+$ source ~/.bash_profile
+
+# install ruby
+$ rvm install 2.2
+
+# clone the project
+$ mkdir workspace
+$ cd workspace
+$ git clone https://github.com/dwafler/gsa_2015.git
+$ cd gsa_2015
+
+# install bundler
+$ gem install bundler
+
+# qt is needed to run the integration tests (capybara dependency)
+$ brew install qt
+
+$ bundle install
+
+$ bundle exec rails s

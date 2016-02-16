@@ -1,0 +1,13 @@
+80
+
+[0m[0m
+server is running 80
+[0m  app[0m
+[2K[0G  [32m  √[0m[90m server port should be listen on 80[0m
+
+[0m  GET /[0m
+[2K[0G  [32m  √[0m[90m respond with html[0m[33m (43ms)[0m
+
+
+[92m [0m[32m 2 passing[0m[90m (51ms)[0m
+

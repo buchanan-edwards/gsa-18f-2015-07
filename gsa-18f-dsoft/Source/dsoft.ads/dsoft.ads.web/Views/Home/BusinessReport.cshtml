@@ -1,0 +1,131 @@
+﻿@{
+	Layout = "~/Views/Shared/_ReportLayout.cshtml";
+    ViewBag.Title = ViewBag.ReportType = "Business Report";
+    var defaultTitle = "Report Count Per Year";
+}
+
+<div id="barContainer" class="graphContainer"></div>
+
+<script>
+    $(document).ready(function () {
+        $('#businessNav').parent().addClass('active');
+        $('#filterSubmit').on("click", refreshGraph);
+        SetTitle('@defaultTitle');
+    });
+
+   $('#reportTitleInput').on('input', function() {
+		if ($(this).val() != '') {
+			SetTitle($(this).val());
+		}
+		else {
+			SetTitle('@defaultTitle');
+		}
+	});
+
+    var width = 800,
+    	height = 400,
+    	spacing = 5,
+    	margin = {top: 20, right: 20, bottom: 50, left: 100};
+
+    var svg = d3.select("#barContainer").append("svg")
+		.attr("preserveAspectRatio", "xMinYMin meet")
+		.attr("viewBox", "0 0 870 470")
+		.attr("height", "100%");
+
+	var g = svg.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+
+
+	refreshGraph();
+
+	function refreshGraph() {
+//		queue()
+//			.defer(d3.json, "/Content/json/busdata.json")
+//			.await(buildGraph);
+
+		// get filter form data
+		var formData = JSON.stringify($("#filterForm").serializeForm());
+
+//		svg.selectAll("g").remove();
+//		svg.append("g").append("text")
+//			.text("Querying open.fda.gov...");
+
+		// post to get json data
+		d3.json("/Report/BusinessReport")
+			.header("Content-type", "application/json")
+			.post(formData, buildGraph);
+
+		return false;
+	}
+
+	function buildGraph(error, bus) {
+		SetSubtitle(bus.Subtitle);
+
+		var maxCount = d3.max(bus.data, function(d) { return d.Count; });
+		var years = $.map(bus.data, function(value, index) { return value.Year; });
+
+		var barWidth = Math.floor(width / bus.data.length) - spacing;
+		var barHeight = height / (maxCount);
+
+		var xScale = d3.scale.ordinal()
+			.rangeRoundBands([0, width], 0)
+			.domain(years);
+
+		var xAxis = d3.svg.axis()
+			.scale(xScale)
+			.orient("bottom");
+
+		var yScale = d3.scale.linear()
+			.domain([0, maxCount])
+			.range([height, 0]);
+
+		var yAxis = d3.svg.axis()
+			.scale(yScale)
+			.orient("left");
+
+		g.selectAll(".bar").remove();
+		var bar = g.selectAll(".bar")
+			.data(bus.data)
+			.enter().append("g")
+				.attr("transform", function (d, i){ return "translate(" + ((i * (barWidth + spacing)) + spacing) + ",0)"; })
+				.attr("class", "bar");
+
+		bar.append("rect")
+			.attr("width", barWidth)
+			.attr("y", function(d) { return yScale(d.Count); })
+			.attr("height", function(d) { return height - yScale(d.Count); });
+
+		bar.append("text")
+			.attr("x", barWidth / 2)
+			.attr("y", function(d) { return yScale(d.Count) - 10; })
+			.text(function(d) { return d.Count == 0 ? "" : d.Count});
+
+		g.selectAll(".axis").remove();
+		g.append("g")
+			.attr("class", "y axis")
+			.call(yAxis);
+
+
+		g.append("g")
+			.attr("class", "x axis")
+			.attr("transform", "translate(0, " + height + ")")
+			.call(xAxis);
+
+		g.append("text")
+	      .attr("transform", "rotate(-90)")
+	      .attr("x", -275)
+	      .attr("y", -75)
+	      .attr("dy", ".71em")
+	      .style("font-size", "20px")
+	      .text("Number of Reports");
+
+	    g.append("text")
+	      .attr("x", 385)
+	      .attr("y", 435)
+	      .attr("dy", ".71em")
+	      .style("font-size", "20px")
+	      .text("Year");
+	}
+
+
+</script>

@@ -1,0 +1,152 @@
+﻿@using FdaService.Models.Drug.Event
+@using FaNgMvcBs2.ViewModels
+@model DrugEventViewModel
+
+@{
+    ViewBag.Title = "MedFinder - Search Results";
+}
+
+<div class="inside-page">
+
+    <nav role="navigation">
+        <div class="container">
+            <a asp-action="Search" asp-controller="DrugEvent" class="nav-back visible-xs">Back</a>  
+            <a class="logo" href="/"><span>MedFinder</span></a>
+        </div>
+        <div class="logo visible-xs"></div>
+    </nav>
+    <!-- Header -->
+    <div class="hero inside-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-8">
+                    <h1>
+                        <span class="small">RESULTS:</span><br />
+                        <strong>@Model.SearchInfo</strong> 
+                    </h1>
+
+                </div>
+                <!-- /col -->
+
+            </div>
+            <!-- /row -->
+            <div class="hero-img"></div>
+
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /header -->
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="tabs">
+                    <div class="clearfix">
+                        <ul>
+                            <li><a href="#tabs-1">Drugs Reported <br />to Interfere</a></li>
+                            <li><a href="#tabs-2">Potential <br />Side Effects</a></li>
+                        </ul>
+                    </div>
+                    <div id="tabs-1">
+                        <h2 class="hr-bg"><span>Drugs Reported to Interfere</span></h2>
+                        <p>This list is created by healthcare professionals and consumers who have voluntarily reported 
+                        issues with your drug and the list below in the United States. The findings have not been 
+                        verified by the FDA. If you have concerns or questions reach out to your healthcare provider. 
+                        <a href="http://www.rxlist.com/script/main/srchcont_rxlist.asp?src=@Model.SearchInfo" target="_blank">For more detailed info click here <i class="fa fa-external-link"></i></a>.
+                        
+                        </p>
+                     
+                        @*<h3>@Html.DisplayNameFor(model => model.RootObject.results[0].patient.drug[0].medicinalproduct)</h3>*@
+
+                        <ul>
+                            @if (Model.Drugs == null || Model.Reactions.Count < 1)
+                            {
+                                <li>No Data Found</li>
+                            }
+                            @foreach (var item in Model.Drugs)
+                            {
+                                <li>@Html.DisplayFor(modelItem => item.medicinalproduct)</li>
+                            }
+                        </ul>
+
+                    </div>
+                    <div id="tabs-2">
+                        <h2 class="hr-bg"><span>Potential Side Effects</span></h2>
+                        <p>This list is created by by healthcare professionals and consumers who have voluntarily reported issues with your drug and the list below in the United States. The findings have not been verified by the FDA. If you have concerns or questions reach out to your healthcare provider.</p>
+                        <p>Note that increases in the total number of adverse events are likely caused by improved reporting. News, enforcement actions, and other phenomena can also spur reporting.</p>
+
+                        @*Html.DisplayNameFor(model => model.RootObject.results[0].patient.reaction[0].reactionmeddrapt)*@
+
+                        <ul>
+                            @if (Model.Reactions == null || Model.Reactions.Count < 1)
+                            {
+                                <li>No Data Found</li>
+                            }
+                            @foreach (var item in Model.Reactions)
+                            {
+                                <li>@Html.DisplayFor(modelItem => item.reactionmeddrapt)</li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+    
+    <hr />
+
+    <div class="container hidden-xs">
+        <div class="row">
+            <div class="col-md-5 col-sm-8 col-xs-12">
+                <div class="testimonial quote-1">
+                    <blockquote>&quot;Life moves fast! I don't always slow down to listen to my doctor.  I am so glad that I have MedFinder to research my medication when I have the time&quot;</blockquote>
+                </div>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-sm-8 col-xs-12">
+                <div class="testimonial quote-2">
+                    <blockquote>“I depend on MedFinder to understand how to manage my medications.  My pharmacist and doctor do advise me, but I like to own my own care plan.”</blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+
+    <div class="container visible-xs">
+        <p class="testimonial-intro">See how Americans like you are using <br />MY DRUG REPORT to manage their care</p>
+
+        <div class="testimonial-slider">
+
+            <div class="slide">
+                <div class="testimonial quote-3">
+                    <blockquote>
+                        &quot;We depend on each other. 
+                        It makes me feel better to do my own research about what my husband is taking!&quot;
+                    </blockquote>
+                </div>
+            </div>
+            <!-- END .slide -->
+
+            <div class="slide">
+                <div class="testimonial quote-1">
+                    <blockquote>&quot;Life moves fast! I don't always slow down to listen to my doctor.  I am so glad that I have MedFinder to research my properly medications when I have the time&quot;</blockquote>
+                </div>
+            </div>
+            <!-- END .slide -->
+
+            <div class="slide">
+                <div class="testimonial quote-2">
+                    <blockquote>“I depend on MedFinder to understand how to manage my medications.  My pharmacist and doctor do advise me, but I like to own my own care plan.”</blockquote>
+                </div>
+            </div>
+            <!-- END .slide -->
+
+        </div>
+        <!-- END .hp-slides-row -->
+
+    </div>
+    <!-- /container -->
+
+</div>

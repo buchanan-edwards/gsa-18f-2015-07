@@ -1,0 +1,53 @@
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" aria-expanded="false"
+                ng-click="toggleMenu()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/">
+                My Medicine Cabinet
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse"
+            ng-class="{true:'show', false: 'hide'}[menuOn]">
+
+            <ul class="nav navbar-nav">
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/about">Getting Started</a></li>
+                <li ng-show="ProfileService.user"><a href="#/meds">My Medications</a></li>
+                <li ng-hide="ProfileService.user"><a href="#/profile/create">My Medications</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right"
+                ng-show="ProfileService.user">
+                <li><a href="#/profile">
+                    <i class="fa fa-user"></i>
+                    {{ ProfileService.user.firstName }}
+                    {{ ProfileService.user.lastName }}
+                </a></li>
+                <li>
+                    <a ng-click="signOut()">
+                        <i class="fa fa-sign-out"></i>
+                        Sign Out
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right"
+                ng-hide="ProfileService.user">
+
+                <li><a href="#/profile/signin"><i class="fa fa-sign-in"></i> Sign In</a></li>
+                <li><a href="#/profile/create"><i class="fa fa-user"></i> Create Profile</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>

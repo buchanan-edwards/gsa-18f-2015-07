@@ -1,0 +1,154 @@
+<!-- Navigation -->
+<div>
+    <nav data-asm-slide-left class="navbar navbar-default navbar-fixed-left">
+    <div style="margin-left:3%; margin-right:3%; margin-top:3%;">
+        <div class="symptom" title="Date From"><strong>Date From</strong></div> 
+        <div class="form-group col-centered">
+            <datepicker date-format="MM/dd/yyyy" date-max-limit={{searchCriteria.endDate}} 
+                date-set={{searchCriteria.startDate}}
+                button-prev="<i class='fa fa-arrow-left'></i>" button-next="<i class='fa fa-arrow-right'></i>">
+                    <input type="text" id="dateFrom" title="Date From" ng-model="searchCriteria.startDate" class="form-control" readonly="true" tabindex=1>
+            </datepicker>
+        </div>
+        <div class="symptom" title="Date To"><strong>Date To</strong></div> 
+        <div class="form-group col-centered">
+            <datepicker date-format="MM/dd/yyyy" date-min-limit={{searchCriteria.startDate}} date-set={{searchCriteria.endDate}} button-prev="<i class='fa fa-arrow-left'></i>" button-next="<i class='fa fa-arrow-right'></i>">
+                <input type="text" ng-model="searchCriteria.endDate" title="Date To"  class="form-control" readonly="true" tabindex=2>
+            </datepicker>
+        </div>
+        <div class="symptom" title="Search Term"><strong>Search Term</strong></div> 
+        <div class="form-group col-centered">
+            <input class="form-control" type="text" title="Search Term" ng-model="searchCriteria.keyTerm" tabindex=3/>
+        </div>
+        <div class="symptom" title="Recall Type"><strong>Recall Type</strong></div>    
+        <div class="form-group col-centered">
+            <multi-select
+                name="recall_select"
+                values="availableRecall"
+                model="searchCriteria.selectedRecall"
+                show-filters="true"
+                value-field="code"
+                label-field="name"
+            tabindex=4 title="Recall Type"></multi-select>
+        </div>
+        <div class="symptom" title="Select State"><strong>Select State(s)</strong></div> 
+        <div class="form-group col-centered">
+            <multi-select
+                name="state_select"
+                values="availableStates"
+                model="searchCriteria.states"
+                show-filters="true"
+                value-field="code"
+                label-field="name"
+            tabindex=5 title="Select State"></multi-select>
+        </div>
+        <div data-asm-control="slideLeft" class="inlineDiv" ng-click="searchData(); resetStateCount();">
+            <a class="btn btn-primary" tabindex=6><span style="color:white" title="Search">Search</span></a>
+        </div>
+        <div data-asm-control="slideLeft" class="inlineDiv">
+            <a class="btn btn-primary" tabindex=7 title="Close">Close</a>
+        </div>
+    </div>
+    </nav>
+    
+    <div class="page-header3 text-center">Product Recalls by General Area of Initial Distributions</div>
+
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <strong><span style="color:red;">*</span>Total Results
+                                <span ng-if="(stateCount != '' ||  stateCount == '0') && products.meta.results.total != stateCount"> 
+                                ({{searchCriteria.states[0].name}} {{stateCount}} + other states)</span>: </strong>
+                            <span ng-if="products.meta.results.total == undefined"> 0 </span>
+                            <span ng-if="products.meta.results.total != undefined"> {{products.meta.results.total}} </span>
+                        </div>
+                        <div class="col-sm-3">
+                            <strong>Recall for: </strong>  
+                            <span ng-repeat="x in searchCriteria.selectedRecall">
+                                <span ng-if="x.code == 'food'">
+                                    <i class="fa fa-cutlery" title="Food"> </i>
+                                </span>
+                                <span ng-if="x.code == 'drug'">
+                                    <i class="fa fa-eyedropper" title="Drug"> </i>
+                                </span>
+                                <span ng-if="x.code == 'device'">
+                                    <i class="fa fa-medkit" title="Device"> </i>
+                                </span>
+                                {{x.name}}<span ng-if="!$last">, </span>
+                            </span> 
+                        </div>
+                        <div class="col-sm-3">
+                            <strong>Date Range: </strong> {{formatDate(searchCriteria.startDate) |  date:"MM/dd/yyyy" }} - {{formatDate(searchCriteria.endDate) |  date:"MM/dd/yyyy" }} 
+                        </div>
+                        <div class="col-sm-2">
+                            <strong>Search Term: </strong>
+                            <span ng-if="searchCriteria.keyTerm == ''"> None </span>
+                            <span ng-if="searchCriteria.keyTerm != ''"> {{searchCriteria.keyTerm}} </span>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <strong>State(s):</strong> 
+                            <span ng-repeat="y in searchCriteria.states">
+                                {{y.name}}<span ng-if="!$last">, </span>
+                            </span> 
+                        </div>
+                        <div class="col-sm-8 text-left">
+                            <span style="color:red; font-style:italic;">*Results are based on the distribution pattern search API & includes state combinations.</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div style="text-align:center" ng-if="products.meta.results.total == undefined">
+                        No resuts found. Please try different search criteria.
+                    </div>
+                    <div class="table-responsive" ng-if="products.meta.results.total != undefined">
+                        <table class="table-hover">
+                            <thead>
+                                <tr class="headerrow">
+                                    <th width="14%"> Recall Date </th>
+                                    <th width="20%"> Recalling Firm </th>
+                                    <th width="22%"> Recall Reason</th>
+                                    <th width="22%"> Product Description</th>
+                                    <th width="22%"> Code Info</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="y in products.results" id="{{y.event_details.event_id}}" style="vertical-align:top;">
+                                <td nowrap ng-click="showDetails(y)">
+                                    <span ng-if="y.event_details.product_type == 'Food'">
+                                        <i class="fa fa-cutlery" title="Food"> </i>
+                                    </span>
+                                    <span ng-if="y.event_details.product_type == 'Drugs'">
+                                        <i class="fa fa-eyedropper" title="Drug"> </i>
+                                    </span>
+                                    <span ng-if="y.event_details.product_type == 'Devices'">
+                                        <i class="fa fa-medkit" title="Device"> </i>
+                                    </span>
+                                    {{ createDate(y.recall_initiation_date) |  date:"MM/dd/yyyy"}} 
+                                    <span> - <a ng-click="showDetails(y)" title="Details">Details</a> </span>
+                                </td>
+                                <td>{{ y.recalling_firm }}</td>
+                                <td title="{{ y.reason_for_recall }}">{{ y.reason_for_recall | limitTo:35}} <span ng-if="y.reason_for_recall.length>35" class="dotdotdot"> ... </span></td>
+                                <td title="{{ y.product_description }}"> {{ y.product_description | limitTo:35}} <span ng-if="y.product_description.length>35" class="dotdotdot"> ... </span></td>
+                                <td title="{{ y.code_info }}">{{ y.code_info | limitTo:30}} <span ng-if="y.code_info.length>35" class="dotdotdot" style="vertical-align:top;"> ... </span> </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                   <!--div class="text-right countnav"><< <a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> 6 >></div-->
+              </div>
+              <!-- panel-body-->
+            </div>
+            <!-- panel panel-default -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- row -->
+</div>
+<!-- Responsive Table CSS -->
+<link href="/css/responsive-table.css" rel="stylesheet">

@@ -1,0 +1,18 @@
+<project>
+  <bannerLeft>
+    <name>TechFlow ADS RFP Prototype</name>
+  </bannerLeft>
+  <body>
+    <menu name="TechFlow ADS RFP Prototype">
+      <item name="JavaDocs" href="apidocs/index.html"/>
+      <item name="Sonar" href="http://18f-dari.techflow.com/sonarqube/dashboard/index/1"/>
+      <item name="Swagger" href="http://18f-dari.techflow.com/swagger/"/>
+    </menu>
+    <menu ref="reports"/>
+  </body>
+  <skin>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-fluido-skin</artifactId>
+    <version>1.4</version>
+  </skin>
+</project>

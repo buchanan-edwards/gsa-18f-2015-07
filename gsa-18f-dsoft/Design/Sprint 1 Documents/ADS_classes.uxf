@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>80</y>
+      <w>260</w>
+      <h>410</h>
+    </coordinates>
+    <panel_attributes>OpenFDAResult
+--
++id: string
++event_id: integer
++recall_number: string
++report_date: smalldatetime
++recall_initiation_date: smalldatetime
++classification: string
++voluntary_mandated: string
++reason_for_recall: string
++status: string
++recalling_firm: string
++city: string
++state: string
++country: string
++distribution_pattern: string
++product_type: string
++product_quantity: string
++product_description: string
++code_info: string
++initial_firm_notification: string
++term: string
++count: string
++countNumeric: integer
+--
++GetStateList</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>280</y>
+      <w>220</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>OpenFDAQuery
+--
+-baseUrl: string
++source: FDAReportSource
++type: FDAReportType 
++querySearch: string
++queryCount: string
++queryLimit: integer
++querySkip: integer
++response: OpenFDAResponse
+--
++RunQueryAsync
+-GetUrl
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>670</x>
+      <y>390</y>
+      <w>170</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>510</y>
+      <w>260</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Event
+--
+
+                        [deferred]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>610</y>
+      <w>260</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Label
+--
+
+                        [deferred]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>670</x>
+      <y>420</y>
+      <w>170</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>670</x>
+      <y>440</y>
+      <w>170</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>550</y>
+      <w>220</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+FDAReportSource
+--
+Drugs
+Devices
+Foods
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>680</y>
+      <w>220</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+FDAReportType
+--
+Event
+Label
+EnforcementReport</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>360</y>
+      <w>280</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>OpenFDAResponse
+--
++meta: OpenFDAResponseMeta
++count: integer
+--
++GetStateCounts</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>530</y>
+      <w>280</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>OpenFDAResponseMeta
+--
++disclaimer: string
++license: string
++last_updated: string
++results: OpenFDAResponseMetaResults
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>660</y>
+      <w>280</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>OpenFDAResponseMetaResults
+--
++skip: integer
++limit: integer
++total: integer
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>420</y>
+      <w>90</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>710</y>
+      <w>260</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>StateNames
+--
++stateNames: SortedDictionary
+--
++GetStateList
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

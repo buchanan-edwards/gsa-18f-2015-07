@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "disclaimer": "openFDA is a beta research project and not for clinical use. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated.",
+    "license": "http://open.fda.gov/license",
+    "last_updated": "2015-05-31",
+    "results": {
+      "skip": 0,
+      "limit": 1,
+      "total": 9
+    }
+  },
+  "results": [
+    {
+      "set_id": "4dfd46e4-b9f9-464d-aa47-e8fa9e526a5d",
+      "dosage_and_administration_table": [
+        "<table width=\"45%\"> <col width=\"45%\" align=\"left\" valign=\"top\"/> <col width=\"55%\" align=\"left\" valign=\"top\"/> <thead> <tr> <th styleCode=\"Lrule Rrule\">Age (yr)</th> <th styleCode=\"Rrule\">Dose (mL or tsp)</th> </tr> </thead> <tbody> <tr styleCode=\"Botrule\"> <td styleCode=\"Lrule Rrule\">under 4 years</td> <td styleCode=\"Rrule\">do not use</td> </tr> <tr styleCode=\"Botrule\"> <td styleCode=\"Lrule Rrule\">4 to 5 years</td> <td styleCode=\"Rrule\">5 mL (1 tsp)</td> </tr> <tr> <td styleCode=\"Lrule Rrule\">6 to 11 years</td> <td styleCode=\"Rrule\">10 mL (2 tsp)</td> </tr> </tbody> </table>"
+      ],
+      "indications_and_usage": [
+        "Use temporarily relieves nasal congestion due to the common cold, hay fever or other upper respiratory allergies"
+      ],
+      "stop_use": [
+        "Stop use and ask a doctor if nervousness, dizziness, or sleeplessness occur symptoms do not improve within 7 days or occur with a fever"
+      ],
+      "keep_out_of_reach_of_children": [
+        "Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center right away. (1-800-222-1222)"
+      ],
+      "ask_doctor": [
+        "Ask a doctor before use if the child has heart disease high blood pressure thyroid disease diabetes a sodium-restricted diet"
+      ],
+      "questions": [
+        "Questions or comments? call 1-888-217-2117"
+      ],
+      "dosage_and_administration": [
+        "Directions find right dose on chart below mL = milliliter; tsp = teaspoonful repeat dose every 4 hours do not use more than 6 times in 24 hours Age (yr) Dose (mL or tsp) under 4 years do not use 4 to 5 years 5 mL (1 tsp) 6 to 11 years 10 mL (2 tsp) Attention: use only enclosed dosing cup designed for use with this product. Do not use any other dosing device."
+      ],
+      "purpose": [
+        "Purpose Nasal decongestant"
+      ],
+      "storage_and_handling": [
+        "Other information each 5 mL (1 tsp) contains: sodium 14 mg store between 20-25°C (68-77°F). Protect from light. Store in outer carton until contents are used. do not use if bottle wrap, or foil inner seal imprinted \"Safety Seal®\" is broken or missing see bottom panel for lot number and expiration date"
+      ],
+      "do_not_use": [
+        "Do not use in a child who is taking a prescription monoamine oxidase inhibitor (MAOI) (certain drugs for depression, psychiatric or emotional conditions, or Parkinson's disease), or for 2 weeks after stopping the MAOI drug. If you do not know if your child's prescription drug contains an MAOI, ask a doctor or pharmacist before giving this product."
+      ],
+      "version": "1",
+      "id": "42e74116-a50e-41c0-9e82-a5191a5ba0c0",
+      "package_label_principal_display_panel": [
+        "PRINCIPAL DISPLAY PANEL NDC 50580-784-04 NON-DROWSY children's SUDAFED PE ® NASAL DECONGESTANT Phenylephrine HCl oral solution Nasal decongestant ✓ Sinus Pressure & Stuffy Nose Phenylephrine HCl Due to Colds & Allergies Raspberry Flavor Liquid Alcohol & Sugar Free 4 fl oz (118 ml) 2.5 mg per 5 ml Principal Display Panel"
+      ],
+      "active_ingredient": [
+        "Active ingredient (in each 5 mL = 1 teaspoonful) Phenylephrine HCl 2.5 mg"
+      ],
+      "inactive_ingredient": [
+        "Inactive ingredients anhydrous citric acid, carboxymethylcellulose sodium, edetate disodium, FD&C red #40, flavors, glycerin, purified water, sodium benzoate, sodium citrate, sorbitol solution, sucralose"
+      ],
+      "@epoch": 1416451272.131902,
+      "effective_time": "20111005",
+      "openfda": {
+        "unii": [
+          "1WS297W6MV"
+        ],
+        "spl_id": [
+          "42e74116-a50e-41c0-9e82-a5191a5ba0c0"
+        ],
+        "product_ndc": [
+          "50580-784"
+        ],
+        "substance_name": [
+          "PHENYLEPHRINE HYDROCHLORIDE"
+        ],
+        "rxcui": [
+          "827706",
+          "692479"
+        ],
+        "spl_set_id": [
+          "4dfd46e4-b9f9-464d-aa47-e8fa9e526a5d"
+        ],
+        "product_type": [
+          "HUMAN OTC DRUG"
+        ],
+        "upc": [
+          "227B483"
+        ],
+        "manufacturer_name": [
+          "McNeil Consumer Healthcare Div. McNeil-PPC, Inc"
+        ],
+        "brand_name": [
+          "Childrens Sudafed PE NASAL DECONGESTANT"
+        ],
+        "is_original_packager": [
+          true
+        ],
+        "route": [
+          "ORAL"
+        ],
+        "nui": [
+          "N0000186105",
+          "N0000009917"
+        ],
+        "pharm_class_moa": [
+          "Adrenergic alpha1-Agonists [MoA]"
+        ],
+        "package_ndc": [
+          "50580-784-04"
+        ],
+        "pharm_class_epc": [
+          "alpha-1 Adrenergic Agonist [EPC]"
+        ],
+        "generic_name": [
+          "PHENYLEPHRINE HYDROCHLORIDE"
+        ],
+        "application_number": [
+          "part341"
+        ]
+      },
+      "spl_product_data_elements": [
+        "Childrens Sudafed PE NASAL DECONGESTANT Phenylephrine hydrochloride Phenylephrine hydrochloride phenylephrine anhydrous citric acid carboxymethylcellulose sodium edetate disodium FD&C red No. 40 glycerin water sodium benzoate sodium citrate sorbitol sucralose"
+      ],
+      "warnings": [
+        "Warnings Do not use in a child who is taking a prescription monoamine oxidase inhibitor (MAOI) (certain drugs for depression, psychiatric or emotional conditions, or Parkinson's disease), or for 2 weeks after stopping the MAOI drug. If you do not know if your child's prescription drug contains an MAOI, ask a doctor or pharmacist before giving this product. Ask a doctor before use if the child has heart disease high blood pressure thyroid disease diabetes a sodium-restricted diet When using this product do not exceed recommended dose Stop use and ask a doctor if nervousness, dizziness, or sleeplessness occur symptoms do not improve within 7 days or occur with a fever Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center right away. (1-800-222-1222)"
+      ],
+      "when_using": [
+        "When using this product do not exceed recommended dose"
+      ],
+      "spl_unclassified_section": [
+        "Drug Facts"
+      ]
+    }
+  ]
+}

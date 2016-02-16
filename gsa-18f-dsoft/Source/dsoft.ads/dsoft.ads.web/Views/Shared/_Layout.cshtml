@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/stylebundles/bootstrap", "~/stylebundles/site")
+    @Scripts.Render("~/scriptbundles/bootstrap", "~/scriptbundles/site")
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+    @RenderSection("head", required: false)
+</head>
+<body>
+	@Html.Partial("~/Views/Shared/_MainMenu.cshtml")
+	<div class="container">
+		@Html.Partial("~/Views/Shared/_BetaWarning.cshtml")
+		<div class="col-sm-12">
+			@RenderBody()
+		</div>
+		@Html.Partial("~/Views/Shared/_Footer.cshtml")
+	</div>
+
+	@Html.Partial("~/Views/Shared/_ContactModal.cshtml")
+	@RenderSection("bodybottom", required: false)
+</body>
+</html>

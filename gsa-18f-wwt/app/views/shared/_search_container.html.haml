@@ -1,0 +1,7 @@
+.search-form
+  = form_for @search, method: :get do |f|
+    .search-field-container
+      = f.button class: 'prefix', id: 'search-button' do
+        %i.fa.fa-search
+      = f.text_field :generic_name, placeholder: t(:search_box_hint), maxlength: 100, class: 'searchbox'
+      = f.label :generic_name, t(:search), class: 'hide'

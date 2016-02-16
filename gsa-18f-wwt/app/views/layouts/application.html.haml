@@ -1,0 +1,29 @@
+!!! 5
+%html{ :lang => "en"}
+  %head
+    %meta{ :charset => "utf-8" }
+
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
+
+    %title= content_for?(:title) ? yield(:title) : "GSA Prototype"
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "vendor/modernizr"
+    = javascript_include_tag "application"
+    = javascript_include_tag "chartkick"
+    = csrf_meta_tag
+
+  %body
+    .top-nav
+    .top-box
+      = link_to image_tag('icon-logo.svg', size: '87x98'), root_path, title: 'GSA Prototype'
+
+    .row
+      .small-12.columns
+        - if flash[:alert]
+          .alert-box.alert.radius{ data: { alert: true } }
+            = flash[:alert]
+            = link_to '#', class: 'close' do
+              &times;
+
+        = yield
+

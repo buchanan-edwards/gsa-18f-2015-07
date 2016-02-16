@@ -1,0 +1,126 @@
+﻿@using FdaService.Models.Drug.Event
+@using FaNgMvcBs2.ViewModels
+@model DrugEventViewModel
+
+
+@{
+    ViewBag.Title = "Drug Event Page";
+
+
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        @Html.DropDownListFor(model => model.SearchCriteriaSelected, new SelectList(Model.SearchCriteria, "FullName", "ShortName"))
+        @Html.EditorFor(model => model.SearchInfo)
+        <input type="submit" value="Search" />
+        @if (Model.RootObject != null)
+        {
+        <table>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.RootObject.results[0].safetyreportid)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RootObject.results[0].fulfillexpeditecriteria)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RootObject.results[0].receivedateformat)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RootObject.results[0].receiptdateformat)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RootObject.results[0].receivedate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RootObject.results[0].seriousnessother)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RootObject.results[0].__invalid_name__epoch)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RootObject.results[0].receiptdate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RootObject.results[0].transmissiondate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RootObject.results[0].transmissiondateformat)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RootObject.results[0].seriousnesshospitalization)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RootObject.results[0].serious)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RootObject.results[0].companynumb)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RootObject.results[0].term)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RootObject.results[0].count)
+                </th>
+                <th></th>
+            </tr>
+            if (Model.RootObject != null)
+            {
+            @foreach (var item in Model.RootObject.results)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.safetyreportid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.fulfillexpeditecriteria)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.receivedateformat)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.receiptdateformat)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.receivedate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.seriousnessother)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.__invalid_name__epoch)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.receiptdate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.transmissiondate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.transmissiondateformat)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.seriousnesshospitalization)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.serious)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.companynumb)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.term)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.count)
+                    </td>
+                    <td></td>
+                </tr>
+            }
+            }
+        </table>
+            }
+
+        }
+
+
+}

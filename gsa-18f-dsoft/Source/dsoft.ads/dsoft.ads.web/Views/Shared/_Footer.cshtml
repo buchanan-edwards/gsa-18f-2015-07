@@ -1,0 +1,22 @@
+﻿@{
+	var facebookLink = "http://www.facebook.com/DSoftTechnology";
+	var twitterLink = "http://twitter.com/dsofttech";
+	var linkedInLink = "http://www.linkedin.com/company/dsoft-technology";
+	var googlePlusLink = "https://plus.google.com/+Dsoft-tech/posts";
+	var gitHubLink = "https://github.com/DSoftTechnology";
+}
+
+<footer class="col-sm-12">
+	<hr />
+	<div class="text-muted col-sm-4">&copy; DSoft Technology Company 2000-@DateTime.Now.Year. All Rights Reserved.</div>
+	<div class="text-center col-sm-4">
+		@System.Configuration.ConfigurationManager.AppSettings["appVersion"]
+	</div>
+	<div id="socialMedia" class="text-right col-sm-4">
+		<a href="@facebookLink" target="_blank"><img src="~/Content/images/facebook_32.png"></a>
+		<a href="@twitterLink" target="_blank"><img src="~/Content/images/twitter_32.png"></a>
+		<a href="@linkedInLink" target="_blank"><img src="~/Content/images/linkedin_32.png"></a>
+		<a href="@googlePlusLink" target="_blank"><img src="~/Content/images/google-plus-icon-32.png"></a>
+		<a href="@gitHubLink" target="_blank"><img src="~/Content/images/github_32.jpg"></a>
+	</div>
+</footer>

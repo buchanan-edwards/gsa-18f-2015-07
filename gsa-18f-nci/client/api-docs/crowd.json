@@ -1,0 +1,82 @@
+{
+    "apiVersion": "0.0.4",
+    "apis": [
+        {
+            "operations": [
+                {
+                    "method": "GET",
+                    "nickname": "crowd-get",
+                    "parameters": [
+                        {
+                            "allowableValues": {
+                                "valueType": "LIST",
+                                "values": [
+                                    "json",
+                                    "xml"                                
+                                ]
+                            },
+                            "dataType": "string",
+                            "description": "file format",
+                            "name": "file",
+                            "paramType": "path",
+                            "required": true
+                        },
+                        {
+                            "dataType": "string",
+                            "description": "recall number",
+                            "name": "recall",
+                            "paramType": "query",
+                            "required": true
+                        }
+                    ],
+                    "produces": [
+                        "application/json",                        
+                        "text/xml"
+                    ],
+                    "summary": "API to GET the crowdsource feedback of a food recall."
+                },
+                {
+                    "method": "POST",
+                    "nickname": "crowd-post",
+                    "parameters": [
+                        {
+                            "allowableValues": {
+                                "valueType": "LIST",
+                                "values": [
+                                    "json",
+                                    "xml"                             
+                                ]
+                            },
+                            "dataType": "string",
+                            "description": "file format",
+                            "name": "file",
+                            "paramType": "path",
+                            "required": true
+                        },
+                        {
+                            "dataType": "string",
+                            "description": "recall number",
+                            "name": "recall",
+                            "paramType": "query",
+                            "required": true
+                        }
+                    ],
+                    "produces": [
+                        "application/json",                        
+                        "text/xml"
+                    ],
+                    "summary": "API to POST the crowdsource input of a food recall."
+                }
+            ],
+            "path": "/api/crowd.{file}"
+        }
+   ],
+    "basePath": "/",
+    "models": {},
+    "produces": [
+        "application/json",                        
+		"text/xml"
+    ],
+    "resourcePath": "/api",
+    "swaggerVersion": "1.2"
+}

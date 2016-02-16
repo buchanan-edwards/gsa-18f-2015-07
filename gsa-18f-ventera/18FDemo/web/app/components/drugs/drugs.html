@@ -1,0 +1,244 @@
+<div class="drug-reaction-global" style="height:100%; width:100%;" lang="en" ng-cloak ng-controller="DrugsController">
+	<h1 ng-if="false">Drug Reaction Research Report</h1>
+	<h2 ng-if="false">Adverse Action Report</h2>
+	<div style="display:table; height:100%; width:100%;">
+		<div style="display:table-row;">
+			<div style="display:table-cell;">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-lg-3 dr-pin-stroke">
+							<!-- Rows: START -->
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-xs-12" style="padding-left:0; padding-right:0;">
+										<div class="dr-brand-primary-background-color" style="padding:15px; margin-bottom:15px; margin-right:-15px; margin-left:-15px; margin-top:-15px;">
+											<h4 class="dr-inverted-production-title center-block text-center">
+												Drug Reaction Research Report
+											</h4>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12" style="padding-left:0; padding-right:0;">
+										<caption>Powered by</caption>
+										<div style="max-width:50%; margin-top:0px; margin-bottom:10px;">			
+											<img class="img-responsive center-block" alt="OpenFDA" src="/web/assets/img/open-fda-logo.png">
+										</div>
+									</div>
+								</div>	
+								<div class="row">
+									<div class="col-xs-12" style="padding-left:0; padding-right:0;">
+										<nav class="navbar navbar-default">
+											<!-- Brand and toggle get grouped for better mobile display -->
+											<div class="navbar-header">
+												<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#search-container-id" aria-expanded="false">
+ 													<span ng-if="flase">Mobile view menu button</span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+												</button>
+												<a class="navbar-brand" href="#">Search Drugs</a>
+											</div>
+											<!-- Collect the nav links, forms, and other content for toggling -->
+											<div class="navbar-collapse collapse" style="padding-top:15px;padding-bottom:15px;" id="search-container-id">
+												<div class="panel panel-default" style="margin-bottom: 5px;padding-bottom: 0;">
+													<div class="panel-heading">
+														<h3 class="panel-title">Search Drugs</h3>
+													</div>
+													<div class="panel-body" style="padding-bottom: 0;">
+														<div class="input-group">
+															<label for="suggestGeneric" ng-show="false">Select Drugs:</label> 
+															<input id="suggestGeneric" type="text" class="form-control"
+																ng-keypress="($event.which === 13)?move():0"
+																ng-model="searchForDrug" placeholder="e.g. aspirin"
+																ng-disabled="selecteddrugs.length >= 5">
+															<span
+																id="addDrug"
+																ng-click="(searchForDrug && selecteddrugs.indexOf(searchForDrug) == -1)?move():0"
+																class="input-group-btn">
+																<button class="btn btn-primary" type="button" title="Add selection"><span class="glyphicon glyphicon-plus"></span></button>
+															</span>
+														</div>
+														<h5><b>Search up to 5 drugs</b></h5>
+														<div class="list-group">
+															<div class="list-group-item" ng-if="isEmpty(selecteddrugs);">None</div>
+															<div class="list-group-item row"
+																style="margin-left: inherit; margin-right: inherit;"
+																ng-if="!isEmpty(selecteddrugs);" ng-repeat="drug in selecteddrugs">
+																<div class="col-md-10 pull-left" style="margin-left: -15px">
+																	<span style="text-transform: capitalize;"
+																		id="selectedDrugs{{$index}}">{{drug}}</span>
+																</div>
+																<div class="col-sm-2 pull-right">
+																	<span style="cursor: pointer;" id="removeDrug{{$index}}"
+																		ng-click="remove(drug);"
+																		class="glyphicon glyphicon-trash text-danger"></span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default" style="margin-bottom: 5px;padding-bottom: 0;">
+													<div class="panel-heading">
+														<h3 class="panel-title">Filter Adverse Events</h3>
+													</div>
+													<div class="panel-body input-group" style="padding-bottom: 0;">
+														<fieldset>
+															<h5>
+																<b>Event Outcome:</b>
+															</h5>
+															<div style="margin-left: 10px;" class="checkbox">
+																<label><input type="checkbox" id="seriousOutcome"
+																	ng-model="outcomeFilter" ng-true-value="'1'" ng-false-value="''"
+																	ng-click="applyFilter();">Serious</label>
+															</div>
+															<h5>
+																<b>Patient Gender:</b>
+															</h5>
+															<div style="margin-left: 10px;" class="radio">
+																<label><input type="radio" name="genderFilter"
+																	id="genderAll" ng-model="genderFilter" ng-value="''"
+																	ng-change="applyFilter();">All</label>
+															</div>
+															<div style="margin-left: 10px;" class="radio">
+																<label><input type="radio" name="genderFilter"
+																	id="genderMale" ng-model="genderFilter" ng-value="'1'"
+																	ng-change="applyFilter();">Male</label>
+															</div>
+															<div style="margin-left: 10px;" class="radio">
+																<label><input type="radio" name="genderFilter"
+																	id="genderFemale" ng-model="genderFilter" ng-value="'2'"
+																	ng-change="applyFilter();">Female</label>
+															</div>
+														</fieldset>
+													</div>
+												</div>
+												
+												<div class="panel panel-default" style="margin-bottom: 0;padding-bottom: 0;">
+													<div class="panel-heading">
+														<h3 class="panel-title">Related Links</h3>
+													</div>
+													<ul class="list-group">
+													  <li class="list-group-item"><a target="_blank" href="https://open.fda.gov/about/">More Information about OpenFDA</a></li>
+													  <li class="list-group-item"><a target="_blank" href="https://www.accessdata.fda.gov/scripts/medwatch/index.cfm?action=reporting.home">Help us fill our reports database</a></li>
+													  <li class="list-group-item"><a target="_blank" href="https://twitter.com/fda_drug_info">Follow @FDA_Drug_Info</a></li>
+													</ul>
+												</div>	
+											</div><!-- /.navbar-collapse -->
+										</nav>
+									</div>
+								</div>		
+							</div>
+							<!-- Rows: END -->
+						</div>
+						<div class="col-xs-12 col-sm-8 col-lg-9" style="padding:0;">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-xs-12" ng-if="isEmpty(selecteddrugs);">
+										<div class="dr-how-to-text">
+											<h2 class="dr-how-to-text-heading">How-to:</h2>
+											<ol class="dr-how-to-text-list">
+												<li>
+													<span class="dr-how-to-text-list-number">1</span>
+													<span class="dr-how-to-text-list-item-text">Enter drugs you are interested in searching</span>
+												</li>
+												<li>
+													<span class="dr-how-to-text-list-number">2</span>
+													<span class="dr-how-to-text-list-item-text">Add up to 5 drugs using the <button class="btn btn-primary btn-xs" type="button" aria-label="plus icon button"><span class="glyphicon glyphicon-plus"></span></button></span>
+												</li>
+												
+												<li>
+													<span class="dr-how-to-text-list-number">3</span>
+													<span class="dr-how-to-text-list-item-text">Filter your search results using our <em>Event Outcome</em> and <em>Patient Gender</em> filters</span>
+												</li>
+												
+												<li>
+													<span class="dr-how-to-text-list-number">4</span>
+													<span class="dr-how-to-text-list-item-text">Compare reports of adverse drug reactions with all reported uses of particular drugs using <button class="text-primary btn-link" aria-label="stats icon button" style="font-size:18px;"><span class="glyphicon glyphicon-stats"></span></button></span>
+												</li>
+											</ol>
+										</div>
+									</div>
+									<div class="col-xs-12" ng-if="!isEmpty(selecteddrugs);">
+										<div class="row">
+											<div class="col-xs-12 dr-pin-stroke">
+												<div class="text-danger" id="chartDiv">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12" ng-if="!isEmpty(selecteddrugs);">
+										<!-- Pin container: START -->
+										<div class="container-fluid" style="padding:0;">
+											<div class="row">
+												<div class="col-xs-12 dr-pin-stroke" style="padding:0;">
+													<!-- Fat container: START -->
+													<div class="container-fluid">
+														<div class="row">
+															<div class="col-xs-12 dr-fat-stroke" style="border-bottom-width:0;">
+																<div class="alert alert-info alert-dismissible row" role="alert" style="margin-bottom:10px;margin-left: 0; margin-right: 0">
+																	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">x</span></button>
+																	<strong>Tip:</strong> Click on <span class="glyphicon glyphicon-stats" aria-hidden="chart icon"></span> to see a graph view.<br/>
+																	<strong>Tip:</strong> Click on <span class="glyphicon glyphicon-share-alt" aria-label="arrow icon"></span> to learn more about drugs and reactions from the National Library of Medicine
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-xs-12 dr-fat-stroke" style="border-top-width:15px;">
+																<!-- Pin container: START -->
+																<div class="container-fluid">
+																	<div class="row">
+																		<div class="col-xs-12 dr-pin-stroke" style="padding:0;">
+																			<!-- Data table: START -->
+																			<table class="table table-bordered table-hover table-striped" style="margin:0;">
+																				<thead>
+																					<tr>
+																						<th style="width: 30px"><span class="glyphicon glyphicon-stats pull-right" aria-hidden="true"></span></th>
+																						<th>Adverse Reactions</th>
+																						<th ng-repeat="item in selecteddrugs" ng-style="{'background-color' : chartColors[$index]}">
+																							<span style="text-transform: capitalize;">
+																								<span id="drug{{$index}}">{{item}}</span>&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&query={{item}}"><span class="glyphicon glyphicon-share-alt" style="color:#000000;" aria-label="Learn more at Medline Plus"></span></a></span>
+																							</span>
+																						</th>
+																					</tr>
+																				</thead>
+																				<tbody>
+																					<tr ng-repeat="reaction in top10Reactions">
+																						<td ng-class="{'dr-table-header-on-state' : selectedReaction==reaction.term}"><a ng-click="drawChart($index, reaction.term);" href=""><span class="glyphicon glyphicon-stats pull-right" aria-hidden="true"></span></a></td>
+																						<td ng-class="{'dr-bold-text' : selectedReaction==reaction.term}" scope="row"><span id="reaction{{$index}}">{{reaction.term}}</span>&nbsp;&nbsp;&nbsp;<a target="_blank"
+																							href="http://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&query={{reaction.term}}"><span class="glyphicon glyphicon-share-alt" aria-label="Learn more at Medline Plus"></span></a>
+																						</td>
+																						<td ng-repeat="count in finalstorage" id="drugCount{{$index}}">{{count[$parent.$index] | textOrNumber}}</span></td>
+																					</tr>
+																				</tbody>
+																			</table>
+																			<!-- Data table: END -->
+																		</div>
+																	</div>
+																</div>			
+																<!-- Pin container: END -->
+															</div>
+														</div>
+													</div>
+													<!-- Fat container: END -->
+												</div>
+											</div>
+										</div>			
+										<!-- Pin container: END -->
+									</div>
+								</div>
+							</div>	
+						</div>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>			
+</div>
+
+<script>
+$(document).ready(function() {
+	//enable autocomplete once the page loads. 
+	enableAutoComplete("suggestGeneric","https://api.fda.gov/drug/label.json?limit=15&search=openfda.generic_name:");
+});
+   </script>

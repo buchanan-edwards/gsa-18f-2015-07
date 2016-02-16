@@ -1,0 +1,106 @@
+<%
+/**
+ * Recall summary card.
+ * @param {RecallProvider} recallProvider Provider of recall information.
+ */
+%>
+<div class="panel <%= recallProvider.getCardType() %> recall-summary-card recall-class-i">
+	<div class="panel-heading">
+		<div rel="tooltip" data-placement="bottom"
+			 title="Collapse card" class="recall-card-toggle <%= recallProvider.isCollapsed() ? 'collapsed' : '' %>"
+			 data-toggle="collapse"
+			 data-target="#collapse-<%= recallProvider.getFdaId() %>">
+			<i class="glyphicon"></i>
+		</div>
+		<h3 rel="tooltip" data-placement="bottom"
+			title="<%= recallProvider.getProductDescription() %>"
+			class="panel-title"><%= recallProvider.getProductDescription() %></h3>
+		<h4 class="panel-subtitle">
+			<span rel="tooltip" data-placement="bottom"
+				  title="<%= recallProvider.getFirmAddress() %>">
+				<%= recallProvider.getFirmName() %>
+			</span> &nbsp;&#183;&nbsp;
+			<small rel="tooltip" data-placement="bottom"
+				   title="<%= recallProvider.getRecallInitiationDate('MMMM Do, YYYY') %>">
+				<%= recallProvider.getRecallInitiationFromNow() %>
+			</small>
+		</h4>
+	</div>
+	<div id="collapse-<%= recallProvider.getFdaId() %>" data-recall-id="<%= recallProvider.getFdaId() %>"
+		 class="panel-collapse collapse <%= recallProvider.isCollapsed() ? '' : 'in' %>">
+		<section class="panel-body">
+			<p class="recall-reason"><%= recallProvider.getReasonForRecall() %></p>
+
+			<div class="allergen-info">
+				<h4 class="recall-section-heading text-left text-muted"><span>Categories</span></h4>
+				<ol class="allergen-list list-inline list-view text-center <%= recallProvider.getFoodCategories().length === 0 ? 'empty' : '' %>">
+					<% for (var i = 0, l = recallProvider.getFoodCategories().length; i < l; i++) { %>
+					<li class="allergen">
+						<div class="aspect-box">
+							<div class="aspect-content">
+								<div rel="tooltip" data-placement="bottom"
+									 title="<%= recallProvider.getFoodCategoryName(i) %>" class="preview-holder">
+									<img src="<%= recallProvider.getFoodCategoryImgUrl(i) %>">
+								</div>
+							</div>
+						</div>
+					</li>
+					<% } %>
+				</ol>
+				<div class="list-view-messages">
+					<p class="list-view-empty-message">Not categorized.</p>
+
+					<p class="list-view-error-message">Oops, we had trouble retrieving recall categories!</p>
+				</div>
+			</div>
+		</section>
+		<div class="panel-footer clearfix">
+			<ul class="list-inline pull-left">
+				<li>
+					<a class="btn btn-link" rel="tooltip" data-placement="bottom" title="See recall details"
+					   href="<%= recallProvider.getRecallDetailsLink() %>">
+						<i class="glyphicon glyphicon-info-sign"></i> Info
+					</a>
+				</li>
+			</ul>
+			<ul class="list-inline pull-right">
+				<!--li>
+					<div data-action="recall-pin" data-recall-id="<%= recallProvider.getFdaId() %>" data-toggle="button"
+						 rel="tooltip" data-placement="bottom" title="Pin recall to your board"
+						 class="btn btn-link <%= recallProvider.isPinned() ? 'active' : '' %>"><i
+								class="glyphicon glyphicon-pushpin"></i> Pin
+					</div>
+				</li-->
+				<li>
+					<div class="dropup">
+						<span data-toggle="dropdown" rel="tooltip" data-placement="bottom"
+							  title="Share recall with others" class="btn btn-link dropdown-toggle"><i
+									class="glyphicon glyphicon-share-alt"></i> Share</span>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li role="presentation">
+								<a href="#" data-action="recall-copy" data-text="<%= recallProvider.getShareLink() %>"
+								   role="menuitem" tabindex="-1">
+									<i class="glyphicon glyphicon-link"></i> Copy
+								</a>
+							</li>
+							<li role="presentation">
+								<a href="<%= recallProvider.getEmailShareLink() %>" target="_" role="menuitem" tabindex="-1">
+									<i class="glyphicon glyphicon-envelope"></i> E-mail
+								</a>
+							</li>
+							<% if (recallProvider.canFbShare()) { %>
+							<li role="presentation">
+								<a href="#" data-href="<%= recallProvider.getFacebookShareLink() %>"
+								   onclick="window.open(this.dataset.href, 'FeedDialog', 'width=500,height=300,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no'); return false;"
+								   role="menuitem" tabindex="-1">
+									<i class="fa fa-facebook-official"></i> Facebook
+								</a>
+							</li>
+							<% } %>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,59 @@
+.ui-tabs .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+	margin: 1px .2em 0 0;
+	border-bottom-width: 0;
+	white-space: nowrap;
+	text-align: center;
+	font: 1.5rem/1 'robotomedium', sans-serif;
+	line-height: 1;
+
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	top: 8px;
+	padding: 8px 20px;
+	background: #dbdbdc;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+	color: #666;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+	top: 0;
+	padding: 12px 20px;
+	background: $primary-color;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+	color: #fff;
+}
+
+.ui-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 1em 0;
+	background: none;
+}
+#tabs {
+	position: relative;
+	top: -56px;
+
+	ul {
+		float: left;
+		padding-left: 2px;		
+	}
+	.ui-tabs-nav {
+		border-bottom: 2px solid #666;
+	}
+}
+.ui-tabs-panel {
+	.hr-bg {
+		font-size: 1.5rem;
+		font-family: 'robotobold', sans-serif;
+		background: url('../images/hr-bg.gif') repeat-x 0 70%;
+		
+		span {
+			background: #fff;
+			padding-right: 20px;
+		}
+	}
+}

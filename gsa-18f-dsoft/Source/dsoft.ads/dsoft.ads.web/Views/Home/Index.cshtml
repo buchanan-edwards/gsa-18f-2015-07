@@ -1,0 +1,78 @@
+﻿@{
+	ViewBag.Title = "Food Recall Reports";
+}
+
+<h2>@ViewBag.Title</h2>
+<hr />
+<div class="form-group">
+	<p>
+		Recalls are almost always voluntary, meaning a company discovers a problem and recalls a product on its own. 
+	    Other times a company recalls a product after FDA raises concerns. Only in rare cases will FDA request or order 
+	    a recall. But in every case, FDA's role is to oversee a company's strategy, classify the recalled products 
+	    according to the level of hazard involved, and assess the adequacy of the recall. Recall information is posted 
+	    in the Enforcement Reports once the products are classified.
+	</p>
+</div>
+<div class="form-group">
+	<div class="col-sm-4">
+	    <div class="thumbnail">
+	      <a href="@Url.Action("GeographicReport")">
+	      	<img src="/Content/images/geopreview.png">
+	      </a>
+	      <div class="caption">
+	        <h3>
+	          Geographic Research
+	        </h3>
+	        <p>
+	          Use geographic data to visualize the number of FDA Enforcement Reports across the US states.
+	        </p>
+	        <div class="thunbnail-bottom-align-text">
+	        	@Html.ActionLink("View Report", "GeographicReport", null, new {@class="btn btn-primary pull-right"})
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-4">
+	    <div class="thumbnail">
+	      <a href="@Url.Action("BusinessReport")">
+	      	<img src="/Content/images/barpreview.png">
+	      </a>
+	      <div class="caption">
+	        <h3>
+	          Business Research
+	        </h3>
+	        <p>
+	          Configure and generate a report illustrating the number of food recalls per year.
+	        </p>
+	        <div class="thunbnail-bottom-align-text">
+	          @Html.ActionLink("View Report", "BusinessReport", null, new {@class="btn btn-primary pull-right"})
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-4">
+	    <div class="thumbnail">
+	      <a href="@Url.Action("FinancialReport")">
+	      	<img src="/Content/images/dotpreview.png">
+	      </a>
+	      <div class="caption">
+	        <h3>
+	          Company Recall Trending Research
+	        </h3>
+	        <p>
+	          Configure and generate a report illustrating Top 10 companies with number of recall reports trends.
+	        </p>
+	        <div class="thunbnail-bottom-align-text">
+	          @Html.ActionLink("View Report", "FinancialReport", null, new {@class="btn btn-primary pull-right"})
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#homeNav').parent().addClass('active');
+    });
+</script>

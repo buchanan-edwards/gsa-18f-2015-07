@@ -1,0 +1,5 @@
+-if field_data
+  %li{class: "accordion-navigation #{extra_class}"}
+    =link_to t(field_name), "##{panel_id}", class: extra_class
+    .content{id: panel_id }
+      = display_field field_data

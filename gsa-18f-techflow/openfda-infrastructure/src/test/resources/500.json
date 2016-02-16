@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "SERVER_ERROR",
+    "message": "Check your request and try again"
+  }
+}

@@ -1,0 +1,260 @@
+﻿/* Colors
+	Main: #2c2768
+	Bright: #565ab5
+	Dark Grey: #3e3e3e
+	White: #ffffff
+	Contrast: #cab879
+*/
+
+/* Body */
+body {
+	padding-top: 50px;
+	font-family:"Open Sans","Lucida Grande","Calibri",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+}
+
+/* Warning Alert */
+.alert-warning {
+  color: #000000;
+  background-color: #cab879;
+  border-color: #cab879;
+}
+
+/* Filter List */
+@media (max-width: 992px) {
+    .affix {
+        position: static;
+    }
+}
+
+/* Buttons */
+.btn-primary {
+	background-color: #2c2768;
+	border-color: #2c2768;
+	color: #ffffff;
+}
+
+.focus.btn-primary, .btn-primary:focus {
+	background-color: #2c2768;
+	border-color: #2c2768;
+	color: #ffffff;
+}
+.btn-primary:hover {
+	background-color: #565ab5;
+	border-color: #565ab5;
+	color: #ffffff;
+}
+
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover {
+	background-color: #565ab5;
+	border-color: #565ab5;
+	color: #ffffff;
+}
+
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+	background-color: #3e3e3e;
+	border-color: #3e3e3e;
+	color: #ffffff;
+}
+
+.disabled.btn-primary, .active.disabled.btn-primary, .focus.disabled.btn-primary, .disabled.btn-primary:active, .disabled.btn-primary:focus, .disabled.btn-primary:hover, [disabled].btn-primary, [disabled].active.btn-primary, [disabled].focus.btn-primary, [disabled].btn-primary:active, [disabled].btn-primary:focus, [disabled].btn-primary:hover, fieldset[disabled] .btn-primary, fieldset[disabled] .active.btn-primary, fieldset[disabled] .focus.btn-primary, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
+	background-color: #565ab5;
+	border-color: #565ab5;
+}
+
+/* Datepicker */
+.datepicker table tr td.active:hover,.datepicker table tr td.active:hover:hover,.datepicker table tr td.active.disabled:hover,.datepicker table tr td.active.disabled:hover:hover,.datepicker table tr td.active:focus,.datepicker table tr td.active:hover:focus,.datepicker table tr td.active.disabled:focus,.datepicker table tr td.active.disabled:hover:focus,.datepicker table tr td.active:active,.datepicker table tr td.active:hover:active,.datepicker table tr td.active.disabled:active,.datepicker table tr td.active.disabled:hover:active,.datepicker table tr td.active.active,.datepicker table tr td.active:hover.active,.datepicker table tr td.active.disabled.active,.datepicker table tr td.active.disabled:hover.active,.open .dropdown-toggle.datepicker table tr td.active,.open .dropdown-toggle.datepicker table tr td.active:hover,.open .dropdown-toggle.datepicker table tr td.active.disabled,.open .dropdown-toggle.datepicker table tr td.active.disabled:hover{
+	border-color: #565ab5;
+	background-color: #565ab5;
+	color: #ffffff;
+}
+
+/* Navbar */
+.navbar a {
+    font-size: 18px;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 55px;
+    height: 55px;
+    padding-top: 0;
+}
+.navbar-default { 
+	background-color: #3e3e3e;
+	border-color: #3e3e3e;
+}
+.navbar-default .navbar-brand {
+	color: #ffffff;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #ffffff;
+}
+.navbar-default .navbar-text {
+	color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+	background-color: #3e3e3e;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+	color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover, .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+	color: #ffffff;
+	background-color: #565ab5;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+	background-color: #3e3e3e;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #ffffff;
+	background-color: #565ab5;
+}
+.dropdown-menu>.active>a,.dropdown-menu>.active>a:focus,.dropdown-menu>.active>a:hover {
+	color:#fff;
+	background-color:#565ab5;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	color: #ffffff;
+	background-color: #565ab5;
+}
+.navbar-default .navbar-toggle {
+	border-color: #3e3e3e;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #565ab5;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #ffffff;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: #565ab5;
+}
+.navbar-default .navbar-link {
+	color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+	color: #ffffff;
+}
+
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: #ffffff;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #ffffff;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+		color: #ffffff;
+		background-color: #565ab5;
+	}
+}
+
+/* Thumbnail */
+.thumbnail{
+    height: 450px;
+    overflow: auto;
+}
+
+.thunbnail-bottom-align-text {
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+}
+
+/* Map */
+.states {
+	fill: none;
+  	stroke: #000;
+  	stroke-width: .2;
+  	stroke-linejoin: round;
+}
+
+.graphContainer{
+	width:100%;
+	margin: 0 auto;
+
+	height: 0;
+	padding-top: 60%;
+	position:relative;
+}
+
+.graphContainer svg {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.graphHelp {
+	font-size:small;
+	font-style:italic;
+}
+
+#mapLegend {
+    padding: 2% 0 2% 10%;
+}
+
+#mapLegend li.key {
+    border-top-width: 15px;
+    border-top-style: solid;
+    font-size: x-small;
+    width: 10%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#matrixContainer {
+ 	padding-top: 35%;
+ 	margin-top: 20px;
+}
+
+#barContainer {
+ 	padding-top: 45%;
+ 	margin-top: 20px;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+  	stroke: #3e3e3e;
+  	shape-rendering: crispEdges;
+}
+
+.axis text {
+	font-size:large;
+}
+
+.bar rect {
+	fill: #565ab5;
+}
+
+.bar text {
+	fill: #2c2768;
+	text-anchor: middle;
+}
+
+/* Glyphicons */
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('/Content/bootstrap/fonts/glyphicons-halflings-regular.eot');
+  src: url('/Content/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/Content/bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('/Content/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/Content/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/Content/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+/* Footer */
+footer {
+	padding-bottom: 25px;
+}

@@ -1,0 +1,22 @@
+---
+en:
+  adverse_reactions: Adverse Reactions
+  drug_classification: Drug Classification
+  find_a_medication: Find a Medication
+  generic_error: Something went wrong during your request. Please try again.
+  generic_name: Generic Name
+  homepage_text: Search for a drug by name to view label information and potential side effects.
+  indications_and_usage: Indications and Usage
+  manufacturer: Manufacturer
+  other_information: Other Information
+  reported_side_effects: Reported Side Effects
+  search: Search
+  search_box_hint: Search for medication
+  views:
+    pagination:
+      first: First
+      last: Last
+      next: Next
+      previous: Previous
+      truncate: '&hellip;'
+  warnings: Warnings

@@ -1,0 +1,44 @@
+
+<h3>
+    Current Medications
+    <span ng-show="ProfileService.user.drugs">({{ ProfileService.user.drugs.length }})</span>
+</h3>
+
+<div class="medlist">
+    <!-- No medications for user -->
+    <p ng-hide="ProfileService.user.drugs">
+        None
+    </p>
+
+
+    <!-- div class="medication" ng-repeat="drug in ProfileService.user.drugs">
+        <h3><a href="#/meds/{{drug.fdaId}}">{{ drug.brandName[0] }}</a></h3>
+        <div class="med-info">
+            <p>
+                Generic Names:
+                <span ng-repeat="nm in drug.genericName">{{ nm }}</span>
+            </p>
+
+        </div>
+    </div -->
+    <div class="medication" ng-repeat="drug in ProfileService.user.drugs">
+
+        <div class="med-list-detail">
+            <div class="detail-left">
+                <h3><a href="#/meds/{{drug.fdaId}}">{{ drug.brandName[0] }}</a></h3>
+                <p>
+                    Generic Names:
+                    <span ng-repeat="nm in drug.genericName">{{ nm }}</span>
+                </p>
+            </div>
+            <div class="detail-right">
+                <button
+                    class="btn btn-default"
+                    ng-click="goTo(drug.fdaId)">
+                    <i class="fa fa-chevron-circle-right"></i> View Details
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

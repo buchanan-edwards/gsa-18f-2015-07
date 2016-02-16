@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>LABEL : LABEL Home</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body>
+        <div id="page">
+            <div id="main">
+                <div id="main-header" class="pageSectionHeader">
+                    <h1 id="title-heading" class="pagetitle">
+                                                    <img src="images/icons/contenttypes/home_page_16.png" height="16" width="16" border="0" align="absmiddle" alt="Home Page" style="float: none; vertical-align: middle;"/>
+                                                <span id="title-text">
+                            LABEL : LABEL Home
+                        </span>
+                    </h1>
+
+                    <div class="page-metadata">
+                        <p>This page last changed on Jul 07, 2015 by <font color="#0050B2">patrick.mcconnell</font>.</p>
+                    </div>
+                </div>
+
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                    <p>SemanticBits leveraged an Agile, iterative approach to implementing a prototype for the GSA Agile BPA. Our first step during the Inception Phase was to identify a key need of our user community. Here, the Product Manager identified that the key issue is the ability to quickly and accurately find information about drug labels through a government site. In particular, users should be able to either search by name/keyword or upload a photo of a drug label from their smartphone to initiate a search.</p><p>After Inception, we began the Elaboration Phase where we focused on getting the project team mobilized, implementing the baseline architecture, and coming up with the initial user experience. Once the problem statement was defined, reviewed, and approved, our User Interaction Designer created wireframes with Balsamiq for a web-based, mobile-enabled application to perform this function. In parallel, the DevOps Engineer identified the target environment and wrote the appropriate Vagrant and Chef scripts for standing up the various environments. Our Business Analyst also began creating Epics and User Stories in Jira, as well as User Acceptance Tests (UATs). The Usability Engineer identified an overall design approach and exchanged the design guide/style patterns with the team. The Architect put together a baseline architectural approach using the concurrent 4+1 view model. During this process, the Delivery Manager set up daily scrums, the code repository on GitHub, Jira for capturing Epics/User Stories/Tasks/Bugs, Confluence for capturing documentation, and Crucible for code reviews.</p><p>The wireframes were presented to users from the community, we gathered feedback, and that feedback was incorporated into the wireframes. These wireframes were linked to User Stories. During this time, elaboration phase development was commencing, where the baseline architecture was implemented and proven. Here, we were remixing data from the label portion of the OpenFDA APIs. We stood up a basic REST-like service that provides our business-specific queries. The riskiest aspect of the architecture was parsing an image of a barcode, so this was prototyped using ZXing. In addition, the baseline pages were implemented using Grails and Bootstrap to perform some of these queries. We prototyped an HTML5 component leveraging CSS3 for capturing an image from a smartphone to ensure that this critical feature is possible. The Business Analyst began fleshing out named User Stories by writing their text and adding scenarios.</p><p>The environment was decided early on - towards the end of inception and beginning of elaboration. Amazon Web Services (AWS) was decided upon because of its low cost, ease of use, and our extensive experience with it. The DevOps Engineer implemented Chef and Vagrant scripts to stand up our environments: development (DEV), continuous integration (CI), and quality assurance (QA). Jenkins was incorporated into the CI environment scripts, and automated deployment and testing was initiated using Ant, Vagrant, Chef, Geb, and Selenium. Everyone on the team received emails when CI failed, and the issue was fixed immediately. We automated unit and integration tests using JUnit and Geb/Selenium. When a bug is encountered, a test is written that fails to validate the bug, and then the issue is resolved. Manual tests were performed against functionality on the DEV instance before sprint end and the QA instance after sprint end. Typically we document tests in Jira using Zephyr and link them to the User Stories for which they cover. Ad hoc test cycles are used for validating functionality within a sprint before a User Story is marked as resolved, and a test cycle for each sprint captures tests cumulatively to perform regression testing.</p><p>As the Construction Phase began, we moved into daily mini-sprints to demonstrate our iterative approach. Here we ended each day with a sprint meeting that combined the scrum update, the sprint retrospective, and sprint planning meetings. User stories were iteratively fleshed out, approved, and implemented. Mockups were created by the Visual Designer from wireframes and presented to the Product Manager. After two rounds of feedback, the Usability Tester presented the mockups to our user community for feedback. This was documented and incorporated into a final revision of mockups. These mockups were linked to User Stories, and the Visual Designer designed images and CSS to be incorporated by the developers. The Architect refined the architectural approach as technical challenges were uncovered, such as the ZXing not returning specific error codes when decoding failed. Developers iterated over the web interface and backend REST-like services. Query functionality was enhanced, the result pages better formulated, and the label details laid out.</p><p>The Delivery Manager worked closely with the Product Manager to prioritize features. Certain features were down-prioritized and a subset of those were dropped altogether. For example, advanced search functionality through entering a hashtag (pound symbol) had a low priority but made it into the release. On the other hand, supporting pages like “About”, “Contact”, and “Help” were dropped because they were deemed to add the least value. In other cases, tradeoffs were made in effort versus functionality. The user experience design called for type-ahead after a hashtag is entered for advanced search. This proved to be cost-prohibitive (high effort) to implement, so an auto-completer was incorporated instead.</p><p>Three releases were made: alpha, beta, and production. The alpha release was an internal release designed as a milestone to make sure the team was on track and the features were meeting the expectations of the Product Manager. The beta release went through a usability test administered by our Usability Engineer. Each user in our beta user group was provided the application, and the Usability Engineer observed the users as they used the application. We noted down any issues that the users ran into, as well as suggestions that the users provided. These were then reviewed by the Interaction Designer and Visual Designer, who along with the Delivery Manager and Business Analyst made a recommendation to the Product Manager. The Product Manager approved a subset of the recommended changes, which were incorporated into the final release. User Acceptance Testing (UAT) is an ongoing process from the first release. As more functionality is rolled out in the last half of the project, UAT takes a more central focus. Once we had a release, our users were able to put their hands on the application and report issues.</p><p>The Transition Phase typically involves handover of all work product to the customer, including production deployment, user training, handover of documentation, and kickoff of operations and maintenance. For this project, the focus of Transition was moving the application to production, polishing off documentation, and finalizing evidence for the Agile BPA submission.</p>
+                    </div>
+
+                    
+                 
+                </div>             </div> 
+            <div id="footer" style="background: url(https://projects.semanticbits.com/confluence/images/border/border_bottom.gif) repeat-x;">
+                <p><small>Document generated by Confluence on Jul 07, 2015 11:03</small></p>
+            </div>
+        </div>     </body>
+</html>
+nt, user training, handover of documentation, and kickoff of operations and maintenance.  For this project, the focus of Transition was moving the application to production, polishing off documentation, and finalizing evidence for the Agile BPA submission.</span></span></p>
+                    </div>
+
+                    
+                 
+                </div>             </div> 
+            <div id="footer" style="background: url(https://projects.semanticbits.com/confluence/images/border/border_bottom.gif) repeat-x;">
+                <p><small>Document generated by Confluence on Jul 07, 2015 10:37</small></p>
+            </div>
+        </div>     </body>
+</html>

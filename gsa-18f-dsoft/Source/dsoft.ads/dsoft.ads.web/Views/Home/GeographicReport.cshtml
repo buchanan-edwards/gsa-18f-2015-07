@@ -1,0 +1,199 @@
+﻿@{
+	Layout = "~/Views/Shared/_ReportLayout.cshtml";
+    ViewBag.Title = ViewBag.ReportType = "Geographic Report";
+    var defaultTitle = "US Reports";
+}
+
+@section head
+{
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+}
+
+<p>
+  This map color encodes the number of FDA Food Reports based on the filter criteria with a 7-step quantize scale ranging from 0 to the max number of reports.
+</p>
+<div id="mapLegend"></div>
+<div id="mapcontainer" class="graphContainer">
+  <svg>
+    <g id="states"></g>
+    <g id="labels"></g>
+    <g id="border"></g>
+  </svg>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#geographicNav').parent().addClass('active');
+        $('#filterSubmit').on("click", colorMap);
+        SetTitle('@defaultTitle');
+    });
+
+    // initialize svg elements
+	var width = 800,
+	    height = 500;
+
+    var map = d3.select("#mapcontainer svg")
+		.attr("preserveAspectRatio", "xMinYMin meet")
+		.attr("viewBox", "0 0 800 500");
+
+	var states = d3.select("#mapcontainer svg #states");
+	var labels = d3.select("#mapcontainer svg #labels");
+	var border = d3.select("#mapcontainer svg #border");
+	var legend = d3.select("#mapLegend");
+
+	var projection = d3.geo.albersUsa()
+		.scale(1000)
+		.translate([width/2, height/2]);
+
+	var path = d3.geo.path()
+		.projection(projection);
+
+	var colorRange = colorbrewer.Purples[7];
+	var stateData = null;
+
+	// queue json requests, calls buildMap when done
+    queue()
+    	.defer(d3.json, "/Content/json/usa.json")
+    	.await(buildMap);
+
+    // called when deferred json calls are done
+    function buildMap(error, us, data){
+	  	if (error) return console.error(error);
+
+	  	stateData = data;
+
+		// Create states
+	  	states
+	  		.selectAll("path")
+	  		.data(topojson.feature(us, us.objects.units).features)
+	  		.enter().append("path")
+      			.attr("id", function(d) { return 'path-' + d.properties.abbr; })
+	  			.attr("d", path)
+	  			.attr("fill", "white")
+	  			.on("click", function(d) { return redirectToList(d.properties.abbr); })
+	  			.on("mouseover", stateMouseOver)
+	  			.on("mouseout", stateMouseOut);
+
+	  	var labelsText = labels
+	  		.selectAll("text")
+    		.data(topojson.feature(us, us.objects.units).features)
+    		.enter().append("text")
+      			.attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
+      			.attr("id", function(d) { return 'label-' + d.properties.abbr; })
+      			.style("display", "none")
+      			.on("click", function(d) { return redirectToList(d.properties.abbr); });
+
+      	labelsText
+      			.append("tspan")
+      			.attr("x", -5)
+      			.text(function(d) { return d.properties.abbr; });
+
+      	labelsText
+      			.append("tspan")
+      			.attr("class", "stateCount")
+      			.attr("x", -5)
+      			.attr("dy", "15px");
+
+	  	// Create state border overlay
+	  	border.append("path")
+	    	.datum(topojson.feature(us, us.objects.units, function(a,b){ return a !==b; }))
+	    	.attr("class", "states")
+	    	.attr("d", path);
+
+	  	// Build legend
+		legend.append("ul")
+			.attr("class", "list-inline");
+
+		var keys = legend.selectAll("li.key")
+			.data(colorRange);
+
+		keys.enter().append("li")
+			.attr("class", "key")
+			.style("display", "inline-block")
+			.style("border-top-color", String)
+
+		colorMap();
+	}
+
+	function redirectToList(state){
+		window.location.href = "/Home/ReportList?state=" + state;
+	}
+
+	// mouse over will hide circles and show actual values
+	function stateMouseOver(p) {
+		var abbr = d3.select(this).node().id.replace("path-","");
+		labels.select("#label-"+abbr).style("display", "block");
+	}
+
+	function stateMouseOut(p) {
+		var abbr = d3.select(this).node().id.replace("path-","");
+		labels.select("#label-"+abbr).style("display", "none");
+	}
+
+	// (re)colors the map, called after map is built and by the filter button on the _FilterList partial view
+    function colorMap() {
+    	// get filter form data
+    	var formData = JSON.stringify($("#filterForm").serializeForm());
+
+    	d3.json("/Report/GeoReport")
+    		.header("Content-type", "application/json")
+    		.post(formData, function(error, data) {
+	  			if (error) return console.error(error);
+
+    	var maxCount = d3.max(data.data, function(d) { return d.Count; });
+    	if (maxCount === 0) maxCount = 1;
+
+		// define color scale
+		var colors = d3.scale.quantize()
+			.domain([0, maxCount])
+			.range(colorRange);
+
+		// set subtitle
+		if (data.Subtitle != '') {
+			SetSubtitle(data.Subtitle);
+		}
+
+		// color states
+    	states.transition()
+    		.selectAll("path")
+    		.duration(500)
+  			.attr("fill", function(d) { return colorForStateCount(colors, data, d.properties.name); });
+
+  		// recalculate legend numbers
+  		legend.selectAll("li.key")
+  			.text(function(d){ return Math.round(colors.invertExtent(d)[0]); });
+
+  		labels.selectAll(".stateCount")
+  			.text(function(d) { return getStateCount(data, d.properties.name); });
+  		});
+
+  		// prevent event from bubbling up
+  		return false;
+  	}
+
+  	function getStateCount(data, name) {
+		var stateCount = 0;
+		for (var i = 0, len = data.data.length; i < len; i++) {
+			if (data.data[i].StateName === name) {
+				stateCount = data.data[i].Count;
+				break;
+			}
+		}
+
+		return stateCount;
+  	}
+
+  	// determines the state color based on the state count
+  	function colorForStateCount(colors, data, name) {
+		return colors(getStateCount(data, name)); 
+	}
+
+ 	$('#reportTitleInput').on('input', function() {
+		if ($(this).val() != '') {
+			SetTitle($(this).val());
+		}
+		else {
+			SetTitle('@defaultTitle');
+		}
+	});
+</script>

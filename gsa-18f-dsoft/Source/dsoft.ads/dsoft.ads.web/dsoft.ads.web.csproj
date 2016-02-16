@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{B535EEA5-94AB-49E6-8BA2-CF8724F60E02}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>dsoft.ads.web</RootNamespace>
+    <AssemblyName>dsoft.ads.web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Content\" />
+    <Folder Include="Content\images\" />
+    <Folder Include="Content\json\" />
+    <Folder Include="Content\site\" />
+    <Folder Include="Content\site\fonts\" />
+    <Folder Include="Content\site\css\" />
+    <Folder Include="Scripts\site\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Models\OpenFDAQuery.cs" />
+    <Compile Include="Models\OpenFDAResponse.cs" />
+    <Compile Include="Models\OpenFDAResponseMeta.cs" />
+    <Compile Include="Models\OpenFDAResponseMetaResults.cs" />
+    <Compile Include="Helpers\StateNames.cs" />
+    <Compile Include="Helpers\SessionHelper.cs" />
+    <Compile Include="ViewModels\ReportListViewModel.cs" />
+    <Compile Include="ViewModels\ReportDetailsViewModel.cs" />
+    <Compile Include="ViewModels\GeoReportViewModel.cs" />
+    <Compile Include="Models\OpenFDAResult.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
+    <Compile Include="ViewModels\FinancialReportViewModel.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\BusinessReportViewModel.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="Helpers\CompanyCount.cs" />
+    <Compile Include="Helpers\RecallCount.cs" />
+    <Compile Include="Helpers\StateCount.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Web.config" />
+    <Content Include="Global.asax" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\bootstrap\bootstrap.js" />
+    <Content Include="Scripts\bootstrap\bootstrap.min.js" />
+    <Content Include="Scripts\jquery\jquery-2.1.4.min.js" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\BusinessReport.cshtml" />
+    <Content Include="Views\Home\FinancialReport.cshtml" />
+    <Content Include="Views\Home\GeographicReport.cshtml" />
+    <Content Include="Views\Home\ReportDetails.cshtml" />
+    <Content Include="Views\Home\ReportList.cshtml" />
+    <Content Include="Views\Shared\_ContactModal.cshtml" />
+    <Content Include="Views\Shared\_FilterList.cshtml" />
+    <Content Include="Views\Shared\_MainMenu.cshtml" />
+    <Content Include="Content\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\site\css\site.css" />
+    <Content Include="Content\site\fonts\OpenSans-Bold.ttf" />
+    <Content Include="Content\site\fonts\OpenSans-BoldItalic.ttf" />
+    <Content Include="Content\site\fonts\OpenSans-ExtraBold.ttf" />
+    <Content Include="Content\site\fonts\OpenSans-ExtraBoldItalic.ttf" />
+    <Content Include="Content\site\fonts\OpenSans-Italic.ttf" />
+    <Content Include="Content\site\fonts\OpenSans-Light.ttf" />
+    <Content Include="Content\site\fonts\OpenSans-LightItalic.ttf" />
+    <Content Include="Content\site\fonts\OpenSans-Regular.ttf" />
+    <Content Include="Content\site\fonts\OpenSans-Semibold.ttf" />
+    <Content Include="Content\site\fonts\OpenSans-SemiboldItalic.ttf" />
+    <Content Include="Content\site\css\PagedList.css" />
+    <Content Include="Scripts\site\common.js" />
+    <Content Include="Content\json\us.json" />
+    <Content Include="Scripts\site\colorbrewer.js" />
+    <Content Include="Scripts\bootstrap\bootstrap-datepicker.js" />
+    <Content Include="Scripts\bootstrap\bootstrap-datepicker.min.js" />
+    <Content Include="Content\bootstrap\css\bootstrap-datepicker3.standalone.css" />
+    <Content Include="Content\bootstrap\css\bootstrap-datepicker3.standalone.min.css" />
+    <Content Include="Content\images\geopreview.png" />
+    <Content Include="Content\json\financialreport.json" />
+    <Content Include="Views\Shared\_ReportLayout.cshtml" />
+    <Content Include="Views\Shared\_BetaWarning.cshtml" />
+    <Content Include="Content\images\facebook_32.png" />
+    <Content Include="Content\images\google-plus-icon-32.png" />
+    <Content Include="Content\images\linkedin_32.png" />
+    <Content Include="Content\images\twitter_32.png" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Content\images\github_32.jpg" />
+    <Content Include="Content\images\barpreview.png" />
+    <Content Include="Content\images\dotpreview.png" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8083" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ItemGroup>
+    <None Include="Content\bootstrap\css\bootstrap.css.map" />
+    <None Include="Content\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Content\json\usa.json" />
+  </ItemGroup>
+</Project>

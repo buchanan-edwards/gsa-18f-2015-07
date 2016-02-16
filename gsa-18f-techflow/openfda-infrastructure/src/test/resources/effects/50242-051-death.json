@@ -1,0 +1,792 @@
+{
+  "meta": {
+    "disclaimer": "openFDA is a beta research project and not for clinical use. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated.",
+    "license": "http://open.fda.gov/license",
+    "last_updated": "2015-01-21",
+    "results": {
+      "skip": 0,
+      "limit": 1,
+      "total": 59744
+    }
+  },
+  "results": [
+    {
+      "fulfillexpeditecriteria": "1",
+      "receivedateformat": "102",
+      "receiver": {
+        "receiverorganization": "FDA",
+        "receivertype": "6"
+      },
+      "reportduplicate": {
+        "duplicatesource": "GE HEALTHCARE",
+        "duplicatenumb": "US-GE HEALTHCARE MEDICAL DIAGNOSTICS-OSCN-PR-1006S-0175"
+      },
+      "receiptdateformat": "102",
+      "reporttype": "1",
+      "receivedate": "20140312",
+      "sender": {
+        "sendertype": "2",
+        "senderorganization": "FDA-Public Use"
+      },
+      "seriousnessdeath": "1",
+      "@epoch": 1417466131.85916,
+      "patient": {
+        "reaction": [
+          {
+            "reactionmeddrapt": "Nephrogenic systemic fibrosis",
+            "reactionmeddraversionpt": "17.0",
+            "reactionoutcome": "5"
+          }
+        ],
+        "patientonsetage": "70.946",
+        "patientweight": "55.39",
+        "patientonsetageunit": "801",
+        "drug": [
+          {
+            "drugauthorizationnumb": "020123",
+            "drugstartdateformat": "102",
+            "medicinalproduct": "OMNISCAN",
+            "drugindication": "CEREBROVASCULAR ACCIDENT",
+            "drugstructuredosageunit": "012",
+            "drugdosageform": "SOLUTION FOR INJECTION",
+            "drugcharacterization": "1",
+            "drugstructuredosagenumb": "40",
+            "drugadministrationroute": "042",
+            "openfda": {
+              "unii": [
+                "84F6U3J2R6"
+              ],
+              "spl_id": [
+                "acf2f893-3fe2-4977-9455-07f62f381a59",
+                "775e7bb2-943c-4d02-ab68-06361329be31",
+                "31f41468-178f-425e-bf16-0440ebd67ed6"
+              ],
+              "product_ndc": [
+                "0407-0690",
+                "0407-0691"
+              ],
+              "substance_name": [
+                "GADODIAMIDE"
+              ],
+              "spl_set_id": [
+                "d539c8b2-13fe-4ba2-994e-b4d0ee1ef490",
+                "f9fd4805-cbc1-4bc7-955f-e5cd4e1b03bb",
+                "1e9a37e2-f28a-4373-bf0f-3e9b60f42d8a"
+              ],
+              "product_type": [
+                "HUMAN PRESCRIPTION DRUG"
+              ],
+              "manufacturer_name": [
+                "GE Healthcare Inc."
+              ],
+              "brand_name": [
+                "OMNISCAN"
+              ],
+              "route": [
+                "INTRAVENOUS"
+              ],
+              "nui": [
+                "N0000175862",
+                "N0000180184"
+              ],
+              "pharm_class_moa": [
+                "Magnetic Resonance Contrast Activity [MoA]"
+              ],
+              "package_ndc": [
+                "0407-0690-42",
+                "0407-0690-43",
+                "0407-0690-40",
+                "0407-0690-70",
+                "0407-0691-63",
+                "0407-0690-10",
+                "0407-0690-05",
+                "0407-0690-15",
+                "0407-0690-17",
+                "0407-0690-20",
+                "0407-0691-62",
+                "0407-0690-22",
+                "0407-0690-30",
+                "0407-0690-12",
+                "0407-0690-50",
+                "0407-0691-65",
+                "0407-0691-64"
+              ],
+              "pharm_class_epc": [
+                "Paramagnetic Contrast Agent [EPC]"
+              ],
+              "generic_name": [
+                "GADODIAMIDE"
+              ],
+              "application_number": [
+                "NDA022066",
+                "NDA020123"
+              ]
+            },
+            "drugstartdate": "20031122",
+            "drugenddate": "20031122",
+            "drugenddateformat": "102"
+          },
+          {
+            "drugauthorizationnumb": "020123",
+            "drugstartdateformat": "102",
+            "medicinalproduct": "OMNISCAN",
+            "drugindication": "HYPERTENSION",
+            "drugstructuredosageunit": "012",
+            "drugdosageform": "SOLUTION FOR INJECTION",
+            "drugcharacterization": "1",
+            "drugstructuredosagenumb": "40",
+            "drugadministrationroute": "042",
+            "openfda": {
+              "unii": [
+                "84F6U3J2R6"
+              ],
+              "spl_id": [
+                "acf2f893-3fe2-4977-9455-07f62f381a59",
+                "775e7bb2-943c-4d02-ab68-06361329be31",
+                "31f41468-178f-425e-bf16-0440ebd67ed6"
+              ],
+              "product_ndc": [
+                "0407-0690",
+                "0407-0691"
+              ],
+              "substance_name": [
+                "GADODIAMIDE"
+              ],
+              "spl_set_id": [
+                "d539c8b2-13fe-4ba2-994e-b4d0ee1ef490",
+                "f9fd4805-cbc1-4bc7-955f-e5cd4e1b03bb",
+                "1e9a37e2-f28a-4373-bf0f-3e9b60f42d8a"
+              ],
+              "product_type": [
+                "HUMAN PRESCRIPTION DRUG"
+              ],
+              "manufacturer_name": [
+                "GE Healthcare Inc."
+              ],
+              "brand_name": [
+                "OMNISCAN"
+              ],
+              "route": [
+                "INTRAVENOUS"
+              ],
+              "nui": [
+                "N0000175862",
+                "N0000180184"
+              ],
+              "pharm_class_moa": [
+                "Magnetic Resonance Contrast Activity [MoA]"
+              ],
+              "package_ndc": [
+                "0407-0690-42",
+                "0407-0690-43",
+                "0407-0690-40",
+                "0407-0690-70",
+                "0407-0691-63",
+                "0407-0690-10",
+                "0407-0690-05",
+                "0407-0690-15",
+                "0407-0690-17",
+                "0407-0690-20",
+                "0407-0691-62",
+                "0407-0690-22",
+                "0407-0690-30",
+                "0407-0690-12",
+                "0407-0690-50",
+                "0407-0691-65",
+                "0407-0691-64"
+              ],
+              "pharm_class_epc": [
+                "Paramagnetic Contrast Agent [EPC]"
+              ],
+              "generic_name": [
+                "GADODIAMIDE"
+              ],
+              "application_number": [
+                "NDA022066",
+                "NDA020123"
+              ]
+            },
+            "drugstartdate": "20031123",
+            "drugenddate": "20031123",
+            "drugenddateformat": "102"
+          },
+          {
+            "drugauthorizationnumb": "020123",
+            "drugstartdateformat": "102",
+            "drugcharacterization": "1",
+            "drugindication": "RENAL ARTERY STENOSIS",
+            "medicinalproduct": "OMNISCAN",
+            "drugadministrationroute": "042",
+            "openfda": {
+              "unii": [
+                "84F6U3J2R6"
+              ],
+              "spl_id": [
+                "acf2f893-3fe2-4977-9455-07f62f381a59",
+                "775e7bb2-943c-4d02-ab68-06361329be31",
+                "31f41468-178f-425e-bf16-0440ebd67ed6"
+              ],
+              "product_ndc": [
+                "0407-0690",
+                "0407-0691"
+              ],
+              "substance_name": [
+                "GADODIAMIDE"
+              ],
+              "spl_set_id": [
+                "d539c8b2-13fe-4ba2-994e-b4d0ee1ef490",
+                "f9fd4805-cbc1-4bc7-955f-e5cd4e1b03bb",
+                "1e9a37e2-f28a-4373-bf0f-3e9b60f42d8a"
+              ],
+              "product_type": [
+                "HUMAN PRESCRIPTION DRUG"
+              ],
+              "manufacturer_name": [
+                "GE Healthcare Inc."
+              ],
+              "brand_name": [
+                "OMNISCAN"
+              ],
+              "route": [
+                "INTRAVENOUS"
+              ],
+              "nui": [
+                "N0000175862",
+                "N0000180184"
+              ],
+              "pharm_class_moa": [
+                "Magnetic Resonance Contrast Activity [MoA]"
+              ],
+              "package_ndc": [
+                "0407-0690-42",
+                "0407-0690-43",
+                "0407-0690-40",
+                "0407-0690-70",
+                "0407-0691-63",
+                "0407-0690-10",
+                "0407-0690-05",
+                "0407-0690-15",
+                "0407-0690-17",
+                "0407-0690-20",
+                "0407-0691-62",
+                "0407-0690-22",
+                "0407-0690-30",
+                "0407-0690-12",
+                "0407-0690-50",
+                "0407-0691-65",
+                "0407-0691-64"
+              ],
+              "pharm_class_epc": [
+                "Paramagnetic Contrast Agent [EPC]"
+              ],
+              "generic_name": [
+                "GADODIAMIDE"
+              ],
+              "application_number": [
+                "NDA022066",
+                "NDA020123"
+              ]
+            },
+            "drugstartdate": "20050326",
+            "drugenddate": "20050326",
+            "drugenddateformat": "102",
+            "drugdosageform": "SOLUTION FOR INJECTION"
+          },
+          {
+            "drugauthorizationnumb": "020123",
+            "drugstartdateformat": "102",
+            "drugcharacterization": "1",
+            "drugindication": "PAIN IN EXTREMITY",
+            "medicinalproduct": "OMNISCAN",
+            "drugadministrationroute": "042",
+            "openfda": {
+              "unii": [
+                "84F6U3J2R6"
+              ],
+              "spl_id": [
+                "acf2f893-3fe2-4977-9455-07f62f381a59",
+                "775e7bb2-943c-4d02-ab68-06361329be31",
+                "31f41468-178f-425e-bf16-0440ebd67ed6"
+              ],
+              "product_ndc": [
+                "0407-0690",
+                "0407-0691"
+              ],
+              "substance_name": [
+                "GADODIAMIDE"
+              ],
+              "spl_set_id": [
+                "d539c8b2-13fe-4ba2-994e-b4d0ee1ef490",
+                "f9fd4805-cbc1-4bc7-955f-e5cd4e1b03bb",
+                "1e9a37e2-f28a-4373-bf0f-3e9b60f42d8a"
+              ],
+              "product_type": [
+                "HUMAN PRESCRIPTION DRUG"
+              ],
+              "manufacturer_name": [
+                "GE Healthcare Inc."
+              ],
+              "brand_name": [
+                "OMNISCAN"
+              ],
+              "route": [
+                "INTRAVENOUS"
+              ],
+              "nui": [
+                "N0000175862",
+                "N0000180184"
+              ],
+              "pharm_class_moa": [
+                "Magnetic Resonance Contrast Activity [MoA]"
+              ],
+              "package_ndc": [
+                "0407-0690-42",
+                "0407-0690-43",
+                "0407-0690-40",
+                "0407-0690-70",
+                "0407-0691-63",
+                "0407-0690-10",
+                "0407-0690-05",
+                "0407-0690-15",
+                "0407-0690-17",
+                "0407-0690-20",
+                "0407-0691-62",
+                "0407-0690-22",
+                "0407-0690-30",
+                "0407-0690-12",
+                "0407-0690-50",
+                "0407-0691-65",
+                "0407-0691-64"
+              ],
+              "pharm_class_epc": [
+                "Paramagnetic Contrast Agent [EPC]"
+              ],
+              "generic_name": [
+                "GADODIAMIDE"
+              ],
+              "application_number": [
+                "NDA022066",
+                "NDA020123"
+              ]
+            },
+            "drugstartdate": "20050428",
+            "drugenddate": "20050428",
+            "drugenddateformat": "102",
+            "drugdosageform": "SOLUTION FOR INJECTION"
+          },
+          {
+            "drugcharacterization": "2",
+            "drugindication": "PAIN",
+            "medicinalproduct": "OXYCONTIN",
+            "openfda": {
+              "unii": [
+                "CD35PMG570"
+              ],
+              "spl_id": [
+                "f768f011-8545-f999-0d8f-56ad304547c4"
+              ],
+              "product_ndc": [
+                "59011-460",
+                "59011-430",
+                "59011-420",
+                "59011-415",
+                "59011-410",
+                "59011-440",
+                "59011-480"
+              ],
+              "substance_name": [
+                "OXYCODONE HYDROCHLORIDE"
+              ],
+              "rxcui": [
+                "1049545",
+                "1049599",
+                "1049595",
+                "1049574",
+                "1049543",
+                "1049502",
+                "1049565",
+                "1049504",
+                "1049563",
+                "1049593",
+                "1049601",
+                "1049576",
+                "1049584",
+                "1049586"
+              ],
+              "spl_set_id": [
+                "bfdfe235-d717-4855-a3c8-a13d26dadede"
+              ],
+              "product_type": [
+                "HUMAN PRESCRIPTION DRUG"
+              ],
+              "manufacturer_name": [
+                "Purdue Pharma LP"
+              ],
+              "brand_name": [
+                "OXYCONTIN"
+              ],
+              "route": [
+                "ORAL"
+              ],
+              "nui": [
+                "N0000175690",
+                "N0000175684"
+              ],
+              "pharm_class_moa": [
+                "Full Opioid Agonists [MoA]"
+              ],
+              "package_ndc": [
+                "59011-420-20",
+                "59011-480-20",
+                "59011-430-20",
+                "59011-480-10",
+                "59011-460-20",
+                "59011-430-10",
+                "59011-410-10",
+                "59011-415-10",
+                "59011-440-20",
+                "59011-410-20",
+                "59011-420-10",
+                "59011-440-10",
+                "59011-415-20",
+                "59011-460-10"
+              ],
+              "pharm_class_epc": [
+                "Opioid Agonist [EPC]"
+              ],
+              "generic_name": [
+                "OXYCODONE HYDROCHLORIDE"
+              ],
+              "application_number": [
+                "NDA022272"
+              ]
+            }
+          },
+          {
+            "drugcharacterization": "2",
+            "medicinalproduct": "NEURONTIN",
+            "openfda": {
+              "unii": [
+                "6CW7F3G59X"
+              ],
+              "spl_id": [
+                "d27e85b1-089b-4a4b-a836-5fff0fbb36ea"
+              ],
+              "product_ndc": [
+                "0071-2012",
+                "0071-0401",
+                "0071-0803",
+                "0071-0513",
+                "0071-0806",
+                "0071-0805"
+              ],
+              "substance_name": [
+                "GABAPENTIN"
+              ],
+              "rxcui": [
+                "105028",
+                "105029",
+                "261281",
+                "261280",
+                "105030",
+                "283523",
+                "310433",
+                "310432",
+                "310431",
+                "310430",
+                "310434",
+                "351973"
+              ],
+              "spl_set_id": [
+                "ee9ad9ed-6d9f-4ee1-9d7f-cfad438df388"
+              ],
+              "product_type": [
+                "HUMAN PRESCRIPTION DRUG"
+              ],
+              "manufacturer_name": [
+                "Parke-Davis Div of Pfizer Inc"
+              ],
+              "brand_name": [
+                "NEURONTIN"
+              ],
+              "pharm_class_pe": [
+                "Decreased Central Nervous System Disorganized Electrical Activity [PE]"
+              ],
+              "route": [
+                "ORAL"
+              ],
+              "nui": [
+                "N0000175753",
+                "N0000008486"
+              ],
+              "package_ndc": [
+                "0071-0805-40",
+                "0071-0401-24",
+                "0071-0803-24",
+                "0071-0803-40",
+                "0071-0806-40",
+                "0071-0805-24",
+                "0071-2012-23",
+                "0071-0513-24",
+                "0071-0806-24"
+              ],
+              "pharm_class_epc": [
+                "Anti-epileptic Agent [EPC]"
+              ],
+              "generic_name": [
+                "GABAPENTIN"
+              ],
+              "application_number": [
+                "NDA020882",
+                "NDA020235",
+                "NDA021129"
+              ]
+            }
+          },
+          {
+            "drugstartdateformat": "102",
+            "drugcharacterization": "2",
+            "drugindication": "NEPHROGENIC SYSTEMIC FIBROSIS",
+            "medicinalproduct": "THALIDOMIDE",
+            "openfda": {
+              "unii": [
+                "4Z8R6ORS6L"
+              ],
+              "spl_id": [
+                "62e5a320-fb7c-11e3-a3ac-0800200c9a66"
+              ],
+              "product_ndc": [
+                "59572-215",
+                "59572-220",
+                "59572-205",
+                "59572-210"
+              ],
+              "rxcui": [
+                "200390",
+                "213360",
+                "700418",
+                "700416",
+                "404449",
+                "404450",
+                "360177",
+                "360176"
+              ],
+              "substance_name": [
+                "THALIDOMIDE"
+              ],
+              "spl_set_id": [
+                "2eda833b-1357-4ed4-a093-194524fcb061"
+              ],
+              "product_type": [
+                "HUMAN PRESCRIPTION DRUG"
+              ],
+              "manufacturer_name": [
+                "Celgene Corporation"
+              ],
+              "brand_name": [
+                "THALOMID"
+              ],
+              "pharm_class_pe": [
+                "Decreased Immunologically Active Molecule Activity [PE]"
+              ],
+              "route": [
+                "ORAL"
+              ],
+              "nui": [
+                "N0000008663"
+              ],
+              "package_ndc": [
+                "59572-215-93",
+                "59572-205-17",
+                "59572-205-14",
+                "59572-215-13",
+                "59572-220-16",
+                "59572-205-97",
+                "59572-210-95",
+                "59572-210-15",
+                "59572-205-94",
+                "59572-220-96"
+              ],
+              "generic_name": [
+                "THALIDOMIDE"
+              ],
+              "application_number": [
+                "NDA020785"
+              ]
+            },
+            "drugstartdate": "20050823"
+          },
+          {
+            "drugcharacterization": "2",
+            "drugindication": "PAIN",
+            "medicinalproduct": "CELEXA",
+            "openfda": {
+              "unii": [
+                "0DHU5B8D6V"
+              ],
+              "spl_id": [
+                "d0ce418d-d88a-49b7-8a32-7dde9967e3b8"
+              ],
+              "product_ndc": [
+                "0456-4010",
+                "0456-4020",
+                "0456-4040"
+              ],
+              "substance_name": [
+                "CITALOPRAM HYDROBROMIDE"
+              ],
+              "rxcui": [
+                "284591",
+                "200371",
+                "283672",
+                "213345",
+                "213344",
+                "309314"
+              ],
+              "spl_set_id": [
+                "4259d9b1-de34-43a4-85a8-41dd214e9177"
+              ],
+              "product_type": [
+                "HUMAN PRESCRIPTION DRUG"
+              ],
+              "manufacturer_name": [
+                "Forest Laboratories, Inc."
+              ],
+              "brand_name": [
+                "CELEXA"
+              ],
+              "route": [
+                "ORAL"
+              ],
+              "nui": [
+                "N0000175696",
+                "N0000000109"
+              ],
+              "pharm_class_moa": [
+                "Serotonin Uptake Inhibitors [MoA]"
+              ],
+              "package_ndc": [
+                "0456-4040-63",
+                "0456-4010-01",
+                "0456-4020-63",
+                "0456-4020-01",
+                "0456-4040-11",
+                "0456-4040-01",
+                "0456-4020-11"
+              ],
+              "pharm_class_epc": [
+                "Serotonin Reuptake Inhibitor [EPC]"
+              ],
+              "generic_name": [
+                "CITALOPRAM HYDROBROMIDE"
+              ],
+              "application_number": [
+                "NDA020822"
+              ]
+            }
+          },
+          {
+            "drugstartdateformat": "102",
+            "drugcharacterization": "2",
+            "drugindication": "NEPHROGENIC SYSTEMIC FIBROSIS",
+            "medicinalproduct": "INTRAVENOUS IMMUNOGLOBULIN",
+            "drugstartdate": "20050808"
+          },
+          {
+            "drugcharacterization": "2",
+            "drugindication": "PAIN",
+            "medicinalproduct": "OXYCODONE",
+            "openfda": {
+              "unii": [
+                "CD35PMG570"
+              ],
+              "spl_id": [
+                "b1513f9e-7008-4c45-bbb3-64b266d4f6c8"
+              ],
+              "product_ndc": [
+                "65162-047",
+                "65162-051",
+                "65162-050",
+                "65162-048",
+                "65162-049"
+              ],
+              "substance_name": [
+                "OXYCODONE HYDROCHLORIDE"
+              ],
+              "rxcui": [
+                "1049618",
+                "1049611",
+                "1049621",
+                "1049683",
+                "1049686"
+              ],
+              "spl_set_id": [
+                "094b64b3-cd32-4de5-afb6-ea00d9caad74"
+              ],
+              "product_type": [
+                "HUMAN PRESCRIPTION DRUG"
+              ],
+              "manufacturer_name": [
+                "Amneal Pharmaceuticals of New York, LLC"
+              ],
+              "brand_name": [
+                "OXYCODONE HYDROCHLORIDE"
+              ],
+              "route": [
+                "ORAL"
+              ],
+              "nui": [
+                "N0000175690",
+                "N0000175684"
+              ],
+              "pharm_class_moa": [
+                "Full Opioid Agonists [MoA]"
+              ],
+              "package_ndc": [
+                "65162-050-10",
+                "65162-051-10",
+                "65162-048-10",
+                "65162-050-25",
+                "65162-049-10",
+                "65162-047-03",
+                "65162-049-25",
+                "65162-050-03",
+                "65162-047-10",
+                "65162-048-25",
+                "65162-049-03",
+                "65162-048-03",
+                "65162-051-25",
+                "65162-047-25",
+                "65162-051-03"
+              ],
+              "pharm_class_epc": [
+                "Opioid Agonist [EPC]"
+              ],
+              "generic_name": [
+                "OXYCODONE"
+              ],
+              "application_number": [
+                "ANDA203638"
+              ]
+            }
+          }
+        ],
+        "patientsex": "1"
+      },
+      "receiptdate": "20140312",
+      "safetyreportversion": "2",
+      "serious": "1",
+      "companynumb": "US-GE HEALTHCARE MEDICAL DIAGNOSTICS-OSCN-PR-1006S-0175",
+      "safetyreportid": "10003633",
+      "duplicate": "1",
+      "primarysource": {
+        "qualification": "4",
+        "reportercountry": "US"
+      },
+      "primarysourcecountry": "US",
+      "transmissiondate": "20141002",
+      "transmissiondateformat": "102",
+      "occurcountry": "US"
+    }
+  ]
+}

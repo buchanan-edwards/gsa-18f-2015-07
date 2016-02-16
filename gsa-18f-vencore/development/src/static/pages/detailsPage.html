@@ -1,0 +1,101 @@
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row detailssection-header">
+                    <div class="col-xs-6">
+                        <h4>Product Details</h4>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                    <a href="#listSearch" title="Back" class="btn btn-primary">
+                        Back
+                    </a>
+                    </div>
+                </div>
+                <div class="row detailssection-odd">
+                    <div class="col-sm-2 detailscol1">Product Description:</div>
+                    <div class="col-sm-10 detailscol2">
+                        {{recallDetails.product_description}}
+                    </div>
+                </div>
+                <div class="row detailssection-even">
+                    <div class="col-sm-2 detailscol1">Recall Number:</div>
+                    <div class="col-sm-10 detailscol2">{{recallDetails.recall_number}}</div>
+                </div>
+                <div class="row detailssection-odd">
+                    <div class="col-sm-2 detailscol1">Classification:</div>
+                    <div class="col-sm-10 detailscol2">{{recallDetails.classification}}</div>
+                </div>
+                <div class="row detailssection-even">
+                    <div class="col-sm-2 detailscol1">Code Info:</div>
+                    <div class="col-sm-10 detailscol2">{{recallDetails.code_info}}</div>
+                </div>
+                <div class="row detailssection-odd">
+                    <div class="col-sm-2 detailscol1">Product Distributed Qty:</div>
+                    <div class="col-sm-10 detailscol2">{{recallDetails.product_quantity}}</div>
+                </div>
+                <div class="row detailssection-even">
+                    <div class="col-sm-2 detailscol1">Reason for Recall:</div>
+                    <div class="col-sm-10 detailscol2">{{recallDetails.reason_for_recall}}</div>
+                </div>
+                <div class="row detailssection-header">
+                    <div class="col-sm-12">
+                        <h4>Event Details</h4>
+                    </div>
+                </div>
+                <div class="row detailssection-odd">
+                    <div class="col-sm-2 detailscol1">Event Id:</div>
+                    <div class="col-sm-10 detailscol2">{{recallDetails.event_details.event_id}}</div>
+                </div>
+                <div class="row detailssection-even">
+                    <div class="col-sm-2 detailscol1">Product Type:</div>
+                    <div class="col-sm-10 detailscol2">{{recallDetails.event_details.product_type}}</div>
+                </div>
+                <div class="row detailssection-odd">
+                    <div class="col-sm-2 detailscol1">Status:</div>
+                    <div class="col-sm-10 detailscol2">{{recallDetails.event_details.status}}</div>
+                </div>
+                <div class="row detailssection-even">
+                    <div class="col-sm-2 detailscol1">Recalling Firm:</div>
+                    <div class="col-sm-10 detailscol2">{{recallDetails.event_details.recalling_firm}}</div>
+                </div>
+                <div class="row detailssection-odd">
+                    <div class="col-sm-2 detailscol1">City: </div>
+                    <div class="col-sm-10 detailscol2">{{recallDetails.event_details.city}}</div>
+                </div>
+                <div class="row detailssection-even">
+                    <div class="col-sm-2 detailscol1">State: </div>
+                    <div class="col-sm-10 detailscol2">{{recallDetails.event_details.state}}</div>
+                </div>
+                <div class="row detailssection-odd">
+                    <div class="col-sm-2 detailscol1">Country: </div>
+                    <div class="col-sm-10 detailscol2">{{recallDetails.event_details.country}}</div>
+                </div>
+                <div class="row detailssection-even">
+                    <div class="col-sm-2 detailscol1">Voluntary / Mandated: </div>
+                    <div class="col-sm-10 detailscol2">{{recallDetails.event_details.voluntary_mandated}}</div>
+                </div>
+                <div class="row detailssection-odd">
+                    <div class="col-sm-2 detailscol1">Recall Initiation Date: </div>
+                    <div class="col-sm-10 detailscol2">{{recallDetails.event_details.recall_initiation_date}}</div>
+                </div>
+                <div class="row detailssection-even">
+                    <div class="col-sm-2 detailscol1">Initial Firm Notification of <br> Consignee or Public: </div>
+                    <div class="col-sm-10 detailscol2">{{recallDetails.event_details.initial_firm_notification}}</div>
+                </div>
+                <div class="row detailssection-odd">
+                    <div class="col-sm-2 detailscol1">Distribution Pattern: </div>
+                    <div class="col-sm-10 detailscol2">{{recallDetails.event_details.distribution_pattern}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<style>
+    .hideThis {
+        display: none;
+    }
+</style>

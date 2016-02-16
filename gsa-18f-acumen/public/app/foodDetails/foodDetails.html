@@ -1,0 +1,78 @@
+
+<div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a ui-sref="search">Return to Search Results</a>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12 page-head-line">
+                    <span class="pull-right">{{food.selectedFoodItem.city}}, {{food.selectedFoodItem.state}}</span> 
+                    <h1>{{food.selectedFoodItem.recalling_firm}}</h1>
+                </div>                
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Product Information
+                        </div>
+                        <div class="panel-body">
+                            <label for="product-description">Product Description</label>
+							<p id="product-description">{{food.selectedFoodItem.product_description}}</p>
+
+							<label for="product-quantity">Product Quantity</label>
+							<p id="product-quantity">{{food.selectedFoodItem.product_quantity || 'Not Specified'}}</p>
+                        </div>
+                    </div>
+                </div>  
+            
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading {{food.getClassStyle(food.selectedFoodItem.classification)}}" style="color:white;">
+                            <i  class="fa fa-exclamation-circle" ></i>
+                            {{food.getClassName(food.selectedFoodItem.classification) || 'No Classification'}}
+                        </div>
+
+                        <div class="panel-body">
+                            <p>{{food.getClassDescription(food.selectedFoodItem.classification)}}</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Recall Information
+                        </div>
+                        <div class="panel-body">
+                            <p id="recall-number">{{food.selectedFoodItem.recall_number}}</p>
+                            <p id="recall-number">{{food.selectedFoodItem.voluntary_mandated}}&nbsp;&nbsp;|&nbsp;&nbsp;{{food.selectedFoodItem.status}}</p>
+
+                            <label for="recall-initiation-date">Recall Initiation Date</label>
+							<p id="recall-initiation-date">{{food.selectedFoodItem.recall_initiation_date | formatResultDate}}</p>
+
+							<label for="report-date">Report Date</label>
+							<p id="report-date">{{food.selectedFoodItem.report_date  | formatResultDate}}</p>
+
+							<label for="reason-for-recall">Reason for Recall</label>
+							<p id="reason-for-recall">{{food.selectedFoodItem.reason_for_recall}}</p>
+
+                            <label for="distribution-pattern">Distribution Pattern</label>
+                            <p id="distribution-pattern">{{food.selectedFoodItem.distribution_pattern}}</p>
+
+                            <label for="initial-firm-notification">Initial Firm Notification</label>
+                            <p id="initial-firm-notification">{{food.selectedFoodItem.initial_firm_notification}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+               
+    </div>

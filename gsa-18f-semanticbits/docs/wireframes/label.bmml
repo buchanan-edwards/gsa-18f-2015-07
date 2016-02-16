@@ -1,0 +1,130 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1251" measuredH="599" mockupW="1251" mockupH="599">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="0" y="0" w="1000" h="599" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>METRONIDAZOLE%20-%20LABEL%3A%20Label%20and%20Barcode%20Excerpt%20Locator%0Ahttp%3A//label.fda.gov/search/5d5728bc-0a01-4bbd-886b-b5729e6b1898/%3Fterm%3Dcarcinogen%26page%3D0</text>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Label" x="435" y="541" w="-1" h="-1" measuredW="130" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%5BAbout%5D%20%7C%20%5BContact%5D%20%7C%20%5BHelp%5D</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="__group__" x="15" y="83" w="201" h="79" measuredW="201" measuredH="79" zOrder="1" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="11">
+          <controlProperties/>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="86" y="23" w="115" h="32" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="11">
+          <controlProperties>
+            <text>Label%20and%20Barcode%20%0AExcerpt%20Locator%20</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::SubTitle" x="15" y="177" w="-1" h="-1" measuredW="204" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>METRONIDAZOLE</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::Paragraph" x="1023" y="334" w="228" h="93" measuredW="200" measuredH="80" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Organize%20data%20by%20category%20and%20label.%0A%20%0ASkip%20categories%20and%20labels%20with%20no%20data.%0A%20%0AAll%20uncategorized%20%28unexpected%29%20labels%20go%20into%20%22Other%20fields%22</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::List" x="15" y="215" w="219" h="279" measuredW="100" measuredH="279" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%5BAbuse%20and%20overdosage%5D%0A%5BAdverse%20effects%20and%20interactions%5D%0A%5BClinical%20pharmacology%5D%0A%5BIndications%2C%20usage%2C%20and%20dosage%5D%0A%5BPatient%20information%5D%0A%5BSpecial%20populations%5D%0A%5BNonclinical%20toxicology%5D%0A%5BReferences%5D%0A%5BSupply%2C%20storage%2C%20and%20handling%5D%0A%5BWarnings%20and%20precautions%5D%0A%5BID%20and%20version%5D%0A%5BOther%20fields%5D%0A%5BopenFDA%20fields%5D</text>
+      </controlProperties>
+    </control>
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::Paragraph" x="1023" y="181" w="228" h="109" measuredW="200" measuredH="80" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Table%20of%20contents%20floats%20on%20left%20and%20sticks%20to%20top%20of%20page%20when%20scrolling.%20%20Categories%20without%20any%20data%20do%20not%20appear.%0A%20%0AOrder%20categories%20below%20by%20the%20contents</text>
+      </controlProperties>
+    </control>
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::Link" x="231" y="181" w="-1" h="-1" measuredW="138" measuredH="19" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%3C%3C%20back%20to%20your%20search</text>
+      </controlProperties>
+    </control>
+    <control controlID="66" controlTypeID="__group__" x="248" y="334" w="417" h="160" measuredW="417" measuredH="160" zOrder="6" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="0" w="-1" h="-1" measuredW="122" measuredH="26" zOrder="0" locked="false" isInGroup="66">
+          <controlProperties>
+            <bold>true</bold>
+            <size>18</size>
+            <text>ID%20and%20version</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="100" y="52" w="-1" h="-1" measuredW="39" measuredH="21" zOrder="1" locked="false" isInGroup="66">
+          <controlProperties>
+            <bold>true</bold>
+            <text>Set%20Id</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="126" y="79" w="-1" h="-1" measuredW="13" measuredH="21" zOrder="2" locked="false" isInGroup="66">
+          <controlProperties>
+            <bold>true</bold>
+            <text>Id</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="94" y="107" w="-1" h="-1" measuredW="45" measuredH="21" zOrder="3" locked="false" isInGroup="66">
+          <controlProperties>
+            <bold>true</bold>
+            <text>Version</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="51" y="139" w="-1" h="-1" measuredW="88" measuredH="21" zOrder="4" locked="false" isInGroup="66">
+          <controlProperties>
+            <bold>true</bold>
+            <text>Effective%20time</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="154" y="52" w="-1" h="-1" measuredW="263" measuredH="21" zOrder="5" locked="false" isInGroup="66">
+          <controlProperties>
+            <text>0030514f-879d-416d-b422-24b67e334b36</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="154" y="79" w="-1" h="-1" measuredW="257" measuredH="21" zOrder="6" locked="false" isInGroup="66">
+          <controlProperties>
+            <text>5d5728bc-0a01-4bbd-886b-b5729e6b1898</text>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::Label" x="154" y="107" w="-1" h="-1" measuredW="10" measuredH="21" zOrder="7" locked="false" isInGroup="66">
+          <controlProperties>
+            <text>3</text>
+          </controlProperties>
+        </control>
+        <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="154" y="139" w="-1" h="-1" measuredW="59" measuredH="21" zOrder="8" locked="false" isInGroup="66">
+          <controlProperties>
+            <text>7/12/2011</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="67" controlTypeID="__group__" x="248" y="215" w="702" h="91" measuredW="702" measuredH="91" zOrder="9" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="0" w="-1" h="-1" measuredW="193" measuredH="26" zOrder="0" locked="false" isInGroup="67">
+          <controlProperties>
+            <bold>true</bold>
+            <size>18</size>
+            <text>Abuse%20and%20overdosage</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="0" y="41" w="139" h="35" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="67">
+          <controlProperties>
+            <align>right</align>
+            <bold>true</bold>
+            <text>Overdose</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Paragraph" x="154" y="41" w="548" h="50" measuredW="200" measuredH="80" zOrder="2" locked="false" isInGroup="67">
+          <controlProperties>
+            <text>There%20is%20no%20human%20experience%20with%20overdosage%20of%20metronidazole%20vaginal%20gel.%20Vaginally%20applied%20metronidazole%20gel%2C%200.75%25%20could%20be%20absorbed%20in%20sufficient%20amounts%20to%20produce%20systemic%20effects.%20%28See%20WARNINGS.%29</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</mockup>

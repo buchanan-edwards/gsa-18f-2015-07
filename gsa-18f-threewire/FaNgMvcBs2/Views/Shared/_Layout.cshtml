@@ -1,0 +1,63 @@
+﻿@inject IOptions<AppSettings> AppSettings
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+ <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - @AppSettings.Options.SiteTitle</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/css/bootstrap.min.css"
+              asp-fallback-href="//ajax.aspnetcdn.com/ajax/bootstrap/3.0.0/css/bootstrap.min.css"
+              asp-fallback-test-class="hidden" asp-fallback-test-property="visibility" asp-fallback-test-value="hidden" />
+        <link rel="stylesheet" href="~/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+
+    <!--[if gte IE 9]>
+          <style type="text/css">
+            .hero {
+               filter: none;
+            }
+          </style>
+    <![endif]-->
+
+</head>
+<body>
+   
+    @RenderBody()
+
+    <environment names="Development">
+        <script src="~/js/jquery-1.11.2.min.js"></script>
+        <script src="~/js/bootstrap.js"></script>
+        <script src="~/js/jquery-ui.min.js"></script>
+        <script src="~/js/jquery.bxslider.js"></script>
+        <script src="~/js/main.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/jquery-1.11.2.min.js"
+                asp-fallback-src="//ajax.aspnetcdn.com/ajax/jquery/jquery-1.10.2.min.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+        <script src="~/js/bootstrap.js"
+                asp-fallback-src="//ajax.aspnetcdn.com/ajax/bootstrap/3.0.0/bootstrap.min.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+        <script src="~/js/jquery-ui.min.js"></script>
+        <script src="~/js/jquery.bxslider.js"></script>
+        <script src="~/js/main.js"></script>
+    </environment>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,43 @@
+- unless @medication
+  %p
+    No matches found!
+- else
+  %h1.medication-header
+    = display_field @medication.openfda.brand_name
+
+  -if @medication.warnings?
+    %ul.accordion{ :data => {'accordion'=>true}}
+      = render_panel field_name: 'warnings', field_data: @medication.warnings, extra_class: 'warnings'
+  .row
+    .large-6.columns
+      %h4
+        = t('manufacturer')
+      %p
+        = display_field @medication.openfda.manufacturer_name
+
+    .large-6.columns
+      %h4
+        = t('generic_name')
+      %p
+        = display_field @medication.openfda.generic_name
+        %em.classification
+          = display_field @medication.openfda.pharm_class_epc
+
+
+  .row
+    .large-12.columns
+      %h4
+        = t('other_information')
+      %ul.accordion{ :data => {'accordion'=>true}}
+        = render_panel field_name: 'adverse_reactions', field_data: @medication.adverse_reactions
+        = render_panel field_name: 'indications_and_usage', field_data: @medication.indications_and_usage
+        - unless @interaction.error?
+          %li{class: "accordion-navigation"}
+            - increment
+            =link_to t('reported_side_effects'), "##{panel_id}", id: 'charts-panel'
+            .content.active{id: panel_id }
+              .row
+                .small-12.columns{style: 'width: 100%; margin: 0 auto'}
+                  = pie_chart(@interaction.pie_format, id: 'pie_chart')
+                  = bar_chart(@interaction.chart_format)
+

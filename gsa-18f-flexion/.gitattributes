@@ -1,0 +1,2 @@
+circle.yml merge=ours
+package.json merge=ours

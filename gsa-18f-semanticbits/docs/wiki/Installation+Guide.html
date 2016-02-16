@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>LABEL : Installation Guide</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body>
+        <div id="page">
+            <div id="main">
+                <div id="main-header" class="pageSectionHeader">
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            LABEL : Installation Guide
+                        </span>
+                    </h1>
+
+                    <div class="page-metadata">
+                        <p>This page last changed on Jul 07, 2015 by <font color="#0050B2">gopal.unnikrishnan</font>.</p>
+                    </div>
+                </div>
+
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                    <p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1436281399663 {padding: 0px;}
+div.rbtoc1436281399663 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1436281399663 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1436281399663'>
+<ul class='toc-indentation'>
+<li><a href='#InstallationGuide-PreRequisites'>Pre Requisites</a></li>
+<li><a href='#InstallationGuide-FreshDeployment'>Fresh Deployment</a></li>
+<li><a href='#InstallationGuide-DEVDeployment'>DEV Deployment</a></li>
+<li><a href='#InstallationGuide-QA/UATDeployment'>QA/UAT Deployment</a></li>
+</ul>
+</div></p><h1 id="InstallationGuide-PreRequisites">Pre Requisites</h1><ul><li><a href="https://www.vagrantup.com/" class="external-link" rel="nofollow">Vagrant</a></li><li>Vagrant AWS plugin</li><li><a href="http://aws.amazon.com/" style="line-height: 1.4285715;background-color: transparent;" class="external-link" rel="nofollow">Amazon Web Services</a><span style="line-height: 1.4285715;background-color: transparent;"> </span><span style="line-height: 1.4285715;background-color: transparent;"> (AWS) account</span></li></ul><h1 id="InstallationGuide-FreshDeployment">Fresh Deployment</h1><p>The following steps will provision the LABEL application on AWS.</p><ol><li>Install the latest release of <a href="https://www.vagrantup.com/" class="external-link" rel="nofollow">Vagrant.</a></li><li><p>Install Vagrant AWS provider</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="theme: Confluence; brush: java; gutter: false" style="font-size:12px;">vagrant plugin install vagrant-aws</pre>
+</div></div></li><li><p>Login to AWS management console and create the following resources </p><ol><li>Elastic IP 1 for development server  (AWS_DEV_ELASTIC_IP)</li><li>Elastic IP 2 for QA/UAT server  (AWS_QA_ELASTIC_IP)</li><li>Elastic IP 3 for CI (jenkins) server  (AWS_CI_ELASTIC_IP)</li><li>Create a new key pair (AWS_KEYNAME, AWS_KEYPATH)</li></ol></li><li><p><span>Set the following environment variables with appropriate values for AWS account and the resources created above</span></p><p><span><br /></span></p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">Variable Name</th><th class="confluenceTh">Description</th></tr><tr><td class="confluenceTd">AWS_ACCESS_KEY_ID</td><td class="confluenceTd">AWS Key</td></tr><tr><td class="confluenceTd">AWS_ACCESS_SECRET</td><td class="confluenceTd">AWS Secret key</td></tr><tr><td class="confluenceTd">AWS_KEYNAME</td><td class="confluenceTd">AWS Key name created in step 3.d</td></tr><tr><td class="confluenceTd">AWS_KEYPATH</td><td class="confluenceTd">Path of AWS key downloaded during step 3.d</td></tr><tr><td class="confluenceTd">AWS_DEV_ELASTIC_IP</td><td class="confluenceTd">AWS elastic IP created in step 3.a</td></tr><tr><td class="confluenceTd">AWS_QA_ELASTIC_IP</td><td class="confluenceTd">AWS elastic IP created in step 3.b</td></tr><tr><td class="confluenceTd">AWS_CI_ELASTIC_IP</td><td class="confluenceTd">AWS elastic IP created in step 3.c</td></tr><tr><td class="confluenceTd">AWS_WIN_PASSWORD</td><td class="confluenceTd">A password to be used for the windows machine to be created</td></tr></tbody></table></div><p><span><br /></span></p></li><li><p><span>Check out the code Git</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="theme: Confluence; brush: bash; gutter: false" style="font-size:12px;">git clone https://github.com/semanticbits/label-priv.git LABEL</pre>
+</div></div></li><li><p><span>Run Vagrant</span></p></li></ol><p> </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="theme: Confluence; brush: bash; gutter: false" style="font-size:12px;">cd vm
+vagrant up</pre>
+</div></div><p> </p><p> </p><p>Once the development environment is up, all deployments to DEV and QA/UAT are automated via Jenkins builds.</p><h1 id="InstallationGuide-DEVDeployment">DEV Deployment</h1><p>The DEV deployment process is automated, and runs on a nightly basis, or as part of the <a href="http://ec2-54-172-116-12.compute-1.amazonaws.com:8080/job/LABEL-dev/" class="external-link" rel="nofollow">label-dev build</a> in Jenkins. The deployment script is <a href="https://github.com/semanticbits/label-priv/blob/develop/vm/bash/dev_refresh.sh" class="external-link" rel="nofollow">here</a>.</p><h1 id="InstallationGuide-QA/UATDeployment">QA/UAT Deployment</h1><p>The <a href="http://ec2-54-172-116-12.compute-1.amazonaws.com:8080/job/LABEL-uat/" class="external-link" rel="nofollow">label-uat</a> build is used to deploy to the QA/UAT environment from a given tag.</p><p> </p><p> </p>
+                    </div>
+
+                    
+                 
+                </div>             </div> 
+            <div id="footer" style="background: url(https://projects.semanticbits.com/confluence/images/border/border_bottom.gif) repeat-x;">
+                <p><small>Document generated by Confluence on Jul 07, 2015 11:03</small></p>
+            </div>
+        </div>     </body>
+</html>

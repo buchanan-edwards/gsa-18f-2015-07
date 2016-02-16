@@ -1,0 +1,327 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>LABEL : Architecture</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body>
+        <div id="page">
+            <div id="main">
+                <div id="main-header" class="pageSectionHeader">
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            LABEL : Architecture
+                        </span>
+                    </h1>
+
+                    <div class="page-metadata">
+                        <p>This page last changed on Jul 06, 2015 by <font color="#0050B2">joshua.phillips</font>.</p>
+                    </div>
+                </div>
+
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                    <p> </p><p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1436281399506 {padding: 0px;}
+div.rbtoc1436281399506 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1436281399506 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1436281399506'>
+<ul class='toc-indentation'>
+<li><a href='#Architecture-Scenarios'>Scenarios</a></li>
+<li><a href='#Architecture-LogicalView'>Logical View</a>
+<ul class='toc-indentation'>
+<li><a href='#Architecture-ComponentLayers'>Component Layers</a></li>
+<li><a href='#Architecture-ViewComponents'>View Components</a></li>
+<li><a href='#Architecture-ControllerComponents'>Controller Components</a></li>
+<li><a href='#Architecture-ServiceComponents'>Service Components</a></li>
+</ul>
+</li>
+<li><a href='#Architecture-DevelopmentView'>Development View</a></li>
+<li><a href='#Architecture-ProcessView'>Process View</a></li>
+<li><a href='#Architecture-PhysicalView'>Physical View</a></li>
+</ul>
+</div></p><h1 id="Architecture-Scenarios">Scenarios</h1><p>Following are the architecturally important scenarios.</p><p>    
+<p>
+        
+    
+        
+    <div style="width: 100%;  overflow: auto;">
+    <table class="aui">
+        <tbody>
+        <tr></tr>         <tr>
+                            <th style="text-align: left; text-transform: capitalize;">Key</th>
+                            <th style="text-align: left; text-transform: capitalize;">Summary</th>
+                            <th style="text-align: left; text-transform: capitalize;">epic link</th>
+                    </tr>
+                                                                                    <tr class="rowNormal">
+                                                                                            <td nowrap="true">
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-41">LABEL-41</a>
+                                                    </td>
+                                                <td >
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-41">User navigates back to search from label details</a>
+                                                    </td>
+                                                <td nowrap="true">
+
+                                                                                            	LABEL-24 
+                                                                                    </td>
+                                            </tr>
+                                                                                                            <tr class="rowAlternate">
+                                                                                            <td nowrap="true">
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-40">LABEL-40</a>
+                                                    </td>
+                                                <td >
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-40">User views help tooltip for barcode search</a>
+                                                    </td>
+                                                <td nowrap="true">
+
+                                                                                            	LABEL-24 
+                                                                                    </td>
+                                            </tr>
+                                                                                                            <tr class="rowNormal">
+                                                                                            <td nowrap="true">
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-39">LABEL-39</a>
+                                                    </td>
+                                                <td >
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-39">User views help tooltip for regular search</a>
+                                                    </td>
+                                                <td nowrap="true">
+
+                                                                                            	LABEL-24 
+                                                                                    </td>
+                                            </tr>
+                                                                                                            <tr class="rowAlternate">
+                                                                                            <td nowrap="true">
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-38">LABEL-38</a>
+                                                    </td>
+                                                <td >
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-38">User navigates to and views Help page</a>
+                                                    </td>
+                                                <td nowrap="true">
+
+                                                                                            	LABEL-24 
+                                                                                    </td>
+                                            </tr>
+                                                                                                            <tr class="rowNormal">
+                                                                                            <td nowrap="true">
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-37">LABEL-37</a>
+                                                    </td>
+                                                <td >
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-37">User navigates to and views Contact page</a>
+                                                    </td>
+                                                <td nowrap="true">
+
+                                                                                            	LABEL-24 
+                                                                                    </td>
+                                            </tr>
+                                                                                                            <tr class="rowAlternate">
+                                                                                            <td nowrap="true">
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-36">LABEL-36</a>
+                                                    </td>
+                                                <td >
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-36">User navigates to and views About page</a>
+                                                    </td>
+                                                <td nowrap="true">
+
+                                                                                            	LABEL-24 
+                                                                                    </td>
+                                            </tr>
+                                                                                                            <tr class="rowNormal">
+                                                                                            <td nowrap="true">
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-35">LABEL-35</a>
+                                                    </td>
+                                                <td >
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-35">System searches by barcode image through REST-like service</a>
+                                                    </td>
+                                                <td nowrap="true">
+
+                                                                                            	LABEL-22 
+                                                                                    </td>
+                                            </tr>
+                                                                                                            <tr class="rowAlternate">
+                                                                                            <td nowrap="true">
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-34">LABEL-34</a>
+                                                    </td>
+                                                <td >
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-34">System fetches all details for a label through REST-like service</a>
+                                                    </td>
+                                                <td nowrap="true">
+
+                                                                                            	LABEL-22 
+                                                                                    </td>
+                                            </tr>
+                                                                                                            <tr class="rowNormal">
+                                                                                            <td nowrap="true">
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-33">LABEL-33</a>
+                                                    </td>
+                                                <td >
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-33">System performs query through REST-like service</a>
+                                                    </td>
+                                                <td nowrap="true">
+
+                                                                                            	LABEL-22 
+                                                                                    </td>
+                                            </tr>
+                                                                                                            <tr class="rowAlternate">
+                                                                                            <td nowrap="true">
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-32">LABEL-32</a>
+                                                    </td>
+                                                <td >
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-32">User views all information for a label</a>
+                                                    </td>
+                                                <td nowrap="true">
+
+                                                                                            	LABEL-23 
+                                                                                    </td>
+                                            </tr>
+                                                                                                            <tr class="rowNormal">
+                                                                                            <td nowrap="true">
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-31">LABEL-31</a>
+                                                    </td>
+                                                <td >
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-31">User browses results from a search</a>
+                                                    </td>
+                                                <td nowrap="true">
+
+                                                                                            	LABEL-23 
+                                                                                    </td>
+                                            </tr>
+                                                                                                            <tr class="rowAlternate">
+                                                                                            <td nowrap="true">
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-30">LABEL-30</a>
+                                                    </td>
+                                                <td >
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-30">User performs search by barcode</a>
+                                                    </td>
+                                                <td nowrap="true">
+
+                                                                                            	LABEL-22 
+                                                                                    </td>
+                                            </tr>
+                                                                                                            <tr class="rowNormal">
+                                                                                            <td nowrap="true">
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-29">LABEL-29</a>
+                                                    </td>
+                                                <td >
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-29">User switches between text and barcode search</a>
+                                                    </td>
+                                                <td nowrap="true">
+
+                                                                                            	LABEL-22 
+                                                                                    </td>
+                                            </tr>
+                                                                                                            <tr class="rowAlternate">
+                                                                                            <td nowrap="true">
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-28">LABEL-28</a>
+                                                    </td>
+                                                <td >
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-28">User enters hashtag to perform advanced search</a>
+                                                    </td>
+                                                <td nowrap="true">
+
+                                                                                            	LABEL-22 
+                                                                                    </td>
+                                            </tr>
+                                                                                                            <tr class="rowNormal">
+                                                                                            <td nowrap="true">
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-26">LABEL-26</a>
+                                                    </td>
+                                                <td >
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-26">User searches for labels from the results page</a>
+                                                    </td>
+                                                <td nowrap="true">
+
+                                                                                            	LABEL-22 
+                                                                                    </td>
+                                            </tr>
+                                                                                                            <tr class="rowAlternate">
+                                                                                            <td nowrap="true">
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-25">LABEL-25</a>
+                                                    </td>
+                                                <td >
+
+                                                            <a href="https://projects.semanticbits.com/jira/browse/LABEL-25">User searches for labels from the home page</a>
+                                                    </td>
+                                                <td nowrap="true">
+
+                                                                                            	LABEL-22 
+                                                                                    </td>
+                                            </tr>
+                                                
+                </tbody>
+    </table>
+        </div>
+</p>
+</p><p> </p><p> </p><h1 id="Architecture-LogicalView">Logical View</h1><h2 id="Architecture-ComponentLayers">Component Layers</h2><p><img class="confluence-embedded-image" src="attachments/26050919/26018000.png" data-image-src="attachments/26050919/26018000.png"></p><p>The LABEL application components are organized into three layers:</p><ul><li>View: Components responsible for rendering the Web-based UI - HTML, CSS, JavaScript.</li><li>Controller: Components responsible for responding to user actions via the Web browser.</li><li>Service: Components that encapsulate business logic and interact with external services.</li></ul><p>LABEL does not have its own persistence layer.</p><p> </p><p><img class="confluence-embedded-image" src="attachments/26050919/26018002.png" data-image-src="attachments/26050919/26018002.png"></p><h2 id="Architecture-ViewComponents">View Components</h2><p>Refer to <a href="https://projects.semanticbits.com/confluence/display/LABEL/Wireframes" rel="nofollow">wireframes</a> and <a href="https://projects.semanticbits.com/confluence/display/LABEL/Mockups" rel="nofollow">mockups</a>.</p><ul><li>HomePageView (LABEL-25): Renders the initial search controls (box and button).<ul><li>AboutPageView (LABEL-38): Renders the About page.</li><li>ContactPageView (LABEL-37): Renders the Contact page.</li><li>HelpPageView (LABEL-36): Renders the Help page.</li><li>TextSearchHelpView (LABEL-39): Renders the Help tooltip for text search.</li></ul></li><li>ResultsPageView (LABEL-26): Renders search results, controls to navigate the results, and search controls.</li><li>AdvancedSearchView (LABEL-28): Allows the user to search against individual fields.</li><li>BarcodeSearchView (LABEL-30): Allows the user to search by barcode.<ul><li>BarcodeSearchHelpView (LABEL-34): Renders the Help tooltip for barcode search.</li></ul></li><li>LabelDetailsView (LABEL-32): Renders all fields of the label.</li></ul><h2 id="Architecture-ControllerComponents">Controller Components</h2><ul><li>SearchController: Supports all search-related views.<ul><li>textSearch (LABEL-25, LABEL-26): Supports searching against all fields from HomePageView or ResultsPageView. Delegates to SearchService.search.</li><li>advancedSearch (LABEL-28): Supports searching against a given field from AdvancedSearchView. Delegates to SearchService.search.</li><li>barcodeSearch (LABEL-29): Supports searching by barcode. Delegates to advancedSearch.</li><li>barcodeSearchView (LABEL-29): Supports switching to the BarcodeSearchView. </li><li>textSearchView (LABEL-29): Supports switching to the HomePageView or ResultsPageView.</li><li>paginateResults (LABEL-31): Supports navigation between pages of results on the ResultsPageView.</li><li>details (LABEL-32): Directs the user to the Label Details view for a given label. Passes &quot;query&quot; and &quot;offset&quot; parameters to allow returning to the previous search results.</li><li>backToSearch (LABEL-41): Directs the user back to the previous search, positioned on the appropriate page. Uses the &quot;query&quot; and &quot;offset&quot; parameters based from the LabelDetailsView.</li><li>autocomplete (LABEL-28): Returns field names, given the first few characters.</li></ul></li><li>HomeController: Supports all non-search resulted views.<ul><li>home (LABEL-25): Directs the user to the Home page.</li><li>about (LABEL-38): Directs the user to the About page.</li><li>contact (LABEL-37): Directs the user to the Concat page.</li><li>help (LABEL-36): Directs the user to the Help page.</li><li>textHelp (LABEL-39): Supports rendering Help tooltip for text search.</li><li>barcodeHelp (LABEL-34): Supports rendering Help tooltip for barcode search.</li></ul></li></ul><h2 id="Architecture-ServiceComponents">Service Components</h2><ul><li>SearchService: Supports SearchController operations. Encapsulates OpenFDAService API access.<ul><li>Collaborators<ul><li>openFDAService</li></ul></li><li>Operations<ul><li>search: Supports all search operations (text, advanced, barcode, paginate). Delegates to OpenFDAService.<br /><ul><li>Inputs:<ul><li>query (JSONObject)): Key-value pairs, where key is the search field and value is one or more search values. Each search term is included in a logical AND, while each search term value is included in a logical OR.</li><li>offset (Integer): The index of the first result set item to include.</li><li>pageSize (Integer): The number of results to return.</li></ul></li><li>Outputs: <ul><li>results (JSONObject): Has the following nested structure<ul><li>count: Total number of results matching the query.</li><li>offset</li><li>pageSize</li><li>items: Array of result items, following the OpenFDA JSON structure.</li></ul></li></ul></li></ul></li></ul></li></ul></li><li>OpenFDAService (LABEL-33, LABEL-34, LABEL-35): Handles all interaction with the OpenFDA REST API. <ul><li>Properties<ul><li>apiKey: The OpenFDA API key.</li><li>apiURL: The OpenFDA API URL.</li></ul></li><li>Operations<ul><li>search: Interacts with the OpenFDA REST search API.<ul><li>Inputs:<ul><li>query (JSONObject): The same key-value pairs structure passed to SearchService.search.</li></ul></li><li>Outputs<ul><li>results (JSONObject): Array of items returned by the OpenFDA API.</li></ul></li></ul></li></ul></li></ul></li></ul><p> </p><h1 id="Architecture-DevelopmentView">Development View</h1><p><img class="confluence-embedded-image" src="attachments/26050919/26018003.png" data-image-src="attachments/26050919/26018003.png"></p><p>The LABEL application consists of a single Grails module, which is packaged as a Java EE Web Application Archive (war) file, which is deployed to an Apache Tomcat servlet container. In general, classes are organized according to the Grails standard structure. All application code is included in the com.semanticbits.label package. Sub packages include:</p><ul><li>controller: All controller components.</li><li>service: All service components.</li></ul><p>Spring is used to &quot;wire&quot; together collaborators, using a dependency injection pattern - e.g. SearchService is wired to the SearchContoller; OpenFDAService is wired to the SearchService. All properties (e.g. OpenFDAService.apiKey) are injected by Spring.</p><p> </p><h1 id="Architecture-ProcessView">Process View</h1><p><img class="confluence-embedded-image" src="attachments/26050919/26018004.png" data-image-src="attachments/26050919/26018004.png"></p><p>The user submits a query from his browser. SearchController formulates the query JSON from the HTTP parameters and delegates to SearchService. SearchService interprets the query JSON and pagination parameters and delegates to OpenFDAService to obtain the count and query results via the OpenFDA API. OpenFDAService returns the query as JSON. SearchService modifies the results to include only the desired page.</p><p> </p><p> </p><h1 id="Architecture-PhysicalView">Physical View</h1><p>LABEL is deployed in AWS, according to the deployment process described <a href="https://projects.semanticbits.com/confluence/display/LABEL/Installation+Guide" rel="nofollow">here</a>. </p><p><img class="confluence-embedded-image" src="attachments/26050919/26018005.png" data-image-src="attachments/26050919/26018005.png"></p><p>A complete specification of the deployment environment is found in the <a href="https://github.com/semanticbits/label-priv/blob/develop/vm/Vagrantfile" class="external-link" rel="nofollow">LABEL Vagrant file</a>.</p><p> </p><p> </p><p> </p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/26050919/26018001.png">Layers.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/26050919/26018000.png">Layers.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/26050919/26018002.png">Components.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/26050919/26018003.png">Packages.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/26050919/26018004.png">Search_Sequence.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/26050919/26018006.png">Deployment.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/26050919/26018005.png">Deployment.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                 
+                </div>             </div> 
+            <div id="footer" style="background: url(https://projects.semanticbits.com/confluence/images/border/border_bottom.gif) repeat-x;">
+                <p><small>Document generated by Confluence on Jul 07, 2015 11:03</small></p>
+            </div>
+        </div>     </body>
+</html>

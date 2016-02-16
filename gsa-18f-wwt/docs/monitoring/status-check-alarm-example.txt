@@ -1,0 +1,51 @@
+From: AWS Notifications [mailto:no-reply@sns.amazonaws.com] 
+Sent: Sunday, June 28, 2015 5:17 AM
+To: Karl Mueller
+Subject: Status Check Alarm: "awsec2-i-XXXXXXXXXXX-High-Status-Check-Failed-Any-" in US-West-2
+
+You are receiving this email because instance i-XXXXXXXXXXX in region US-West-2 has failed an instance or a system status check for at least 2 period(s) of 60 seconds at "Sunday 28 June, 2015 10:17:03 UTC". You can view status check details about this instance by navigating to the EC2 console at https://console.aws.amazon.com/ec2/home?region=us-west-2#s=Instances, selecting the instance and clicking on the Status Check tab.
+
+Information about troubleshooting instances with failed status checks:
+http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html.
+
+Information about EC2 Status Checks:
+http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/monitoring-system-instance-status-check.html.
+
+View this alarm in the AWS Management Console:
+https://console.aws.amazon.com/cloudwatch/home?region=us-west-2#s=Alarms&alarm=awsec2-i-c37d5d34-High-Status-Check-Failed-Any-
+
+More details about this alarm are provided below:
+
+
+---
+
+Alarm Details:
+- Name:                       awsec2-i-c37d5d34-High-Status-Check-Failed-Any-
+- Description:                Created from EC2 Console
+- State Change:               OK -> ALARM
+- Reason for State Change:    Threshold Crossed: 2 datapoints were greater than or equal to the threshold (1.0). The most recent datapoints: [1.0, 1.0].
+- Timestamp:                  Sunday 28 June, 2015 10:17:03 UTC
+- AWS Account:                XXXXXXXXXXXXXXXXXX
+
+Threshold:
+- The alarm is in the ALARM state when the metric is GreaterThanOrEqualToThreshold 1.0 for 60 seconds. 
+
+Monitored Metric:
+- MetricNamespace:            AWS/EC2
+- MetricName:                 StatusCheckFailed
+- Dimensions:                 [InstanceId = i-XXXXXXXXXXX]
+- Period:                     60 seconds
+- Statistic:                  Maximum
+- Unit:                       not specified
+
+State Change Actions:
+- OK: 
+- ALARM: [arn:aws:sns:us-west-2:649136392107:GSA_Demo_Notify]
+- INSUFFICIENT_DATA: 
+
+
+--
+If you wish to stop receiving notifications from this topic, please click or visit the link below to unsubscribe:
+https://sns.us-west-2.amazonaws.com/unsubscribe.html?SubscriptionArn=arn:aws:sns:us-west-2:649136392107:GSA_Demo_Notify:dfa367a9-83d8-4801-a06e-6a877096a148&Endpoint=karl.mueller@asynchrony.com
+
+Please do not reply directly to this e-mail. If you have any questions or comments regarding this email, please contact us at https://aws.amazon.com/support

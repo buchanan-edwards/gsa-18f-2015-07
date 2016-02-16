@@ -1,0 +1,409 @@
+{
+  "meta": {
+    "disclaimer": "openFDA is a beta research project and not for clinical use. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated.",
+    "license": "http://open.fda.gov/license",
+    "last_updated": "2015-01-21"
+  },
+  "results": [
+    {
+      "term": "DRUG INEFFECTIVE",
+      "count": 629
+    },
+    {
+      "term": "FATIGUE",
+      "count": 565
+    },
+    {
+      "term": "NAUSEA",
+      "count": 527
+    },
+    {
+      "term": "DEPRESSION",
+      "count": 481
+    },
+    {
+      "term": "HEADACHE",
+      "count": 480
+    },
+    {
+      "term": "ANXIETY",
+      "count": 449
+    },
+    {
+      "term": "INSOMNIA",
+      "count": 400
+    },
+    {
+      "term": "PAIN",
+      "count": 398
+    },
+    {
+      "term": "DIZZINESS",
+      "count": 348
+    },
+    {
+      "term": "FEELING ABNORMAL",
+      "count": 298
+    },
+    {
+      "term": "SUICIDAL IDEATION",
+      "count": 271
+    },
+    {
+      "term": "DYSPNOEA",
+      "count": 258
+    },
+    {
+      "term": "SOMNOLENCE",
+      "count": 256
+    },
+    {
+      "term": "AGGRESSION",
+      "count": 255
+    },
+    {
+      "term": "VOMITING",
+      "count": 250
+    },
+    {
+      "term": "WEIGHT INCREASED",
+      "count": 244
+    },
+    {
+      "term": "ABNORMAL BEHAVIOUR",
+      "count": 241
+    },
+    {
+      "term": "WEIGHT DECREASED",
+      "count": 223
+    },
+    {
+      "term": "PRODUCT SUBSTITUTION ISSUE",
+      "count": 214
+    },
+    {
+      "term": "CONVULSION",
+      "count": 203
+    },
+    {
+      "term": "RASH",
+      "count": 197
+    },
+    {
+      "term": "DISTURBANCE IN ATTENTION",
+      "count": 191
+    },
+    {
+      "term": "CHEST PAIN",
+      "count": 188
+    },
+    {
+      "term": "DIARRHOEA",
+      "count": 184
+    },
+    {
+      "term": "AGITATION",
+      "count": 182
+    },
+    {
+      "term": "TREMOR",
+      "count": 179
+    },
+    {
+      "term": "ARTHRALGIA",
+      "count": 176
+    },
+    {
+      "term": "FALL",
+      "count": 171
+    },
+    {
+      "term": "OVERDOSE",
+      "count": 169
+    },
+    {
+      "term": "IRRITABILITY",
+      "count": 169
+    },
+    {
+      "term": "ASTHENIA",
+      "count": 168
+    },
+    {
+      "term": "PAIN IN EXTREMITY",
+      "count": 164
+    },
+    {
+      "term": "MALAISE",
+      "count": 157
+    },
+    {
+      "term": "HYPERHIDROSIS",
+      "count": 157
+    },
+    {
+      "term": "ABDOMINAL PAIN",
+      "count": 156
+    },
+    {
+      "term": "ABDOMINAL PAIN UPPER",
+      "count": 154
+    },
+    {
+      "term": "OFF LABEL USE",
+      "count": 146
+    },
+    {
+      "term": "BACK PAIN",
+      "count": 144
+    },
+    {
+      "term": "PYREXIA",
+      "count": 142
+    },
+    {
+      "term": "DECREASED APPETITE",
+      "count": 140
+    },
+    {
+      "term": "HEART RATE INCREASED",
+      "count": 139
+    },
+    {
+      "term": "DRUG EFFECT DECREASED",
+      "count": 137
+    },
+    {
+      "term": "INJURY",
+      "count": 135
+    },
+    {
+      "term": "PSYCHOTIC DISORDER",
+      "count": 134
+    },
+    {
+      "term": "CONFUSIONAL STATE",
+      "count": 132
+    },
+    {
+      "term": "ANGER",
+      "count": 132
+    },
+    {
+      "term": "DRUG WITHDRAWAL SYNDROME",
+      "count": 131
+    },
+    {
+      "term": "PRODUCT QUALITY ISSUE",
+      "count": 129
+    },
+    {
+      "term": "MUSCLE SPASMS",
+      "count": 127
+    },
+    {
+      "term": "LOSS OF CONSCIOUSNESS",
+      "count": 127
+    },
+    {
+      "term": "CONDITION AGGRAVATED",
+      "count": 125
+    },
+    {
+      "term": "PARAESTHESIA",
+      "count": 124
+    },
+    {
+      "term": "MEMORY IMPAIRMENT",
+      "count": 124
+    },
+    {
+      "term": "VISION BLURRED",
+      "count": 123
+    },
+    {
+      "term": "PALPITATIONS",
+      "count": 123
+    },
+    {
+      "term": "PULMONARY EMBOLISM",
+      "count": 122
+    },
+    {
+      "term": "HYPOAESTHESIA",
+      "count": 114
+    },
+    {
+      "term": "MOOD SWINGS",
+      "count": 112
+    },
+    {
+      "term": "INJECTION SITE PAIN",
+      "count": 110
+    },
+    {
+      "term": "HALLUCINATION",
+      "count": 109
+    },
+    {
+      "term": "DRUG INTERACTION",
+      "count": 107
+    },
+    {
+      "term": "PHARMACEUTICAL PRODUCT COMPLAINT",
+      "count": 105
+    },
+    {
+      "term": "OEDEMA PERIPHERAL",
+      "count": 103
+    },
+    {
+      "term": "PRURITUS",
+      "count": 99
+    },
+    {
+      "term": "CRYING",
+      "count": 96
+    },
+    {
+      "term": "HYPERTENSION",
+      "count": 95
+    },
+    {
+      "term": "EMOTIONAL DISTRESS",
+      "count": 93
+    },
+    {
+      "term": "DRUG DOSE OMISSION",
+      "count": 93
+    },
+    {
+      "term": "DEEP VEIN THROMBOSIS",
+      "count": 91
+    },
+    {
+      "term": "CONSTIPATION",
+      "count": 89
+    },
+    {
+      "term": "BLOOD PRESSURE INCREASED",
+      "count": 88
+    },
+    {
+      "term": "PARANOIA",
+      "count": 87
+    },
+    {
+      "term": "SUICIDE ATTEMPT",
+      "count": 86
+    },
+    {
+      "term": "GAIT DISTURBANCE",
+      "count": 84
+    },
+    {
+      "term": "MIGRAINE",
+      "count": 82
+    },
+    {
+      "term": "MYALGIA",
+      "count": 78
+    },
+    {
+      "term": "AMNESIA",
+      "count": 78
+    },
+    {
+      "term": "PRESCRIBED OVERDOSE",
+      "count": 76
+    },
+    {
+      "term": "URINARY TRACT INFECTION",
+      "count": 74
+    },
+    {
+      "term": "TACHYCARDIA",
+      "count": 73
+    },
+    {
+      "term": "COUGH",
+      "count": 72
+    },
+    {
+      "term": "TIC",
+      "count": 69
+    },
+    {
+      "term": "URTICARIA",
+      "count": 66
+    },
+    {
+      "term": "FLUSHING",
+      "count": 65
+    },
+    {
+      "term": "ATTENTION DEFICIT/HYPERACTIVITY DISORDER",
+      "count": 55
+    },
+    {
+      "term": "PANIC ATTACK",
+      "count": 53
+    },
+    {
+      "term": "PSYCHOMOTOR HYPERACTIVITY",
+      "count": 52
+    },
+    {
+      "term": "PNEUMONIA",
+      "count": 52
+    },
+    {
+      "term": "NERVOUSNESS",
+      "count": 52
+    },
+    {
+      "term": "DEHYDRATION",
+      "count": 52
+    },
+    {
+      "term": "ERYTHEMA",
+      "count": 50
+    },
+    {
+      "term": "INCORRECT DOSE ADMINISTERED",
+      "count": 49
+    },
+    {
+      "term": "CONTUSION",
+      "count": 49
+    },
+    {
+      "term": "WRONG TECHNIQUE IN DRUG USAGE PROCESS",
+      "count": 48
+    },
+    {
+      "term": "ALOPECIA",
+      "count": 48
+    },
+    {
+      "term": "SINUSITIS",
+      "count": 47
+    },
+    {
+      "term": "CHOLECYSTITIS CHRONIC",
+      "count": 47
+    },
+    {
+      "term": "LETHARGY",
+      "count": 46
+    },
+    {
+      "term": "INTENTIONAL DRUG MISUSE",
+      "count": 43
+    },
+    {
+      "term": "INAPPROPRIATE SCHEDULE OF DRUG ADMINISTRATION",
+      "count": 40
+    }
+  ]
+}

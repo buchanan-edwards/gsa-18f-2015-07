@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Vencore</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="/css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/sb-admin-2.css" rel="stylesheet">
+
+    
+    <!-- Custom Fonts -->
+    <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page1">
+    <div class="container-fluid">
+    <div class="row headerlogo">
+    <div class="container"><img src="/img/logo_vencore_page.jpg" alt="Vencore FDA Search"></div>
+    </div></div>
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 nopadding text-center">
+                                        <img src="/img/placeholder.gif"> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="page-header2 text-center">Product Recalls by General Area of Initial Distributions</div>
+                                    <div class="col-xs-12 nopadding text-left">
+                                        <div class="textwhite"><br><br><br>
+                                            <strong>DISCLAIMER</strong><br>
+                                            This prototype application has been produced and made available only for the purpose of responding to GSA 18F agile services RFQ.
+                                            <br>
+                                            openFDA is a beta research project and not for clinical use. While FDA makes every effort to ensure that data is accurate, you should assume all results are unvalidated.
+
+                                            <br><br><br><br></div>
+                                        </div>
+                                        <br><br><br>
+                                        <div class="col-xs-1  login text-center"></div>
+                                        <div class="col-xs-10  login text-center">
+                                            <div>
+                                                <form role="form">
+                                                    <div class="form-group">
+                                                        <a href="/search/" class="btn btn-primary">I Agree</a> 
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-1  login text-center"></div>
+                                        <div class="col-xs-12 text-right textwhite2">
+                                            
+                                            <br><br><br>
+                                            Site uses features that require HTML5 compliant browser<br>
+                                            <span id="bld_nbr">
+                                            Build 0.12.0151</span><br>
+                                            <span id="bld_time">Wed 09-30-2015 6:00</span><br>
+                                            <br><br><br><br><br><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <!-- jQuery -->
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+  
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/sb-admin-2.js"></script>
+    
+    <script src= "/static/js/config.js"></script>
+    <script>
+       $(document).ready(function(){
+           var bld_nbr,bld_tm = "";
+           if(global_constants && global_constants.build_number){
+                bld_nbr = global_constants.build_number;
+           }
+           if(global_constants && global_constants.build_number){
+                bld_tm = global_constants.build_date_time;
+           }
+           $("#bld_nbr").text(bld_nbr);
+           $("#bld_time").text(bld_tm);
+       });
+    
+    </script>
+
+</body>
+
+</html>

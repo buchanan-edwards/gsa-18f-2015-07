@@ -1,0 +1,93 @@
+﻿@model dsoft.ads.web.ViewModels.ReportDetailsViewModel
+@using dsoft.ads.web.Models;
+@using dsoft.ads.web.ViewModels;
+@{
+    ViewBag.Title = String.Format("Event {0}", Model.Result.event_id);
+    var recallNumberToolTip = ModelMetadata.FromLambdaExpression<ReportDetailsViewModel, string>(x => x.Result.recall_number, ViewData).Description;
+    var reasonToolTip = ModelMetadata.FromLambdaExpression<ReportDetailsViewModel, string>(x => x.Result.reason_for_recall, ViewData).Description;
+    var statusToolTip = ModelMetadata.FromLambdaExpression<ReportDetailsViewModel, string>(x => x.Result.status, ViewData).Description;
+    var distributionPlanToolTip = ModelMetadata.FromLambdaExpression<ReportDetailsViewModel, string>(x => x.Result.distribution_pattern, ViewData).Description;
+    var productQuantityToolTip = ModelMetadata.FromLambdaExpression<ReportDetailsViewModel, string>(x => x.Result.product_quantity, ViewData).Description;
+    var recallInitiationDateToolTip = ModelMetadata.FromLambdaExpression<ReportDetailsViewModel, string>(x => x.Result.recall_initiation_date, ViewData).Description;
+    var productDescriptionToolTip = ModelMetadata.FromLambdaExpression<ReportDetailsViewModel, string>(x => x.Result.product_description, ViewData).Description;
+    var mandatedToolTip = ModelMetadata.FromLambdaExpression<ReportDetailsViewModel, string>(x => x.Result.voluntary_mandated, ViewData).Description;
+    var classificationToolTip = ModelMetadata.FromLambdaExpression<ReportDetailsViewModel, string>(x => x.Result.classification, ViewData).Description;
+    var codeInfoToolTip = ModelMetadata.FromLambdaExpression<ReportDetailsViewModel, string>(x => x.Result.code_info, ViewData).Description;
+}
+
+<h2>@ViewBag.Title</h2>
+<hr />
+<div class="form-horizontal">
+	<div class="col-sm-12">
+		<div class="form-group">
+			<label class="control-label col-sm-3">@Html.DisplayNameFor(model => model.Result.recall_number) <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="auto" title="@recallNumberToolTip"></span></label>
+			<div class="col-sm-9">
+				<p class="form-control-static">@Html.DisplayFor(model => model.Result.recall_number)</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-3">@Html.DisplayNameFor(model => model.Result.reason_for_recall) <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="auto" title="@reasonToolTip"></span></label>
+			<div class="col-sm-9">
+				<p class="form-control-static">@Html.DisplayFor(model => model.Result.reason_for_recall)</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-3">@Html.DisplayNameFor(model => model.Result.status) <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="auto" title="@statusToolTip"></span></label>
+			<div class="col-sm-9">
+				<p class="form-control-static">@Html.DisplayFor(model => model.Result.status)</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-3">@Html.DisplayNameFor(model => model.Result.distribution_pattern) <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="auto" title="@distributionPlanToolTip"></span></label>
+			<div class="col-sm-9">
+				<p class="form-control-static">@Html.DisplayFor(model => model.Result.distribution_pattern)</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-3">@Html.DisplayNameFor(model => model.Result.product_quantity) <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="auto" title="@productQuantityToolTip"></span></label>
+			<div class="col-sm-9">
+				<p class="form-control-static">@Html.DisplayFor(model => model.Result.product_quantity)</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-3">@Html.DisplayNameFor(model => model.Result.recall_initiation_date) <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="auto" title="@recallInitiationDateToolTip"></span></label>
+			<div class="col-sm-9">
+				<p class="form-control-static">@Html.DisplayFor(model => model.Result.recall_initiation_date)</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-3">@Html.DisplayNameFor(model => model.Result.product_description) <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="auto" title="@productDescriptionToolTip"></span></label>
+			<div class="col-sm-9">
+				<p class="form-control-static">@Html.DisplayFor(model => model.Result.product_description)</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-3">@Html.DisplayNameFor(model => model.Result.voluntary_mandated) <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="auto" title="@mandatedToolTip"></span></label>
+			<div class="col-sm-9">
+				<p class="form-control-static">@Html.DisplayFor(model => model.Result.voluntary_mandated)</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-3">@Html.DisplayNameFor(model => model.Result.classification) <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="auto" title="@classificationToolTip"></span></label>
+			<div class="col-sm-9">
+				<p class="form-control-static">@Html.DisplayFor(model => model.Result.classification)</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-3">@Html.DisplayNameFor(model => model.Result.code_info) <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="auto" title="@codeInfoToolTip"></span></label>
+			<div class="col-sm-9">
+				<p class="form-control-static">@Html.DisplayFor(model => model.Result.code_info)</p>
+			</div>
+		</div>
+		<div class="form-group">
+			@Html.ActionLink("Back to List", "ReportList", null, new {@class="btn btn-primary"})
+		</div>
+	</div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#reportsNav').parent().addClass('active');
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+</script>

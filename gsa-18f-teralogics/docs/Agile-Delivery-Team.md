@@ -1,0 +1,1 @@
+![Our Delivery Team](/docs/images/org-chart.jpg?raw=true)

@@ -1,0 +1,181 @@
+
+
+.p_T {padding-top:$spacingunit}
+.p_T_half {padding-top:$spacingunit/2}
+.p_B {padding-bottom:$spacingunit}
+.p_Bx2 {padding-bottom:$spacingunit*2}
+.p_R {padding-right:$spacingunit}
+.m_T {margin-top:$spacingunit}
+.lt-ie8 .inlineblockfix {display: inline-block}
+
+// coludn't figure out another way to fix this
+.lt-ie9 .main-col {width:70%}
+
+
+.border_T_yellow {
+	border-top: 2px $accent-color2 dotted;
+	h4 a {color: $primary-color2}
+}
+.addthis_toolbox a {float : left;}
+
+.social-page{
+	h2, h3 {color: $primary-color2}
+	
+	.social-text {
+		min-height: 162px;
+
+	}
+	.social-item {
+		width: 225px;
+		float:left;
+		padding: 0px $spacingunit/2;
+	}
+	.cta-highlight{
+		overflow: hidden;
+		display: block;
+		
+		h3 {
+			color: $accent-color1
+		}
+		.icons{
+			@include clearfix;
+			margin-right: -5px;
+			img {
+			  	width: 28px;
+			  	margin-right: 5px;
+			  	
+			  	float: left;
+			}
+			a.external-link {
+				margin-right: 0px;
+				padding-right: 0px;
+				background: none;
+			}
+		}
+	} 
+	
+	.podcasts {
+		width:100%;
+		.listen, .transcript{
+			float: left;
+			width: 45%;
+			a {
+				font-size: 1.4em;
+				margin-right: 5px;
+			}	
+			
+		}
+
+		i.fa{
+			&.a-volume-up{font-size: 1.2em;}
+			margin-right: 7px;
+		}
+		.podcast-item{
+			border-bottom: thin dotted #ccc;
+			padding-bottom: 10px;
+			width:100%;
+			overflow: hidden;
+		}
+	}
+	.hub_brigade {
+		border-bottom: 5px solid $accent-color2;
+		overflow: hidden;
+		display: block;
+		h3 {font-size:2.2em;} 
+	}
+	.webinar_date_title {
+		font-size: 1.4em;
+		line-height: 1.3em;
+		.date {
+		  font-size: .8em;
+		}
+	} 
+
+}
+.bluebox {
+	border: thin solid $primary-color1;
+	overflow: hidden;
+	padding-bottom: $spacingunit/2;
+	.bluebox_head {
+		padding:2px $spacingunit/2;
+		background: $primary-color1;
+		overflow: hidden;
+		width:100%;
+		padding:2px $spacingunit/2;
+		h2 {
+			font-size: 1.7em;
+			color: $accent-color2;
+			margin-bottom: 0px;
+		}
+		a {
+			padding-top: $spacingunit/4;
+			font-weight: normal;
+			color: #fff;
+			width:auto;
+		}
+	}
+	a {
+		padding-top: $spacingunit/2;
+		width:100%;
+	}
+	p {
+		padding:2px $spacingunit/2;
+		width:100%;
+	}
+
+}
+.all-link {
+	font-size: 12px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.video {
+	a {
+		display: block;
+	}
+	img {
+		display: block;
+		margin : 0px auto;
+	}
+	p {
+		font-size: 1.2em;
+		line-height: .9em;
+	}
+}
+.excerpt-more a.external-link {
+		margin-right: 0px;
+			padding-right: 0px;
+			background: none;
+	}
+.mobile {
+	
+	background: url('../../mos_images/v3/mobilead.jpg') 0px 0px no-repeat transparent; 
+	height: 317px;
+	p {
+		margin-top: 0x;
+	}
+}
+
+@media (max-width: 767px) {
+	.social-page {
+		.social-text {
+			min-height: initial;
+		}
+		.icons {
+			margin-bottom: $spacingunit*2;
+		}
+		.cta-highlight{
+			padding-bottom:0px;
+		}
+		.video{
+			margin-bottom: $spacingunit;
+			padding-bottom: $spacingunit/2;
+			img {max-width: 100%;}
+		}
+	}
+	
+}
+
+	
+
+

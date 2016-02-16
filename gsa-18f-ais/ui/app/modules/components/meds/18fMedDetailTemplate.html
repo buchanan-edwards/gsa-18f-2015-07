@@ -1,0 +1,72 @@
+
+
+<div class="medlist" ng-show="selectedDrug">
+    <div class="row">
+        <div class="col-md-12">
+            <h6>Medication Detail</h6>
+            <h1>{{ selectedDrug.brandName[0] }}</h1></div>
+    </div>
+
+    <div class="medication gray-container">
+
+        <div class="med-info">
+
+            <div>
+                <h4>Generic Names</h4>
+                <p ng-repeat="nm in selectedDrug.genericName">{{ nm }}</p>
+            </div>
+
+            <div ng-show="selectedDrug.adverseEvents">
+                <h4>Adverse Events</h4>
+                <div class="ae" ng-repeat="adverseEvent in selectedDrug.adverseEvents">
+                    <span class="ae-count">{{ adverseEvent.count }}</span>
+                    <span class="ae-name">{{ adverseEvent.display }}</span>
+                </div>
+            </div>
+
+            <div ng-show="selectedDrug.manufacturer">
+                <h4>Manufacturer</h4>
+                <p ng-repeat="i in selectedDrug.manufacturer">{{ i }}</p>
+            </div>
+
+            <div ng-show="selectedDrug.purpose">
+                <h4>Purpose</h4>
+                <p ng-repeat="i in selectedDrug.purpose">{{ i }}</p>
+            </div>
+
+            <div ng-show="selectedDrug.usage">
+                <h4>Usage</h4>
+                <p ng-repeat="i in selectedDrug.usage">{{ i }}</p>
+
+                <div ng-show="selectedDrug.whenUsing">
+                    <p ng-repeat="i in selectedDrug.whenUsing">{{ i }}</p>
+                </div>
+            </div>
+
+            <div ng-show="selectedDrug.dosage">
+                <h4>Dosage</h4>
+                <p ng-repeat="i in selectedDrug.dosage">{{ i }}</p>
+            </div>
+
+            <div ng-show="selectedDrug.warnings">
+                <h4>Warnings</h4>
+                <p ng-repeat="i in selectedDrug.warnings">{{ i }}</p>
+            </div>
+
+            <div ng-show="selectedDrug.activeIngredients">
+                <h4>Active Ingredients</h4>
+                <p ng-repeat="i in selectedDrug.activeIngredients">{{ i }}</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 col-md-offset-10 col-sm-12">
+                <button class="btn btn-default pull-right" ng-click="confirmRemoval()">
+                    <i class="fa fa-minus-circle"></i> Remove
+                </button>
+            </div>     
+        </div>
+    </div>
+
+</div>

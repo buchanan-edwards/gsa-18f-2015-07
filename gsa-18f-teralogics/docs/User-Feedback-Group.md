@@ -1,0 +1,1 @@
+![User Feedback Group](/docs/images/user-chart.jpg?raw=true)

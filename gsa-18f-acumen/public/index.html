@@ -1,0 +1,38 @@
+<!-- public/index.html -->
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width" />
+<title>Acumen GSA</title>
+<link rel="stylesheet" href="dist/css/base.min.css">
+<link rel="stylesheet" href="dist/css/app.min.css">
+</head>
+<body>
+	<div class="navbar navbar-inverse set-radius-zero">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" />
+                </a>
+
+            </div>
+        </div>
+    </div>
+     <!-- LOGO HEADER END-->
+
+    <noscript>
+        This site requires javascript to work properly. Please enable javascript and refresh this page.
+    </noscript>
+
+	<div ui-view autoscroll="true"></div>
+
+    <div class="container text-muted">
+        <p>This page allows you to search ongoing food recalls in your state. You can search by state as well as class of the recall and additional search terms, (e.g.: eggs, wheat). Although we do our best to keep data accurate and up to date, openFDA is a beta research project, and you should assume all results are unvalidated.</p>
+    </div>
+</body>
+
+<script type="text/javascript" src="dist/js/base.min.js"></script>
+<script type="text/javascript" src="dist/js/app.min.js"></script>
+
+</html>

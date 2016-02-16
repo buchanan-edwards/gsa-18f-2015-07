@@ -1,0 +1,112 @@
+﻿@using FdaService.Models.Drug.Event
+@using FaNgMvcBs2.ViewModels
+@model DrugEventViewModel
+
+@{
+    ViewBag.Title = "MedFind - Search";
+}
+
+<nav role="navigation">
+    <div class="container">
+        <a class="logo" href="/"><span>MedFinder</span></a>
+    </div>
+    <div class="logo visible-xs"></div>
+</nav>
+
+<!-- HP Hero -->
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-8">
+                <h1>
+                    Take Control
+                    <br /><strong>of Your</strong>
+                    <br />Medical Care
+                </h1>
+                <p>The FDA is here to support your care and help you make the best decisions for you and your family.</p>
+
+                <div class="icon-row clearfix">
+                    <a class="ico-fda pull-left hide-text" href="#"></a>
+                    <a class="ico-bird pull-left hide-text" href="#"></a>
+                </div>
+
+                <div class="login-container clearfix">
+                    <fieldset>
+                        <div class="form-group">
+                            @using (Html.BeginForm("Search", "DrugEvent", FormMethod.Post))
+                            {
+                                <label class="hide-label" for="SearchInfo">Find Medication</label>
+                                @* <input type="text" id="SearchInfo" class="form-control" placeholder="Type in your drug here" />
+
+        <button type="submit" class="btn btn-primary">Go To My Drug Info</button>
+    @Html.EditorFor(model => model.SearchInfo)*@
+                                <input type="text" id="SearchInfo" asp-for="SearchInfo" class="form-control" placeholder="Type in your drug here" />
+                                <button type="submit" class="btn btn-primary">Go To My Drug Info</button>
+                            }                                             
+                        </div>
+                    </fieldset>
+                </div>
+                <!-- /login-container -->
+            </div>
+            <!-- /col -->
+        </div>
+        <!-- /row -->
+        <div class="hero-img"></div>
+        <div class="hero-img invisible-sm"></div>
+    </div>
+    <!-- /container -->
+</div>
+<!-- /hero -->
+
+<div class="container hidden-xs">
+    <div class="row">
+        <div class="col-md-5 col-sm-8 col-xs-12">
+            <div class="testimonial quote-1">
+                <blockquote>&quot;Life moves fast! I don't always slow down to listen to my doctor.  I am so glad that I have MedFinder to research my medication when I have the time&quot;</blockquote>
+            </div>
+        </div>
+        <div class="col-md-5 col-md-offset-1 col-sm-8 col-xs-12">
+            <div class="testimonial quote-2">
+                <blockquote>“I depend on MedFinder to understand how to manage my medications.  My pharmacist and doctor do advise me, but I like to own my own care plan.”</blockquote>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /container -->
+
+<div class="container visible-xs">
+    <p class="testimonial-intro">See how Americans like you are using <br />MY DRUG REPORT to manage their care</p>
+
+    <div class="testimonial-slider">
+
+        <div class="slide">
+            <div class="testimonial quote-3">
+                <blockquote>
+                    &quot;We depend on each other. 
+                    It makes me feel better to do my own research about what my husband is taking!&quot;
+                </blockquote>
+            </div>
+        </div>
+        <!-- END .slide -->
+
+        <div class="slide">
+            <div class="testimonial quote-1">
+                <blockquote>&quot;Life moves fast! I don't always slow down to listen to my doctor.  I am so glad that I have MedFinder to research my properly medications when I have the time&quot;</blockquote>
+            </div>
+        </div>
+        <!-- END .slide -->
+
+        <div class="slide">
+            <div class="testimonial quote-2">
+                <blockquote>“I depend on MedFinder to understand how to manage my medications.  My pharmacist and doctor do advise me, but I like to own my own care plan.”</blockquote>
+            </div>
+        </div>
+        <!-- END .slide -->
+
+    </div>
+    <!-- END .hp-slides-row -->
+
+</div>
+<!-- /container -->
+
+

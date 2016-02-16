@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DARI</title>
+    
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.jqplot.min.css" type="text/css"></link>
+    <link rel="stylesheet" href="css/angucomplete-alt.css" type="text/css"></link>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="css/loaders.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'UA-64526821-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+
+<body id="page-top" ng-app="dariApp" ng-controller="mainCtrl">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" ng-show="infoVisibility" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">DARI</a>
+            </div>
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul ng-show="infoVisibility"  class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#adverse">Adverse Events</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#labeling">Labeling Information</a>
+                    </li>
+                    <li>
+                    	<a class="page-scroll" href="#disclaimer">Disclaimer</a>
+                    </li>
+                    <li>
+                        <form class="form-inline">
+                          <div class="form-group search-nav">
+                            <div class="input-group">
+                              <angucomplete-alt id="input-drug-nav"
+                                  placeholder="Enter a drug..."
+                                  pause="400"
+                                  remote-url="/api/suggestions?name="
+                                  remote-url-data-field="suggestions"
+                                  title-field="name"
+                                  input-class="form-control search-control mobile-search-control"
+                                  remote-url-response-formatter="formatSuggestionResponse"
+                                  query="query"
+                                  />
+                            </div>
+                            <div class="input-group">
+                                <button class="input-group-addon fa fa-search" type="submit" ng-click="searchDrug()" ></button> 
+                            </div>
+                          </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="loading-overlay" ng-show="loadOverlay ">
+            <div class="loader-inner ball-pulse">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 class="wow pulse">Drug &amp; Adverse Reaction Information</h1>
+                <hr class="header-hr">
+                <p>Is your drug putting you at risk? <br>Find out if your drug has caused adverse events.</p>
+                <form class="form-inline" ng-show="searchBarVisibility">
+                    <div class="form-group" >
+                    <angucomplete-alt id="input-drug"
+                      placeholder="Enter a drug..."
+                      pause="400"
+                      remote-url="/api/suggestions?name="
+                      remote-url-data-field="suggestions"
+                      title-field="name"
+                      input-class="form-control"
+                      remote-url-response-formatter="formatSuggestionResponse"
+                      query="query"
+                     />
+                    </div>
+                    <button type="submit" id="button-search" class="btn btn-lg page-scroll btn-black" href="#labeling" ng-click='searchDrug()'>Search</button>
+                </form>
+                <br>
+                <div class="loader-inner ball-pulse" ng-show="loading">
+                	<div></div>
+                	<div></div>
+                	<div></div>
+                	<div></div>
+                	<div></div>
+                </div>
+   				<h3 class="warning ng-cloak">{{queryFailedMsg}}</h3>
+            </div>
+        </div>
+    </header>
+    <section class="bg-primary" id="adverse" ng-show="infoVisibility" smooth-scroll scroll-if="{{scroll}}" offset="50">
+        <h1 class-"text-center" id="adverse-heading">Adverse Events for <span id="subheading"> {{result.name}}</span></h1>
+            <div class="row plot-row">
+
+                <div class="col-lg-6 ">
+                    <div id="adversePlot"></div>
+                </div>
+    
+                <div class="event-total col-lg-6 text-center">
+                    <h1 id="adverse-TotalCount" class="big-num wow fadeIn">{{totalEvents | number }}</h1>
+                    <hr class="hr-num">
+                    <h2 class="small-num wow fadeIn">Total Adverse Events</h2>
+                </div>
+            </div>    
+            <div class="row event-row">
+
+                <div class="event-col col-lg-4 col-md-4 col-sm-6 col-xs-12" ng-repeat="event in events">
+                    <div class="panel panel-{{event[0]}}" eventtype="{{event[0]}}">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3"><br>
+                                    <i class="fa fa-{{event[0]}} fa-4x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div id="adverse-events-{{event[0]}}" class="huge">{{event[1] | number }}</div>
+                                    <div class="small">{{ eventLabels[event[0]] }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <section class="bg-primary" id="labeling" ng-show="infoVisibility">
+            <div class="col-sm-8 label-col">
+                <h1 class="text-center label-heading wow fadeIn" id="drug-name">{{result.name}}</h1>
+    	        <div class="row label-row" ng-repeat="(key,label) in result.labelInfo" on-finish-render="finishedRender">
+                    <div class="label-content">
+                   		<h2 id="labeling-{{key}}" class="label-name">{{headers[key]}}</h2>
+                   		<hr class="label-hr" id="hr-grey">
+                   		<p id="labeling-{{key}}-label" class="text-fade">{{label}}</p>
+               		</div>          
+
+                    <!-- Button trigger modal -->
+                    <div class="read-more-section" ng-show="labelReadMore[key]">
+                        <button id="btn-more-{{key}}" type="button" class="btn btn-primary pull-right modal-btn" data-toggle="modal" data-target="#myModal-{{key}}" >Read More</button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal-{{key}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="labeling-{{key}}">{{headers[key]}}</h4>
+                          </div>
+                          <div class="modal-body" id="labeling-{{key}}-modal">{{label}}</div>
+                          <div class="modal-footer">
+                            <button id="btn-close-{{key}}" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    	         </div>
+                 <br><br>
+    	     </div>
+    	     
+    	     <div class="col-sm-4 warning-col">
+                <h1 class="text-center label-heading wow fadeIn"><span><i class="fa fa-warning fa-lg"></i></span>&nbsp; WARNINGS: </h1>
+               	<div class="row label-row" ng-repeat="(key,label) in result.warnings | filter: label == '!!'">
+	                <div class="label-content warning-div">
+                    	<h2 id="labeling-{{key}}" class="label-name">{{headers[key]}}</h2>
+                    	<hr class="label-hr">
+                    	<p id="labeling-{{key}}-label" class="text-fade">{{label}}</p>
+	                </div>
+                    <div class="read-more-section" ng-show="labelReadMore[key]">                    
+                        <button id="btn-more-{{key}}" type="button" class="btn btn-primary pull-right modal-btn warning-btn" data-toggle="modal" data-target="#myModal-{{key}}">Read More</button>
+                    </div>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal-{{key}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="labeling-{{key}}">{{headers[key]}}</h4>
+                          </div>
+                          <div class="modal-body" id="labeling-{{key}}-modal">{{label}}</div>
+                          <div class="modal-footer">
+                            <button id="btn-close-{{key}}" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                 <br><br>
+             </div>
+    </section>
+
+    <footer class="footer" ng-show="infoVisibility">
+    	<div class="container">
+    		<div class="footer-menu text-primary">
+	    		<a href="http://www.techflow.com/">Made by TechFlow</a> |
+	    		<a href="https://github.com/TFlowGit/tf-ads-bpa">Github</a>
+    		</div>
+    		
+            <p id="disclaimer" class="text-muted text-center ">The prescription drug related information on this website is meant for basic informational purposes only. It is not intended to serve as medical advice, substitute for a doctor's appointment or to be used for diagnosing or treating a medical condition. Users of this website are advised to consult with their physician before making any decisions concerning their health.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.jqplot.min.js"></script>
+    <script src="js/jqplot.barRenderer.min.js"></script>
+    <script src="js/jqplot.categoryAxisRenderer.min.js"></script>
+    <script src="js/jqplot.pointLabels.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script type="js/jqplot.canvasTextRenderer.min.js"></script>
+    <script type="js/jqplot.canvasAxisTickRenderer.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+    
+    <!--  AngularJS -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/angular-smooth-scroll.js"></script>
+    <script src="js/controllers/mainController.js"></script>
+    <script src="js/services/drugs.js"></script>
+    <script src="js/directives/onFinishRender.js"></script>
+    
+    <!-- Angular autocomplete -->
+    <script src="js/directives/angucomplete-alt.js"></script>
+    
+    <!--  Custom JS chart.js -->
+    <script src="js/utils/chart.js"></script>
+    
+
+    
+    
+</body>
+
+</html>

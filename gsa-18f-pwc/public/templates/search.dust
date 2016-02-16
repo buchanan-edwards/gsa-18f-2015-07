@@ -1,0 +1,43 @@
+{>"layouts/condition" /}
+
+{<body}
+<section id="search-toggle" class="app-search persist">
+    <div class="inner">
+        <a href="/"><img class="logo" src="/img/logo.svg" alt="Rxpecations" /></a>
+        <!--<a href="#" class="close-btn toggle-view" data-toggle="search-toggle"><i class="fa fa-times"></i></a>-->
+        <!-- <form class="search">
+             <div class="search-bar">
+                   <input type="text" value="{term}" />
+               </div>
+        </form> -->
+        <a href="/" class="close-btn"><i class="fa fa-times"></i></a>
+        <div class="results">
+            <header class="search-item">
+                <h2>Condition: {term}</h2>
+                <p class="result-number">
+                    {#error}No results found{/error}
+                    {#resultsTotal}{.} Medications Found{/resultsTotal}
+                </p>
+            </header>
+            <section class="search-results">
+                <h3>Brand Names</h3>
+                <ul>
+                    {#brandNames}
+                        <li><a href="/events/{url}"><h3>{value}</h3></a></li>
+                    {/brandNames}
+                </ul>
+                <h3>Generic</h3>
+                <ul>
+                    {#genericNames}
+                        <li><a href="/events/{url}"><h3>{value}</h3></a></li>
+                    {/genericNames}
+                </ul>
+            </section>
+        </div>
+    </div>
+</section>
+{/body}
+
+{<script}
+    <script src="/js/app.js"></script>
+{/script}

@@ -1,0 +1,3665 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jira</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://projects.semanticbits.com/jira/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LABEL-13]&nbsp;<a href="https://projects.semanticbits.com/jira/browse/LABEL-13">Administrator uses installation guide to deploy application</a>
+            <span class="subText">
+               Created: 18/Jun/15                   &nbsp;Updated: 30/Jun/15
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Open</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://projects.semanticbits.com/jira/secure/BrowseProject.jspa?id=11100">LABEL</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                                        <a title="1.0 S5"
+                href="https://projects.semanticbits.com/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&sorter/order=ASC&sorter/field=priority&pid=11100&version=12304"
+            >1.0 S5</a>                        </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Unprioritized
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="patrick.mcconnell" id="word_reporter_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Unassigned
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-23684-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10006-23684-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-7" href="https://projects.semanticbits.com/jira/browse/LABEL-3">
+        Documentation
+    </a>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10005-23684-value" class="value" bgcolor="#ffffff" width="80%">Sprint 6 - Construction, Sprint 7 - Transition</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>As an Administrator<br/>
+I want to deploy the application using detailed installation documentation<br/>
+So that the application is available to users</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LABEL-14]&nbsp;<a href="https://projects.semanticbits.com/jira/browse/LABEL-14">Administrator reviews dependency license report</a>
+            <span class="subText">
+               Created: 18/Jun/15                   &nbsp;Updated: 30/Jun/15
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Open</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://projects.semanticbits.com/jira/secure/BrowseProject.jspa?id=11100">LABEL</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                                        <a title="1.0 S4"
+                href="https://projects.semanticbits.com/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&sorter/order=ASC&sorter/field=priority&pid=11100&version=12303"
+            >1.0 S4</a>                        </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Unprioritized
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="patrick.mcconnell" id="word_reporter_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Unassigned
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-23685-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10006-23685-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-7" href="https://projects.semanticbits.com/jira/browse/LABEL-3">
+        Documentation
+    </a>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10005-23685-value" class="value" bgcolor="#ffffff" width="80%">Sprint 6 - Construction, Sprint 7 - Transition</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>As an Administrator<br/>
+I want to review dependency licenses<br/>
+So that I can determine the overall licensing restrictions</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LABEL-25]&nbsp;<a href="https://projects.semanticbits.com/jira/browse/LABEL-25">User searches for labels from the home page</a>
+            <span class="subText">
+               Created: 22/Jun/15                   &nbsp;Updated: 30/Jun/15
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">In Progress</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://projects.semanticbits.com/jira/secure/BrowseProject.jspa?id=11100">LABEL</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Unprioritized
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="patrick.mcconnell" id="word_reporter_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="janakiram.gollapudi" id="word_assignee_janakiram.gollapudi" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=janakiram.gollapudi">Janaki Rama Rao Gollapudi</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-23696-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10006-23696-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-9" href="https://projects.semanticbits.com/jira/browse/LABEL-22">
+        Search
+    </a>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10005-23696-value" class="value" bgcolor="#ffffff" width="80%">Sprint 3 - Elaboration, Sprint 4 - Construction, Sprint 5 - Construction, Sprint 6 - Construction, Sprint 7 - Transition</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>As a User on the Home page<br/>
+I want to search for text within a label<br/>
+So that I can find labels of interest</p>
+
+<p><b>Scenario 1: prompt text</b></p>
+
+<p>When I first see the search field<br/>
+Then it should have prompt text:</p>
+
+<blockquote><p>Enter terms to search anywhere in drug labels</p></blockquote>
+
+<p>And the prompt text should disappear when I give focus to the search field<br/>
+And the prompt text should reappear only when focus is lost and I have not typed anything in</p>
+
+<p><b>Scenario 2: search button</b></p>
+
+<p>When I click the search button<br/>
+Then I should be redirected to the results page<br/>
+And then I should see the results of the search</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;"><b>Design Notes</b></div><div class="panelContent">
+<p>Refer to the sections of the <a href="https://projects.semanticbits.com/confluence/display/LABEL/Architecture" class="external-link" rel="nofollow">Architecture page</a> labeled with this issue ID.</p>
+</div></div>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-28062"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">22/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28062"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=joshua.phillips" class="user-hover" rel="joshua.phillips">joshua phillips</a>, please add design notes.</p>
+        </td></tr>
+                <tr id="comment-header-28103"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="janakiram.gollapudi" id="word_commented_janakiram.gollapudi" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=janakiram.gollapudi">Janaki Rama Rao Gollapudi</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">24/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28103"><td bgcolor="#ffffff">
+            <p>Completed and created reviews:<br/>
+<a href="https://projects.semanticbits.com/crucible/cru/label-6" class="external-link" rel="nofollow">https://projects.semanticbits.com/crucible/cru/label-6</a><br/>
+<a href="https://projects.semanticbits.com/crucible/cru/label-7" class="external-link" rel="nofollow">https://projects.semanticbits.com/crucible/cru/label-7</a> (Addressed review comments)</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LABEL-26]&nbsp;<a href="https://projects.semanticbits.com/jira/browse/LABEL-26">User searches for labels from the results page</a>
+            <span class="subText">
+               Created: 22/Jun/15                   &nbsp;Updated: 30/Jun/15
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">In Progress</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://projects.semanticbits.com/jira/secure/BrowseProject.jspa?id=11100">LABEL</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                                        <a title="1.0 S4"
+                href="https://projects.semanticbits.com/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&sorter/order=ASC&sorter/field=priority&pid=11100&version=12303"
+            >1.0 S4</a>                        </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Unprioritized
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="patrick.mcconnell" id="word_reporter_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="janakiram.gollapudi" id="word_assignee_janakiram.gollapudi" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=janakiram.gollapudi">Janaki Rama Rao Gollapudi</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-23697-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10006-23697-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-9" href="https://projects.semanticbits.com/jira/browse/LABEL-22">
+        Search
+    </a>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10005-23697-value" class="value" bgcolor="#ffffff" width="80%">Sprint 4 - Construction, Sprint 5 - Construction, Sprint 6 - Construction, Sprint 7 - Transition</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>As a User on the Results page<br/>
+I want to search for labels<br/>
+So that I can find labels of interest</p>
+
+<p><b>Scenario 1: fresh search</b></p>
+
+<p>Should function same as <a href="https://projects.semanticbits.com/jira/browse/LABEL-25" title="User searches for labels from the home page" class="issue-link" data-issue-key="LABEL-25">LABEL-25</a></p>
+
+<p><b>Scenario 2: update search</b></p>
+
+<p>Given that a user has already performed a search<br/>
+When the user enters a new search term and clicks the search button<br/>
+Then the user should be redirected to the results page with the new search results displayed</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;"><b>Design Notes</b></div><div class="panelContent">
+<p>Refer to the sections of the <a href="https://projects.semanticbits.com/confluence/display/LABEL/Architecture" class="external-link" rel="nofollow">Architecture page</a> labeled with this issue ID.</p>
+</div></div>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-28067"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">22/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28067"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=joshua.phillips" class="user-hover" rel="joshua.phillips">joshua phillips</a>, please add design notes</p>
+        </td></tr>
+                <tr id="comment-header-28102"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="janakiram.gollapudi" id="word_commented_janakiram.gollapudi" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=janakiram.gollapudi">Janaki Rama Rao Gollapudi</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">24/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28102"><td bgcolor="#ffffff">
+            <p>I made these changes part of task <a href="https://projects.semanticbits.com/jira/browse/LABEL-25" title="User searches for labels from the home page" class="issue-link" data-issue-key="LABEL-25">LABEL-25</a>.<br/>
+Here are the review links:<br/>
+<a href="https://projects.semanticbits.com/crucible/cru/label-6" class="external-link" rel="nofollow">https://projects.semanticbits.com/crucible/cru/label-6</a><br/>
+<a href="https://projects.semanticbits.com/crucible/cru/label-7" class="external-link" rel="nofollow">https://projects.semanticbits.com/crucible/cru/label-7</a></p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LABEL-28]&nbsp;<a href="https://projects.semanticbits.com/jira/browse/LABEL-28">User enters hashtag to perform advanced search</a>
+            <span class="subText">
+               Created: 22/Jun/15                   &nbsp;Updated: 30/Jun/15
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">In Progress</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://projects.semanticbits.com/jira/secure/BrowseProject.jspa?id=11100">LABEL</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                                        <a title="1.0 S4"
+                href="https://projects.semanticbits.com/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&sorter/order=ASC&sorter/field=priority&pid=11100&version=12303"
+            >1.0 S4</a>                        </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Unprioritized
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="patrick.mcconnell" id="word_reporter_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="janakiram.gollapudi" id="word_assignee_janakiram.gollapudi" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=janakiram.gollapudi">Janaki Rama Rao Gollapudi</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-23699-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10006-23699-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-9" href="https://projects.semanticbits.com/jira/browse/LABEL-22">
+        Search
+    </a>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10005-23699-value" class="value" bgcolor="#ffffff" width="80%">Sprint 4 - Construction, Sprint 5 - Construction, Sprint 6 - Construction, Sprint 7 - Transition</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>As a User on the Home or Results page<br/>
+I want to search specific fields using hashtag notation<br/>
+So that I can narrow my results very specifically</p>
+
+<p><b>Scenario 1: hashtag</b></p>
+
+<p>When a user enters the pound symbol in the search field<br/>
+Then type-ahead should begin using <a href="https://open.fda.gov/drug/label/reference/#field-by-field-reference" class="external-link" rel="nofollow">this list</a></p>
+
+<p><b>Scenario 2: enter</b></p>
+
+<p>Given that a user has begun type-ahead<br/>
+When they press enter<br/>
+Then the current type-ahead match is completed<br/>
+And then a colon is appended<br/>
+And then the caret is places after the colon</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;"><b>Design Notes</b></div><div class="panelContent">
+<p>Refer to the sections of the <a href="https://projects.semanticbits.com/confluence/display/LABEL/Architecture" class="external-link" rel="nofollow">Architecture page</a> labeled with this issue ID.</p>
+</div></div>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-28068"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">22/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28068"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=joshua.phillips" class="user-hover" rel="joshua.phillips">joshua phillips</a>, please add design notes</p>
+        </td></tr>
+                <tr id="comment-header-28117"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="janakiram.gollapudi" id="word_commented_janakiram.gollapudi" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=janakiram.gollapudi">Janaki Rama Rao Gollapudi</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">25/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28117"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell" class="user-hover" rel="patrick.mcconnell">Patrick McConnell</a> <a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=denis.krylov" class="user-hover" rel="denis.krylov">Denis Krylov</a><br/>
+How many matching records should we display in autocompleter for Advanced search ? do we have a limit ?</p>
+        </td></tr>
+                <tr id="comment-header-28119"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">25/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28119"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=janakiram.gollapudi" class="user-hover" rel="janakiram.gollapudi">Janaki Rama Rao Gollapudi</a>, no auto-completer, this should be type-ahead.</p>
+        </td></tr>
+                <tr id="comment-header-28124"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">25/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28124"><td bgcolor="#ffffff">
+            <p>Examples: tylenol<br/>
+#manufacturer:novartis</p>
+
+
+<p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan" class="user-hover" rel="gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>, validate my example above and add another one with two search terms.</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LABEL-29]&nbsp;<a href="https://projects.semanticbits.com/jira/browse/LABEL-29">User switches between text and barcode search</a>
+            <span class="subText">
+               Created: 22/Jun/15                   &nbsp;Updated: 30/Jun/15
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">In Progress</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://projects.semanticbits.com/jira/secure/BrowseProject.jspa?id=11100">LABEL</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                                        <a title="1.0 S4"
+                href="https://projects.semanticbits.com/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&sorter/order=ASC&sorter/field=priority&pid=11100&version=12303"
+            >1.0 S4</a>                        </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Unprioritized
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="patrick.mcconnell" id="word_reporter_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="lalit.agarwal" id="word_assignee_lalit.agarwal" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=lalit.agarwal">Lalit Agarwal</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-23700-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10006-23700-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-9" href="https://projects.semanticbits.com/jira/browse/LABEL-22">
+        Search
+    </a>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10005-23700-value" class="value" bgcolor="#ffffff" width="80%">Sprint 4 - Construction, Sprint 5 - Construction, Sprint 6 - Construction, Sprint 7 - Transition</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>As a User on the Home or Results pages<br/>
+I want to switch the search mode from text to barcode image and back again<br/>
+So that I can search using the desired method</p>
+
+<p><b>Scenario 1: text-to-barcode</b></p>
+
+<p>When the user clicks the link "Upload Barcode Image to Search"<br/>
+Then the text search control is replaced with the barcode image file control</p>
+
+<p><b>Scenario 2: barcode-to-text</b></p>
+
+<p>When the user clicks the link "Search by Term"<br/>
+Then the barcode image file control is replaced with the text search control</p>
+
+<p><b>Scenario 3: back to text</b></p>
+
+<p>Given that the user had entered text into the search term box<br/>
+And given that the user clicked the link "Upload Barcode Image to Search"<br/>
+When the user clicks the link "Search by Term"<br/>
+Then the barcode image file control is replaced with the text search control<br/>
+And then the search term box has the previously entered text</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;"><b>Design Notes</b></div><div class="panelContent">
+<p>Refer to the sections of the <a href="https://projects.semanticbits.com/confluence/display/LABEL/Architecture" class="external-link" rel="nofollow">Architecture page</a> labeled with this issue ID.</p>
+</div></div>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-28069"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">22/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28069"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=joshua.phillips" class="user-hover" rel="joshua.phillips">joshua phillips</a>, please add design notes</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LABEL-30]&nbsp;<a href="https://projects.semanticbits.com/jira/browse/LABEL-30">User performs search by barcode</a>
+            <span class="subText">
+               Created: 22/Jun/15                   &nbsp;Updated: 30/Jun/15
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">In Progress</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://projects.semanticbits.com/jira/secure/BrowseProject.jspa?id=11100">LABEL</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Unprioritized
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="patrick.mcconnell" id="word_reporter_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="lalit.agarwal" id="word_assignee_lalit.agarwal" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=lalit.agarwal">Lalit Agarwal</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-23701-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10006-23701-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-9" href="https://projects.semanticbits.com/jira/browse/LABEL-22">
+        Search
+    </a>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10005-23701-value" class="value" bgcolor="#ffffff" width="80%">Sprint 5 - Construction, Sprint 6 - Construction, Sprint 7 - Transition</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>As a User on the Home or Results pages<br/>
+I want to search by uploading/selecting a local barcode image file<br/>
+So that I can find label details for my medication</p>
+
+<p><b>Scenario 1: attempt to get UPC</b></p>
+
+<p>Given that I have an image of a barcode<br/>
+When I upload my image file<br/>
+Then the server should convert the barcode to a UPC code</p>
+
+<p><b>Scenario 2: single label for UPC</b></p>
+
+<p>Given that the UPC code was extracted properly<br/>
+When it matches a single label<br/>
+Then directly show those label results<br/>
+And then have the "back to search" link have the following parameters:</p>
+
+<ul>
+	<li>page=0</li>
+	<li>terms=#openfda.upc=${extractedUPC}</li>
+</ul>
+
+
+<p><b>Scenario 3: multiple/zero labels for UPC</b></p>
+
+<p>Given that the UPC code was extracted properly<br/>
+When it matches multiple labels or zero labels<br/>
+Then show the results page with the following parameters:</p>
+
+<ul>
+	<li>page=0</li>
+	<li>terms=#openfda.upc=${extractedUPC}</li>
+</ul>
+
+
+<p><b>Scenario 4: failed UPC extraction</b></p>
+
+<p>When UPC extraction fails<br/>
+Then show the current page<br/>
+And then show an error box near the file field with a user-friendly error message</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-28123"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">25/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28123"><td bgcolor="#ffffff">
+            <p>please move to in-progress</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LABEL-31]&nbsp;<a href="https://projects.semanticbits.com/jira/browse/LABEL-31">User browses results from a search</a>
+            <span class="subText">
+               Created: 22/Jun/15                   &nbsp;Updated: 30/Jun/15
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">In Progress</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://projects.semanticbits.com/jira/secure/BrowseProject.jspa?id=11100">LABEL</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Unprioritized
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="patrick.mcconnell" id="word_reporter_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="janakiram.gollapudi" id="word_assignee_janakiram.gollapudi" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=janakiram.gollapudi">Janaki Rama Rao Gollapudi</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-23702-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10006-23702-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-2" href="https://projects.semanticbits.com/jira/browse/LABEL-23">
+        Results
+    </a>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10005-23702-value" class="value" bgcolor="#ffffff" width="80%">Sprint 3 - Elaboration, Sprint 4 - Construction, Sprint 5 - Construction, Sprint 6 - Construction, Sprint 7 - Transition</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>As a User on the Results page<br/>
+I want to view all the results of my search<br/>
+So that I can identify those that interest me</p>
+
+<p><b>Scenario 1: count</b></p>
+
+<p>When the user views the results page<br/>
+Then the user sees the total count of results from the search<br/>
+And then the user sees the range of results that the user is currently viewing on the page</p>
+
+<p><b>Scenario 2: pagination</b></p>
+
+<p>When the user clicks on the pagination controls<br/>
+Then the user can paginate through the results:</p>
+
+<ul>
+	<li>Forward one page</li>
+	<li>Backward one page</li>
+	<li>Forward to last page</li>
+	<li>Backward to first page</li>
+	<li>To a specific page within 5-10 pages of the current page</li>
+</ul>
+
+
+<p>And the links that do not make sense for the current page are visibly and functionally disabled (such as backward to first page when already on first page)</p>
+
+<p><b>Scenario 3a: search results</b></p>
+
+<p>Given that a search was performed that generates one or more results<br/>
+When the user views the result list<br/>
+Then the user sees the following for each label</p>
+
+<ul>
+	<li>Name of the label</li>
+	<li>Description of the label (maximum 3 lines)</li>
+</ul>
+
+
+<p><b>Scenario 3b: no search results</b></p>
+
+<p>Given that a search was performed that generates no results<br/>
+When the user views the result list<br/>
+Then the user sees the result count<br/>
+And then the user sees the following</p>
+
+<blockquote><p>No results found.  Please update your query.</p></blockquote>
+
+<p>And then the user does not see the range<br/>
+And then the user does not see pagination controls</p>
+
+<p><b>Scenario 3c: no search entered</b></p>
+
+<p>Given that no search was performed<br/>
+When the user views the result list<br/>
+Then the user sees results for all labels</p>
+
+<p><b>Scenario 4: result link</b></p>
+
+<p>When the user clicks on the result title<br/>
+Then the user is redirected to the page for that label</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;"><b>Design Notes</b></div><div class="panelContent">
+<p>Refer to the sections of the <a href="https://projects.semanticbits.com/confluence/display/LABEL/Architecture" class="external-link" rel="nofollow">Architecture page</a> labeled with this issue ID.</p>
+</div></div>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-28064"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">22/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28064"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=joshua.phillips" class="user-hover" rel="joshua.phillips">joshua phillips</a>, please add design notes.</p>
+        </td></tr>
+                <tr id="comment-header-28082"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">23/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28082"><td bgcolor="#ffffff">
+            <p>Move to in progress</p>
+        </td></tr>
+                <tr id="comment-header-28100"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="janakiram.gollapudi" id="word_commented_janakiram.gollapudi" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=janakiram.gollapudi">Janaki Rama Rao Gollapudi</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">24/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28100"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell" class="user-hover" rel="patrick.mcconnell">Patrick McConnell</a> <a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=denis.krylov" class="user-hover" rel="denis.krylov">Denis Krylov</a></p>
+
+<p>Can I assign this task to me ? So that I can review my implementation with steps mentioned in the description. </p>
+        </td></tr>
+                <tr id="comment-header-28101"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">24/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28101"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=janakiram.gollapudi" class="user-hover" rel="janakiram.gollapudi">Janaki Rama Rao Gollapudi</a>, done.</p>
+        </td></tr>
+                <tr id="comment-header-28104"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="janakiram.gollapudi" id="word_commented_janakiram.gollapudi" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=janakiram.gollapudi">Janaki Rama Rao Gollapudi</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">24/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28104"><td bgcolor="#ffffff">
+            <p>Completed and created a review:<br/>
+<a href="https://projects.semanticbits.com/crucible/cru/label-6" class="external-link" rel="nofollow">https://projects.semanticbits.com/crucible/cru/label-6</a><br/>
+<a href="https://projects.semanticbits.com/crucible/cru/label-7" class="external-link" rel="nofollow">https://projects.semanticbits.com/crucible/cru/label-7</a> (Addressed review comments)</p>
+        </td></tr>
+                <tr id="comment-header-28114"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">25/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28114"><td bgcolor="#ffffff">
+            <p>I looked at the release from yesterday - looking good.  Please limit description to 3 lines.</p>
+
+<p>Thanks.</p>
+        </td></tr>
+                <tr id="comment-header-28115"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="janakiram.gollapudi" id="word_commented_janakiram.gollapudi" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=janakiram.gollapudi">Janaki Rama Rao Gollapudi</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">25/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28115"><td bgcolor="#ffffff">
+            <p>Sure <a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell" class="user-hover" rel="patrick.mcconnell">Patrick McConnell</a>. I noted it down, I will do it while implementing other tasks. </p>
+        </td></tr>
+                <tr id="comment-header-28116"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">25/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28116"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=janakiram.gollapudi" class="user-hover" rel="janakiram.gollapudi">Janaki Rama Rao Gollapudi</a>, we should be able to accomplish this using CSS, but I think we may need the font information from Ben first so we can determine the height of the divs.</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LABEL-32]&nbsp;<a href="https://projects.semanticbits.com/jira/browse/LABEL-32">User views all information for a label</a>
+            <span class="subText">
+               Created: 22/Jun/15                   &nbsp;Updated: 30/Jun/15
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">In Progress</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://projects.semanticbits.com/jira/secure/BrowseProject.jspa?id=11100">LABEL</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                                        <a title="1.0 S4"
+                href="https://projects.semanticbits.com/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&sorter/order=ASC&sorter/field=priority&pid=11100&version=12303"
+            >1.0 S4</a>                        </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Unprioritized
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="patrick.mcconnell" id="word_reporter_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="lalit.agarwal" id="word_assignee_lalit.agarwal" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=lalit.agarwal">Lalit Agarwal</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-23703-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10006-23703-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-2" href="https://projects.semanticbits.com/jira/browse/LABEL-23">
+        Results
+    </a>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10005-23703-value" class="value" bgcolor="#ffffff" width="80%">Sprint 4 - Construction, Sprint 5 - Construction, Sprint 6 - Construction, Sprint 7 - Transition</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>As a User on the Label Detail page<br/>
+I want to see all the details for the label<br/>
+So that I can evaluate the information</p>
+
+<p><b>Scenario 1: table of contents</b></p>
+
+<p>When a user views the table of contents<br/>
+Then the user sees internal links to each of the major sections ordered like this:</p>
+
+<ol>
+	<li>Abuse and overdosage</li>
+	<li>Adverse effects and interactions</li>
+	<li>Clinical pharmacology</li>
+	<li>Indications, usage, and dosage</li>
+	<li>Patient information</li>
+	<li>Special populations</li>
+	<li>Nonclinical toxicology</li>
+	<li>References</li>
+	<li>Supply, storage, and handling</li>
+	<li>Warnings and precautions</li>
+	<li>ID and version</li>
+	<li>Other fields</li>
+	<li>openFDA fields</li>
+</ol>
+
+
+<p><b>Scenario 2: categories and fields</b></p>
+
+<p>When the user browses each category<br/>
+Then the user sees the fields within those categories as defined in the <a href="https://open.fda.gov/drug/label/reference/#field-by-field-reference" class="external-link" rel="nofollow">FDA API docs</a></p>
+
+<p><b>Scenario 3a: empty fields</b></p>
+
+<p>When a field is not included in the results<br/>
+Then the user should not see that field</p>
+
+<p><b>Scenario 3b: empty categories</b></p>
+
+<p>When a category has no fields<br/>
+Then the user should not see that category</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;"><b>Design Notes</b></div><div class="panelContent">
+<p>Refer to the sections of the <a href="https://projects.semanticbits.com/confluence/display/LABEL/Architecture" class="external-link" rel="nofollow">Architecture page</a> labeled with this issue ID.</p>
+
+<p><b>Scenario 1</b><br/>
+The sections can be directly coded in the GSP. No need to pull from the server side.</p>
+</div></div>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-28072"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">22/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28072"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=joshua.phillips" class="user-hover" rel="joshua.phillips">joshua phillips</a>, please add design notes</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LABEL-33]&nbsp;<a href="https://projects.semanticbits.com/jira/browse/LABEL-33">System performs query through REST-like service</a>
+            <span class="subText">
+               Created: 22/Jun/15                   &nbsp;Updated: 25/Jun/15
+
+                                                    &nbsp;Resolved: 25/Jun/15
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Resolved</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://projects.semanticbits.com/jira/secure/BrowseProject.jspa?id=11100">LABEL</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                                        <a title="1.0 S4"
+                href="https://projects.semanticbits.com/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&sorter/order=ASC&sorter/field=priority&pid=11100&fixfor=12303"
+            >1.0 S4</a>                        </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Unprioritized
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="patrick.mcconnell" id="word_reporter_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="gopal.unnikrishnan" id="word_assignee_gopal.unnikrishnan" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Fixed
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-23704-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10006-23704-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-9" href="https://projects.semanticbits.com/jira/browse/LABEL-22">
+        Search
+    </a>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10005-23704-value" class="value" bgcolor="#ffffff" width="80%">Sprint 3 - Elaboration</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>As the system<br/>
+I want to query through a REST-like interface<br/>
+So that the system is aligned with standards</p>
+
+<p><b>Scenario 1: query parameters</b></p>
+
+<p>When the system submits a query<br/>
+Then the service should accept the following parameters:</p>
+
+<ul>
+	<li>terms: string, optional (default is empty string)</li>
+	<li>page: integer, optional (default is 0)</li>
+</ul>
+
+
+<p><b>Scenario 2: query results</b></p>
+
+<p>When the system submits a query<br/>
+Then the service should return the following data for the query:</p>
+
+<ul>
+	<li>totalCount</li>
+	<li>totalPages</li>
+	<li>currentCount</li>
+	<li>currentPage</li>
+</ul>
+
+
+<p>And then the service should return the following data for each label:</p>
+
+<ul>
+	<li>id</li>
+	<li>position</li>
+	<li>title</li>
+	<li>description</li>
+</ul>
+
+
+<p><b>Scenario 3a: title extraction</b></p>
+
+<p>When the service returns the title<br/>
+Then the service should select the appropriate field depending on what is available in the results per the following order:</p>
+
+<ol>
+	<li>brand_name</li>
+	<li>generic_name</li>
+	<li>substance_name</li>
+	<li>id</li>
+</ol>
+
+
+<p><b>Scenario 3b: description extraction</b></p>
+
+<p>When the service returns the description<br/>
+Then the service should select the appropriate field depending on what is available in the results per the following order:</p>
+
+<ol>
+	<li>description</li>
+	<li>package_label_principal_display_panel</li>
+</ol>
+
+
+<p><b>Scenario 4: data cleanup</b></p>
+
+<p>When the service returns the data<br/>
+Then the following items should be cleaned up:</p>
+
+<ul>
+	<li>Name: camel case, e.g. METRONIDAZOLE should be changed to Metronidazole</li>
+	<li>Description: remove repeated field name, e.g. "DESCRIPTION Metronidazole vaginal gel..." should be changed to "Metronidazole vaginal gel"</li>
+</ul>
+
+
+<p><b>Scenario 5: hashtags</b></p>
+
+<p>When a search is performed with a hashtag (pound symbol)<br/>
+Then it should be interpreted as a search on a specific field in the following format:</p>
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">#field_name:value #another_field_name:anotherValue</pre>
+</div></div>
+
+<p><b>Scenario 6: quotes</b></p>
+
+<p>When a search is performed with quotes around terms<br/>
+Then those terms should be grouped together, for example:</p>
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java"><span class="code-quote">"#field_name:some value"</span></pre>
+</div></div>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java"><span class="code-quote">"some value"</span> otherValue</pre>
+</div></div>
+
+<p><b>Scenario 7: errors</b></p>
+
+<p>When an error occurs processing a query<br/>
+Then an appropriate error message should be returned, for example:</p>
+
+<ul>
+	<li>FDA service unavailable</li>
+	<li>Invalid field name</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;"><b>Design Notes</b></div><div class="panelContent">
+<p>Refer to the sections of the <a href="https://projects.semanticbits.com/confluence/display/LABEL/Architecture" class="external-link" rel="nofollow">Architecture page</a> labeled with this issue ID.</p>
+</div></div>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-28063"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">22/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28063"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=joshua.phillips" class="user-hover" rel="joshua.phillips">joshua phillips</a>, please add design notes.</p>
+        </td></tr>
+                <tr id="comment-header-28075"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="gopal.unnikrishnan" id="word_commented_gopal.unnikrishnan" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">22/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28075"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell" class="user-hover" rel="patrick.mcconnell">Patrick McConnell</a>, what is the position attribute in the response? Is it for maintaining the order? In that case it might not be need, the response JSON will be generated in the exact order as the data is provided by the openFDA.</p>
+        </td></tr>
+                <tr id="comment-header-28078"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">23/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28078"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan" class="user-hover" rel="gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>, if the service contract is that the response is ordered, then I think we can drop "position"</p>
+        </td></tr>
+                <tr id="comment-header-28079"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="gopal.unnikrishnan" id="word_commented_gopal.unnikrishnan" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">23/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28079"><td bgcolor="#ffffff">
+            <p>Created review <a href="https://projects.semanticbits.com/crucible/cru/label-2" class="external-link" rel="nofollow">https://projects.semanticbits.com/crucible/cru/label-2</a> with initial implementation</p>
+        </td></tr>
+                <tr id="comment-header-28080"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="gopal.unnikrishnan" id="word_commented_gopal.unnikrishnan" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">23/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28080"><td bgcolor="#ffffff">
+            <p>Created a new review with the review <a href="https://projects.semanticbits.com/crucible/cru/label-4" class="external-link" rel="nofollow">https://projects.semanticbits.com/crucible/cru/label-4</a> with the previous review comments addressed.</p>
+        </td></tr>
+                <tr id="comment-header-28081"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="gopal.unnikrishnan" id="word_commented_gopal.unnikrishnan" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">23/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28081"><td bgcolor="#ffffff">
+            <p>Review comments addressed and feature merged to develop.</p>
+        </td></tr>
+                <tr id="comment-header-28112"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">25/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28112"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan" class="user-hover" rel="gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>, please reorder the naming to:</p>
+
+<ol>
+	<li>brand_name</li>
+	<li>generic_name</li>
+	<li>substance_name</li>
+	<li>id</li>
+</ol>
+
+        </td></tr>
+                <tr id="comment-header-28113"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">25/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28113"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan" class="user-hover" rel="gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>, please also note the addition of scenario 3b</p>
+        </td></tr>
+                <tr id="comment-header-28121"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="gopal.unnikrishnan" id="word_commented_gopal.unnikrishnan" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">25/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28121"><td bgcolor="#ffffff">
+            <p>Working on updating the label summary info.</p>
+        </td></tr>
+                <tr id="comment-header-28122"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="gopal.unnikrishnan" id="word_commented_gopal.unnikrishnan" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">25/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28122"><td bgcolor="#ffffff">
+            <p>Fixes pushed to dev and reviews created.</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LABEL-34]&nbsp;<a href="https://projects.semanticbits.com/jira/browse/LABEL-34">System fetches all details for a label through REST-like service</a>
+            <span class="subText">
+               Created: 22/Jun/15                   &nbsp;Updated: 24/Jun/15
+
+                                                    &nbsp;Resolved: 23/Jun/15
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Resolved</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://projects.semanticbits.com/jira/secure/BrowseProject.jspa?id=11100">LABEL</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                                        <a title="1.0 S4"
+                href="https://projects.semanticbits.com/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&sorter/order=ASC&sorter/field=priority&pid=11100&version=12303"
+            >1.0 S4</a>                        </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                                        <a title="1.0 S4"
+                href="https://projects.semanticbits.com/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&sorter/order=ASC&sorter/field=priority&pid=11100&fixfor=12303"
+            >1.0 S4</a>                        </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Unprioritized
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="patrick.mcconnell" id="word_reporter_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="gopal.unnikrishnan" id="word_assignee_gopal.unnikrishnan" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Fixed
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-23705-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10006-23705-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-9" href="https://projects.semanticbits.com/jira/browse/LABEL-22">
+        Search
+    </a>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10005-23705-value" class="value" bgcolor="#ffffff" width="80%">Sprint 4 - Construction</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>As the system<br/>
+I want to fetch all details for a label through a REST-like interface<br/>
+So that the system is aligned with standards</p>
+
+<p><b>Scenario 1: fetch parameters</b></p>
+
+<p>When the system submits a query<br/>
+Then the service should accept the following parameters:</p>
+
+<ul>
+	<li>id: string, required</li>
+</ul>
+
+
+<p><b>Scenario 2: query results</b></p>
+
+<p>When the system submits a query<br/>
+Then the service should return all data accessible through the FDA API<br/>
+And then the service should also return the title of the label (as defined in <a href="https://projects.semanticbits.com/jira/browse/LABEL-33" title="System performs query through REST-like service" class="issue-link" data-issue-key="LABEL-33"><del>LABEL-33</del></a>)</p>
+
+<p><b>Scenario 3: data cleanup</b></p>
+
+<p>When the service returns the data<br/>
+Then all tags should be cleaned up by removing superfluous text at the beginning of the value, for example:</p>
+
+<ul>
+	<li>Description: remove repeated field name, e.g. "DESCRIPTION Metronidazole vaginal gel..." should be changed to "Metronidazole vaginal gel"</li>
+</ul>
+
+
+<p><b>Scenario 4: error</b></p>
+
+<p>When an error occurs processing the request<br/>
+Then an appropriate error message should be returned to the client, for example:</p>
+
+<ul>
+	<li>FDA service unavailable</li>
+	<li>No identifier provided</li>
+	<li>Identifier invalid</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;"><b>Design Notes</b></div><div class="panelContent">
+<p>Refer to the sections of the <a href="https://projects.semanticbits.com/confluence/display/LABEL/Architecture" class="external-link" rel="nofollow">Architecture page</a> labeled with this issue ID.</p>
+</div></div>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-28070"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">22/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28070"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=joshua.phillips" class="user-hover" rel="joshua.phillips">joshua phillips</a>, please add design notes</p>
+        </td></tr>
+                <tr id="comment-header-28095"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="gopal.unnikrishnan" id="word_commented_gopal.unnikrishnan" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">23/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28095"><td bgcolor="#ffffff">
+            <p>Created review <a href="https://projects.semanticbits.com/crucible/cru/label-5" class="external-link" rel="nofollow">https://projects.semanticbits.com/crucible/cru/label-5</a> with the implementation.</p>
+        </td></tr>
+                <tr id="comment-header-28096"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="gopal.unnikrishnan" id="word_commented_gopal.unnikrishnan" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">23/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28096"><td bgcolor="#ffffff">
+            <p>Implementation merged to develop after addressing review comments.</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LABEL-35]&nbsp;<a href="https://projects.semanticbits.com/jira/browse/LABEL-35">System searches by barcode image through REST-like service</a>
+            <span class="subText">
+               Created: 22/Jun/15                   &nbsp;Updated: 24/Jun/15
+
+                                                    &nbsp;Resolved: 24/Jun/15
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Resolved</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://projects.semanticbits.com/jira/secure/BrowseProject.jspa?id=11100">LABEL</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                                        <a title="1.0 S4"
+                href="https://projects.semanticbits.com/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&sorter/order=ASC&sorter/field=priority&pid=11100&version=12303"
+            >1.0 S4</a>                        </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                                        <a title="1.0 S4"
+                href="https://projects.semanticbits.com/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&sorter/order=ASC&sorter/field=priority&pid=11100&fixfor=12303"
+            >1.0 S4</a>                        </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Unprioritized
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="patrick.mcconnell" id="word_reporter_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="gopal.unnikrishnan" id="word_assignee_gopal.unnikrishnan" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Fixed
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-23706-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10006-23706-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-9" href="https://projects.semanticbits.com/jira/browse/LABEL-22">
+        Search
+    </a>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10005-23706-value" class="value" bgcolor="#ffffff" width="80%">Sprint 4 - Construction, Sprint 5 - Construction</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>As the system<br/>
+I want to get the UPC code for an image with a barcode<br/>
+So that it can be used in a query</p>
+
+<p><b>Scenario 1: fetch parameters</b></p>
+
+<p>When the system submits a query<br/>
+Then the service should accept the following parameters:</p>
+
+<ul>
+	<li>image: binary, required</li>
+	<li>file name: string, optional</li>
+</ul>
+
+
+<p><b>Scenario 2: query results</b></p>
+
+<p>When the system submits a query<br/>
+Then the service should return the UPC code code for the barcode in the image</p>
+
+<p><b>Scenario 3: error</b></p>
+
+<p>When the image does not contain a barcode<br/>
+Or when the system is unable to decode the barcode<br/>
+Then the system should return an appropriate error message</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;"><b>Design Notes</b></div><div class="panelContent">
+<p>Refer to the sections of the <a href="https://projects.semanticbits.com/confluence/display/LABEL/Architecture" class="external-link" rel="nofollow">Architecture page</a> labeled with this issue ID.</p>
+</div></div>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-28071"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="patrick.mcconnell" id="word_commented_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">22/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28071"><td bgcolor="#ffffff">
+            <p><a href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=joshua.phillips" class="user-hover" rel="joshua.phillips">joshua phillips</a>, please add design notes</p>
+        </td></tr>
+                <tr id="comment-header-28106"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="gopal.unnikrishnan" id="word_commented_gopal.unnikrishnan" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">24/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28106"><td bgcolor="#ffffff">
+            <p>The implementation is complete and invoking the barcode generation API, but it is not generating any result, looking into the issue.</p>
+        </td></tr>
+                <tr id="comment-header-28109"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="gopal.unnikrishnan" id="word_commented_gopal.unnikrishnan" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">24/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28109"><td bgcolor="#ffffff">
+            <p>created review <a href="https://projects.semanticbits.com/crucible/cru/label-9" class="external-link" rel="nofollow">https://projects.semanticbits.com/crucible/cru/label-9</a></p>
+        </td></tr>
+                <tr id="comment-header-28111"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="gopal.unnikrishnan" id="word_commented_gopal.unnikrishnan" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=gopal.unnikrishnan">Gopalakrishnan Unnikrishnan</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">24/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-28111"><td bgcolor="#ffffff">
+            <p>Review comments addressed, and created a new review <a href="https://projects.semanticbits.com/crucible/cru/label-10" class="external-link" rel="nofollow">https://projects.semanticbits.com/crucible/cru/label-10</a>.</p>
+
+<p>Fixes merged to develop</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LABEL-39]&nbsp;<a href="https://projects.semanticbits.com/jira/browse/LABEL-39">User views help tooltip for regular search</a>
+            <span class="subText">
+               Created: 22/Jun/15                   &nbsp;Updated: 25/Jun/15
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Open</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://projects.semanticbits.com/jira/secure/BrowseProject.jspa?id=11100">LABEL</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Unprioritized
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="patrick.mcconnell" id="word_reporter_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="lalit.agarwal" id="word_assignee_lalit.agarwal" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=lalit.agarwal">Lalit Agarwal</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-23710-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10006-23710-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-4" href="https://projects.semanticbits.com/jira/browse/LABEL-24">
+        Navigation
+    </a>
+</td>
+            </tr>
+            </table>
+
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LABEL-40]&nbsp;<a href="https://projects.semanticbits.com/jira/browse/LABEL-40">User views help tooltip for barcode search</a>
+            <span class="subText">
+               Created: 22/Jun/15                   &nbsp;Updated: 25/Jun/15
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Open</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://projects.semanticbits.com/jira/secure/BrowseProject.jspa?id=11100">LABEL</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Unprioritized
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="patrick.mcconnell" id="word_reporter_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="lalit.agarwal" id="word_assignee_lalit.agarwal" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=lalit.agarwal">Lalit Agarwal</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-23711-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10006-23711-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-4" href="https://projects.semanticbits.com/jira/browse/LABEL-24">
+        Navigation
+    </a>
+</td>
+            </tr>
+            </table>
+
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LABEL-41]&nbsp;<a href="https://projects.semanticbits.com/jira/browse/LABEL-41">User navigates back to search from label details</a>
+            <span class="subText">
+               Created: 22/Jun/15                   &nbsp;Updated: 30/Jun/15
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Open</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://projects.semanticbits.com/jira/secure/BrowseProject.jspa?id=11100">LABEL</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Unprioritized
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="patrick.mcconnell" id="word_reporter_patrick.mcconnell" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=patrick.mcconnell">Patrick McConnell</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="lalit.agarwal" id="word_assignee_lalit.agarwal" href="https://projects.semanticbits.com/jira/secure/ViewProfile.jspa?name=lalit.agarwal">Lalit Agarwal</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-23712-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10006-23712-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-4" href="https://projects.semanticbits.com/jira/browse/LABEL-24">
+        Navigation
+    </a>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10005-23712-value" class="value" bgcolor="#ffffff" width="80%">Sprint 6 - Construction, Sprint 7 - Transition</td>
+            </tr>
+            </table>
+
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />Generated at Mon Jul 06 16:38:02 EDT 2015 by Patrick McConnell using JIRA 6.0.3#6099-sha1:c2054781884e1c4d112ab9d1ae9f36bba0be0b25.
+
+</body>
+</html>

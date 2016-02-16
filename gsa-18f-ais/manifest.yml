@@ -1,0 +1,10 @@
+---
+applications:
+- name: AgileBPA-server
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  path: ./server
+  env:
+    NODE_ENV: production
+- name: AgileBPA-ui
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack
+  path: ./ui/dist

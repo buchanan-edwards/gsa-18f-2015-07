@@ -1,0 +1,44 @@
+<nav class="navmenu navmenu-default navmenu-fixed-left offcanvas-xs offcanvas-sm offcanvas-md offcanvas-lg" role="navigation">
+	<div class="navmenu-brand">
+		<div style="
+			max-width: 130px;
+			margin: 10px auto;
+			text-align: center;
+    		width: 100%;
+    	">
+			<img src="/img/logo.svg" alt="Total Briecall" style="width: 100%;">
+		</div>
+	</div>
+
+	<ul class="nav navmenu-nav">
+		<li><a href="/browse"><i class="glyphicon glyphicon-th"></i> Browse</a></li>
+		<li><a href="https://github.com/TeraLogics/TotalBriecall"><i class="glyphicon glyphicon-info-sign"></i>
+				About</a></li>
+		<li><a href="/docs/api"><i class="fa fa-cogs"></i> API</a></li>
+		<li><a href="https://github.com/TeraLogics/TotalBriecall/blob/master/Home.md"><i class="glyphicon glyphicon-book"></i>
+				Documentation</a></li>
+	</ul>
+	<div class="text-center" style="margin-top: 72px;">
+		<% if (brie.preferences.state) { %>
+		<p class="text-muted">Your results are localized to:</p>
+		<h1><%= brie.preferences.state %></h1>
+		<a class="btn btn-link" href="/"><i class="glyphicon glyphicon-map-marker"></i> Change states</a>
+		<% } else { %>
+		<h4 class="text-muted">Your results are not localized!</h4>
+		<a class="btn btn-link" href="/"><i class="glyphicon glyphicon-map-marker"></i> Get recalls for your state</a>
+		<% } %>
+	</div>
+</nav>
+<div class="canvas">
+	<div class="navbar navbar-default navbar-fixed-top">
+		<button type="button" class="navbar-toggle cutoff-toggle" data-toggle="offcanvas" data-target=".navmenu">
+			<div style="display: inline-block;">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</div>
+			<div class="navbar-brand"><img src="/img/logo.svg" alt="<%= brie.projectname %>"><%= brie.projectname %>
+			</div>
+		</button>
+
+	</div>

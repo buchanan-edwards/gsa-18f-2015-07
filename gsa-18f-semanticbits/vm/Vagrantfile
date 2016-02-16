@@ -1,0 +1,244 @@
+require 'rbconfig'
+
+def initGit(config)
+ 
+  # Set up Git to remember GitHub OAuth token to be able to clone the repo.
+  config.vm.provision "shell", privileged: false, inline: "git config --global credential.helper store"
+  config.vm.provision "shell", privileged: false, inline: "rm -rf ~/LABEL && git clone -b develop https://#{ENV['GITHUB_OAUTH_TOKEN']}:x-oauth-basic@github.com/semanticbits/label-priv.git ~/LABEL"
+end
+
+def runCommonLinuxShellCmd(config)
+  # Run OS updates on each Linux VM, install Git and other needed stuff.
+  config.vm.provision "shell", inline: "apt-get update && sudo apt-get -y install git"
+
+  initGit(config)
+end
+
+def installGrails(config)
+    # Install GVM and run it to install Grails.
+    config.vm.provision "shell", privileged: false, inline: "curl -s get.gvmtool.net | bash && source \"$HOME/.gvm/bin/gvm-init.sh\" && yes Y | gvm install grails 2.5.0"
+	
+    # Add modified PATH and GRAILS_HOME to /etc/environment so that they are exposed to SSH sessions initiated by Jenkins SSH Plugins.
+    config.vm.provision "shell", privileged: false, inline: "sudo bash -l -c 'echo \"PATH=$PATH\" >> /etc/environment'"
+    config.vm.provision "shell", privileged: false, inline: "sudo bash -l -c 'echo \"GRAILS_HOME=$GRAILS_HOME\" >> /etc/environment'"
+
+end
+
+def installDevStackWithChef(config)
+ # Installs Java, Tomcat via Chef.
+ config.vm.provision "chef_solo" do |chef|
+		# Install Java and Tomcat
+		chef.add_recipe "java"
+		chef.add_recipe "tomcat"		
+		chef.json = {
+			  "java" => { 
+			        "install_flavor" => "oracle",
+					"jdk_version" => "7",
+					"set_etc_environment" => "true",
+					"oracle" => { "accept_oracle_download_terms" => true }
+			  },
+			  "tomcat" => {
+					"java_options" => "-Xmx1024M -XX:MaxPermSize=256M -Dorg.apache.catalina.connector.URI_ENCODING=UTF-8 -Djava.awt.headless=true",
+					"base_version" => "7"
+			  }
+			}
+   end
+end
+
+Vagrant.configure(2) do |config|
+
+  config.vm.box = "aws"
+  config.vm.box_url="https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box"
+
+  # Vagrant defaults to SMB on Windows, which does not work at all. Hence, forcing it to use rsync instead.
+  if (RbConfig::CONFIG['host_os'] =~ /mswin|mingw|cygwin/) then
+	  config.vm.synced_folder ".", "/vagrant", type: "rsync"
+	  config.vm.synced_folder "./cookbooks", "/tmp/vagrant-chef/263ec7fe403a971f163731a7c3f27e91/cookbooks", type: "rsync"
+  end
+
+  # AWS Settings common for all nodes.
+  config.vm.provider :aws do |aws, override|
+	    aws.access_key_id = ENV['AWS_ACCESS_KEY_ID']
+	    aws.secret_access_key = ENV['AWS_ACCESS_SECRET']
+	    aws.keypair_name = ENV['AWS_KEYNAME']
+	    override.ssh.private_key_path = ENV['AWS_KEYPATH']
+  	    override.ssh.username = "ubuntu"	   
+  end
+
+  # DEV
+  config.vm.define "dev", primary: true do |dev|    
+    dev.vm.provider :aws do |aws, override|	   
+	    aws.ami = ENV['AWS_DEV_AMI'] || "ami-12793a7a"
+	    aws.region = ENV['AWS_DEV_REGION'] || "us-east-1"
+	    aws.instance_type = ENV['AWS_DEV_INSTANCE_TYPE'] || "t2.medium"
+	    aws.elastic_ip = ENV['AWS_DEV_ELASTIC_IP']
+    end
+    
+    # Install required software and updates.
+    runCommonLinuxShellCmd(dev)
+    installDevStackWithChef(dev)
+    installGrails(dev)
+
+    # Upload a Bash script used to redeploy the Web app.
+    dev.vm.provision "shell", privileged: false, inline: "cp /vagrant/bash/dev_refresh.sh ~ && chmod a+rx ~/dev_refresh.sh"   
+	
+    # Finally, execute the Dev Refresh script. Dev node is ready at this point.
+    dev.vm.provision "shell", privileged: false, inline: "~/dev_refresh.sh"  
+
+  end
+
+  # QA
+  config.vm.define "qa" do |qa|    
+    qa.vm.provider :aws do |aws, override|	   
+	    aws.ami = ENV['AWS_QA_AMI'] || "ami-12793a7a"
+	    aws.region = ENV['AWS_QA_REGION'] || "us-east-1"
+	    aws.instance_type = ENV['AWS_QA_INSTANCE_TYPE'] || "t2.medium"
+	    aws.elastic_ip = ENV['AWS_QA_ELASTIC_IP']  	    
+    end
+	
+	# Install required software and updates.
+    runCommonLinuxShellCmd(qa)
+	installDevStackWithChef(qa)    
+    installGrails(qa)
+	
+    # Upload a Bash script used to redeploy the Web app.
+    qa.vm.provision "shell", privileged: false, inline: "cp /vagrant/bash/qa_refresh.sh ~ && chmod a+rx ~/qa_refresh.sh"   
+
+  end  
+
+  # Jenkins CI.
+  config.vm.define "ci" do |ci|    
+    ci.vm.provider :aws do |aws, override|	   
+	    aws.ami = ENV['AWS_CI_AMI'] || "ami-12793a7a"
+	    aws.region = ENV['AWS_CI_REGION'] || "us-east-1"
+	    aws.instance_type = ENV['AWS_CI_INSTANCE_TYPE'] || "t2.medium"
+	    aws.elastic_ip = ENV['AWS_CI_ELASTIC_IP'] 	    
+    end
+    runCommonLinuxShellCmd(ci)
+    ci.vm.provision "chef_solo" do |chef|
+		# Install Java & Jenkins
+		chef.add_recipe "java"				
+		chef.add_recipe "jenkins-setup"			
+		chef.json = {
+			  "java" => {
+					"install_flavor" => "oracle",
+					"jdk_version" => "7",
+					"set_etc_environment" => "true",
+					"oracle" => { "accept_oracle_download_terms" => true }
+			  },
+			  "jenkins" => {
+					"master" => {
+						"install_method" => "package"
+					}
+			  },
+			  "jenkins-setup" => {
+					"private_key" => File.open(ENV['AWS_KEYPATH']).read,
+					"github_client_id" => ENV['GITHUB_CLIENT_ID'],
+					"github_client_secret" => ENV['GITHUB_CLIENT_SECRET'],
+					"linux_slave_host" => ENV['AWS_CI_SLAVE01_IP'],
+					"dev_host_name" => ENV['AWS_DEV_ELASTIC_IP'],					
+					"qa_host_name" => ENV['AWS_QA_ELASTIC_IP']
+			  }
+			}			
+			
+   end
+  
+   # Set up Git to remember GitHub OAuth token so that Jenkins could clone via plain URL.
+   ci.vm.provision "shell", privileged: false, inline: "sudo -H -u jenkins sh -c 'git config --global credential.helper store'"
+   ci.vm.provision "shell", privileged: false, inline: "sudo -H -u jenkins sh -c 'git clone -b develop https://#{ENV['GITHUB_OAUTH_TOKEN']}:x-oauth-basic@github.com/semanticbits/label-priv.git ~/LABEL'"
+   
+   # Install GVM and run it to install Grails.
+   ci.vm.provision "shell", privileged: false, inline: "sudo -H -u jenkins bash -l -c 'curl -s get.gvmtool.net | bash'"
+   ci.vm.provision "shell", privileged: false, inline: "sudo -H -u jenkins bash -l -c 'source \"$HOME/.gvm/bin/gvm-init.sh\"'"
+   ci.vm.provision "shell", privileged: false, inline: "sudo -H -u jenkins bash -l -c 'yes Y | gvm install grails 2.5.0'"
+   
+   # Restart Jenkins
+   ci.vm.provision "shell",  inline: "service jenkins restart"   
+   
+  end
+  
+  # CI - Windows Slave
+  config.vm.define "win_slave" do |win_slave|    
+	win_slave.vm.synced_folder ".", "/vagrant", disabled: true
+	win_slave.vm.synced_folder "./cookbooks", "/tmp/vagrant-chef/263ec7fe403a971f163731a7c3f27e91/cookbooks", disabled: true
+
+    win_slave.vm.communicator = "winrm"
+	win_slave.vm.guest = :windows
+    win_slave.vm.provider :aws do |aws, override|	   
+	    aws.ami = ENV['AWS_WIN_AMI'] || "ami-5b9e6b30" # Windows Server 2012 R2 with IE11
+	    aws.region = ENV['AWS_CI_REGION'] || "us-east-1"
+	    aws.instance_type = ENV['AWS_CI_INSTANCE_TYPE'] || "t2.medium"	
+		override.winrm.username = "Administrator"	
+		override.winrm.password = ENV['AWS_WIN_PASSWORD']
+		aws.user_data = File.read("./ps/provision.ps1").gsub('AWS_WIN_PASSWORD', ENV['AWS_WIN_PASSWORD'])
+    end	
+	
+	win_slave.vm.provision "shell", inline: "choco install git -params \"/GitAndUnixToolsOnPath\" -y"
+	win_slave.vm.provision "shell", inline: "choco install 7zip.install java.jdk firefox google-chrome-x64 -y"
+	win_slave.vm.provision "shell", inline: "git config --global credential.helper store"
+    win_slave.vm.provision "shell", inline: "git clone -b develop https://#{ENV['GITHUB_OAUTH_TOKEN']}:x-oauth-basic@github.com/semanticbits/label-priv.git LABEL"	
+	
+	win_slave.vm.provision "shell", inline: <<-'EOH'
+	    $client = new-object System.Net.WebClient
+		$client.DownloadFile( 'https://github.com/grails/grails-core/releases/download/v2.5.0/grails-2.5.0.zip', 'grails-2.5.0.zip')
+		C:\Progra~1\7-Zip\7z x grails-2.5.0.zip `-o`"c:\Grails`"
+		SetX Path "${Env:Path};C:\Grails\grails-2.5.0\bin" /m
+		$Env:Path += ';C:\Grails\grails-2.5.0\bin' 
+		SetX GRAILS_HOME "C:\Grails\grails-2.5.0" /m
+		$Env:GRAILS_HOME = 'C:\Grails\grails-2.5.0' 
+	
+    EOH
+	
+	win_slave.vm.provision "shell", inline: <<-EOH		
+		mkdir c:\\Jenkins
+		$AppLocation = "javaws"
+		$WshShell = New-Object -ComObject WScript.Shell
+		$Shortcut = $WshShell.CreateShortcut("C:\\Users\\Administrator\\Desktop\\Launch Slave.lnk")
+		$Shortcut.TargetPath = $AppLocation
+		$Shortcut.Arguments ="http://#{ENV['AWS_CI_ELASTIC_IP']}:8080/computer/windows/slave-agent.jnlp"		
+		$Shortcut.Description ="Launch Slave and connect to Master"
+		$Shortcut.WorkingDirectory ="C:\\Jenkins"
+		$Shortcut.Save()
+
+    EOH
+
+		
+  end
+  
+  # CI - Linux Slave
+  config.vm.define "linux_slave" do |linux_slave|    
+    linux_slave.vm.provider :aws do |aws, override|	   
+	    aws.ami = ENV['AWS_CI_AMI'] || "ami-12793a7a"
+	    aws.region = ENV['AWS_CI_REGION'] || "us-east-1"
+	    aws.instance_type = ENV['AWS_CI_INSTANCE_TYPE'] || "t2.medium"	
+		aws.private_ip_address = ENV['AWS_CI_SLAVE01_IP'] 
+		aws.subnet_id = ENV['AWS_SUBNET'] 
+    end
+	
+    runCommonLinuxShellCmd(linux_slave)
+	
+    linux_slave.vm.provision "chef_solo" do |chef|
+		# Install Java
+		chef.add_recipe "java"		
+		chef.json = {
+			  "java" => {
+				    "install_flavor" => "oracle",
+					"jdk_version" => "7",
+					"set_etc_environment" => "true",
+					"oracle" => { "accept_oracle_download_terms" => true }
+			  }
+			}						
+   end
+   
+   # Install Chrome, Firefox.
+   linux_slave.vm.provision "shell", inline: "apt-get -y install xvfb"
+   linux_slave.vm.provision "shell", inline: "wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -"
+   linux_slave.vm.provision "shell", inline: "sh -c 'echo \"deb http://dl.google.com/linux/chrome/deb/ stable main\" >> /etc/apt/sources.list.d/google.list'"
+   linux_slave.vm.provision "shell", inline: "apt-get update && apt-get -y install google-chrome-stable firefox"
+   
+   # Install GVM and run it to install Grails.
+   installGrails(linux_slave)   
+
+  end  
+
+end

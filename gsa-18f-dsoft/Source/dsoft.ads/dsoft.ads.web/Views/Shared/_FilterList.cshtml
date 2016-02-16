@@ -1,0 +1,52 @@
+﻿@{
+	var hideStateFilter = ViewData["HideStateFilter"] != null;
+	var hideDateFilter = ViewData["HideDateFilter"] != null;
+	var reportTitleToolTip = "You may customize the title of this report";
+	var keywordToolTip = "You may enter use a keyword to filter the results";
+	var startDateToolTip = "You may enter a start date to filter the results";
+	var endDateToolTip = "You may enter an end date to filter the results";
+}
+
+  <div class="sidebar-nav-fixed">
+    <h4>Report Title <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="@reportTitleToolTip"></span></h4>
+    <input class="form-control" id="reportTitleInput" type="text" placeholder="e.g., 2015 Listeria recalls">
+    <hr>
+    <h4>Filters</h4>
+    <form id="filterForm">
+      <ul class="nav nav-stacked">
+        <li>
+          <label class="control-label">Keyword <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="@keywordToolTip"></span></label>
+          <input name="keyword" class="form-control" type="text" value="@Model.FilterKeyword">
+        </li>
+        @if (!hideStateFilter) {
+            var stateToolTip = "You may select a state to filter the results";
+            <li>
+              <label class="control-label">State <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="@stateToolTip"></span></label>
+              @Html.DropDownList("state", (SelectList)@Model.StateList, new {@class = "form-control" })
+            </li>
+        }
+        @if (!hideDateFilter) {
+	        <li>
+	          <label class="control-label">Start Date <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="@startDateToolTip"></span></label>
+	          <input name="startDate" class="form-control" type="text" data-provide="datepicker" data-date-start-date="1/1/2004" value="@Model.FilterStartDate">
+	        </li>
+	        <li>
+	          <label class="control-label">End Date <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="@endDateToolTip"></span></label>
+	          <input name="endDate" class="form-control" type="text" data-provide="datepicker" data-date-start-date="1/1/2004" value="@Model.FilterEndDate">
+	        </li> 
+	    }
+        <li>
+          <hr>
+          <button id="filterSubmit" class="btn btn-primary form-control" type="submit">Filter</button>
+        </li>
+      </ul>
+      <div class="form-group"></div>
+    </form>
+  </div>
+
+<script>
+  	$(document).ready(function () {
+  		$('[data-toggle="tooltip"]').tooltip();
+  		//$('#datepicker .input-daterange').datepicker({});
+	});
+</script>

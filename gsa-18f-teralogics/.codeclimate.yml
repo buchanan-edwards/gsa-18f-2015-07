@@ -1,0 +1,15 @@
+languages:
+  JavaScript: true
+exclude_paths:
+  - "app/views/docs/**/*"
+  - "public/js/bootstrap.js"
+  - "public/js/bootstrap-tour.js"
+  - "public/js/bootstrap-tour-standalone.js"
+  - "public/js/ejs-2.3.1.js"
+  - "public/js/IPv6.js"
+  - "public/js/leaflet.js"
+  - "public/js/jasny-bootstrap.js"
+  - "public/js/punycode.js"
+  - "public/js/require.js"
+  - "public/js/SecondLevelDomains.js"
+  - "public/js/URI.js"

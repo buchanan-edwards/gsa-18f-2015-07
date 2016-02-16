@@ -1,0 +1,4 @@
+*.bat
+/Cheffile.lock
+.vagrant/**
+tmp/**

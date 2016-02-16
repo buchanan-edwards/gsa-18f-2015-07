@@ -1,0 +1,99 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1251" measuredH="599" mockupW="1251" mockupH="599">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="0" y="0" w="1000" h="599" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>LABEL%3A%20Label%20and%20Barcode%20Excerpt%20Locator%20%0Ahttp%3A//label.fda.gov/search%3Fterm%3Dcarcinogen</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Label" x="435" y="541" w="-1" h="-1" measuredW="130" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%5BAbout%5D%20%7C%20%5BContact%5D%20%7C%20%5BHelp%5D</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="__group__" x="15" y="83" w="201" h="79" measuredW="201" measuredH="79" zOrder="1" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="11">
+          <controlProperties/>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="86" y="23" w="115" h="32" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="11">
+          <controlProperties>
+            <text>Label%20and%20Barcode%20%0AExcerpt%20Locator%20</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::TextInput" x="15" y="184" w="357" h="-1" measuredW="81" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>13</size>
+        <text>Carcinogen</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::SubTitle" x="15" y="261" w="-1" h="-1" measuredW="181" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>253%20labels%20found</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::Paragraph" x="1023" y="373" w="228" h="93" measuredW="200" measuredH="80" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Title%20is%20generic_name%2C%20brand_name%2C%20substance_name%2C%20or%20id%20%20-%20whichever%20exists%20in%20that%20order%0A%20%0ADescription%20is%20description%2C%20display%203%20lines</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Label" x="15" y="295" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>%5BMETRONIDAZOLE%5D</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Paragraph" x="15" y="325" w="946" h="48" measuredW="200" measuredH="80" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <italic>true</italic>
+        <text>Metronidazole%20vaginal%20gel%20USP%2C%200.75%25%20is%20the%20intravaginal%20dosage%20form%20of%20the%20synthetic%20antibacterial%20agent%2C%20metronidazole%2C%20USP%20at%20a%20concentration%20of%200.75%25.%20Metronidazole%20is%20a%20member%20of%20the%20imidazole%20class%20of%20antibacterial%20agents%20and%20is%20classified%20therapeutically%20as%20an%20antiprotozoal%20and%20antibacterial%20agent.%20Chemically%2C%20metronidazole%20is%20a%202-methyl-5-nitroimidazole-1-ethanol.%20It%20has%20a%20chemical%20formula%20of%20C6H9N3O3%2C%20a%20molecular%20weight%20of%20171.16%2C%20and%20has%20the%20following%20structure%3A%20Metronidazole%20vaginal%20gel%20USP%2C%200.75%25%20is%20a%20gelled%2C%20purified%20water%20solution%2C%20containing%20metronidazole%2C%20USP%20at%20a%20concentration%20of%207.5%20mg/g%20%280.75%25%29.%20The%20gel%20is%20formulated%20at%20pH%205.5.%20The%20gel%20also%20contains%20carbopol%20974P%2C%20NF%3B%20edetate%20disodium%2C%20USP%3B%20methylparaben%2C%20NF%3B%20propylene%20glycol%2C%20USP%3B%20propylparaben%2C%20NF%3B%20and%20sodium%20hydroxide%2C%20NF.%20Each%20applicator%20full%20of%205%20grams%20of%20vaginal%20gel%20contains%20approximately%2037.5%20mg%20of%20metronidazole.</text>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Link" x="15" y="220" w="-1" h="-1" measuredW="195" measuredH="19" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Upload%20Barcode%20Image%20to%20Search</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Button" x="378" y="184" w="-1" h="-1" measuredW="82" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>%24ACCOUNT/assets/icon_search.png%7Cxsmall</icon>
+        <text>Search</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Label" x="15" y="388" w="-1" h="-1" measuredW="75" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>%5BETOPOSIDE%5D</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Paragraph" x="15" y="418" w="946" h="48" measuredW="200" measuredH="80" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <italic>true</italic>
+        <text>Etoposide%20Injection%20USP%20%28also%20commonly%20known%20as%20VP-16%29%20is%20a%20semisynthetic%20derivative%20of%20podophyllotoxin%20used%20in%20the%20treatment%20of%20certain%20neoplastic%20diseases.%20It%20is%204%27-demethylepipodophyllotoxin%209-%5C%5B4%2C6-O-%28R%29-ethylidene-%u03B2-D-glucopyranoside%5C%5D.%20It%20is%20very%20soluble%20in%20methanol%20and%20chloroform%2C%20slightly%20soluble%20in%20ethanol%20and%20sparingly%20soluble%20in%20water%20and%20ether.%20It%20is%20made%20more%20miscible%20with%20water%20by%20means%20of%20organic%20solvents.%20It%20has%20a%20molecular%20weight%20of%20588.58%20and%20a%20molecular%20formula%20of%20C29H32O13.%20Etoposide%20Injection%20USP%20is%20administered%20intravenously.%20Etoposide%20Injection%20USP%20is%20available%20in%20100%20mg%20%285%20mL%29%20and%20250%20mg%20%2812.5%20mL%29%20sterile%2C%20multiple%20dose%20vials.%20The%20pH%20of%20the%20clear%2C%20colorless%20to%20pale%20yellow%20liquid%20is%203%20to%204.%20Each%20mL%20contains%2020%20mg%20etoposide%20USP%2C%202%20mg%20anhydrous%20citric%20acid%2C%2030%20mg%20benzyl%20alcohol%2C%2080%20mg%20polysorbate%2080/tween%2080%2C%20650%20mg%20polyethylene%20glycol%20300%2C%20and%2030.5%20percent%20%28v/v%29%20dehydrated%20alcohol.%20Vial%20head%20space%20contains%20nitrogen.%20The%20structural%20formula%20is%3A%20structural%20formula</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::Component" x="16" y="491" w="482" h="27" measuredW="482" measuredH="27" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>$ACCOUNT/assets/Pagination.bmml#Pagination%204</src>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Paragraph" x="1023" y="496" w="228" h="51" measuredW="200" measuredH="80" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Display%2010%20results%20per%20page%2C%20paginated</text>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::Icon" x="467" y="185" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>Help2Icon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::Label" x="818" y="264" w="-1" h="-1" measuredW="143" measuredH="21" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Displaying%20results%2041-50</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

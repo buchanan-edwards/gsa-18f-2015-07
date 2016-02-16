@@ -1,0 +1,113 @@
+<% include ./common/header.ejs %>
+<style>
+	#header-map .leaflet-container,
+	#header-map .leaflet-container .leaflet-clickable {
+		cursor: default
+	}
+</style>
+</head>
+<body class="bg-void application">
+<% include ./common/page-header.ejs %>
+<div class="container-flexible">
+	<div class="panel panel-default panel-expanded">
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-8 pull-right">
+					<div class="aspect-box aspect-ratio-2x1 map-container">
+						<div id="header-map" class="aspect-content">
+							<!-- map goes here -->
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<ul class="list-group list-group-borderless">
+						<li class="list-group-item">
+							<h1><%= typeof brie.preferences.state !== 'undefined' ?
+								UsStates.stateFeatures[brie.preferences.state].properties.name
+								+ ' (' + brie.preferences.state + ')' : 'Nationwide' %></h1>
+						</li>
+						<li class="list-group-item">
+							<div style="position: relative;">
+								<select style="width:100%" class="select2 categories" multiple size="2"></select>
+							</div>
+						</li>
+						<li class="list-group-item">
+							<div class="btn-group btn-group-justified" id="classification-filters"
+								 data-toggle="buttons">
+								<label class="btn btn-danger active" data-active-class="btn-danger">
+									<input type="checkbox" autocomplete="off" name="classification[]" checked value="1">
+									Danger
+								</label>
+								<label class="btn btn-warning active" data-active-class="btn-warning">
+									<input type="checkbox" autocomplete="off" name="classification[]" checked value="2">
+									Warning
+								</label>
+								<label class="btn btn-info active" data-active-class="btn-info">
+									<input type="checkbox" autocomplete="off" name="classification[]" checked value="3">
+									Notice
+								</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<ol id="pinned-recalls" class="list-view empty"></ol>
+		<!--
+			<div class="list-view-messages">
+				<p class="list-view-loading-message"></p>
+
+				<p class="list-view-empty-message">You have not pinned any recalls.</p>
+
+				<p class="list-view-error-message">Oh no! We could not retrieve your pinned recalls!</p>
+			</div>
+		-->
+	</div>
+	<div>
+		<ol id="recent-recalls" class="list-view empty"></ol>
+		<div class="list-view-messages">
+			<p class="list-view-loading-message spinner spinner-pulsation spinner-primary">Loading...</p>
+
+			<p class="list-view-empty-message">There are no recent recalls.</p>
+
+			<p class="list-view-error-message">Oops, we had trouble retrieving recent recalls!</p>
+		</div>
+	</div>
+</div>
+<% include ./common/page-footer.ejs %>
+<div id="recall-link-copy" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Recall link</h4>
+			</div>
+			<div class="modal-body">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
+					<input type="text" name="recall-link" class="form-control" placeholder="Recall link"
+						   readonly="readonly">
+				</div>
+				<em class="small text-muted">Click to select all text.</em>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<%
+var appModule = '/js/app-browse',
+		pageConfig = {
+			categories: categories
+		};
+%>
+<% include ./common/require-application.ejs %>
+</body>
+</html>

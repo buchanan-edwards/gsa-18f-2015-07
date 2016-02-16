@@ -1,0 +1,123 @@
+.styleguide {
+
+	.container {
+		min-width: 992px;
+	}
+	.header-img {
+		position: absolute;
+		top: 0;
+		right: -100px;
+		width: 100%;
+		height: 88px;
+		background: url('../images/styleguide-bg.jpg') no-repeat right top;
+	}
+	.inside-header {
+		height: auto;
+		margin-bottom: 40px;
+		
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9fc8eb+0,ffffff+16,ffffff+16,ffffff+50,9fc8eb+50,9fc8eb+50,9fc8eb+100 */
+		background: rgb(159,200,235); /* Old browsers */
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzlmYzhlYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE2JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE2JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzlmYzhlYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzlmYzhlYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5ZmM4ZWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(left,  rgb(159,200,235) 0%, rgb(255,255,255) 16%, rgb(255,255,255) 16%, rgb(255,255,255) 50%, rgb(159,200,235) 50%, rgb(159,200,235) 50%, rgb(159,200,235) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgb(159,200,235)), color-stop(16%,rgb(255,255,255)), color-stop(16%,rgb(255,255,255)), color-stop(50%,rgb(255,255,255)), color-stop(50%,rgb(159,200,235)), color-stop(50%,rgb(159,200,235)), color-stop(100%,rgb(159,200,235))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left,  rgb(159,200,235) 0%,rgb(255,255,255) 16%,rgb(255,255,255) 16%,rgb(255,255,255) 50%,rgb(159,200,235) 50%,rgb(159,200,235) 50%,rgb(159,200,235) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left,  rgb(159,200,235) 0%,rgb(255,255,255) 16%,rgb(255,255,255) 16%,rgb(255,255,255) 50%,rgb(159,200,235) 50%,rgb(159,200,235) 50%,rgb(159,200,235) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left,  rgb(159,200,235) 0%,rgb(255,255,255) 16%,rgb(255,255,255) 16%,rgb(255,255,255) 50%,rgb(159,200,235) 50%,rgb(159,200,235) 50%,rgb(159,200,235) 100%); /* IE10+ */
+		background: linear-gradient(to right,  rgb(159,200,235) 0%,rgb(255,255,255) 16%,rgb(255,255,255) 16%,rgb(255,255,255) 50%,rgb(159,200,235) 50%,rgb(159,200,235) 50%,rgb(159,200,235) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9fc8eb', endColorstr='#9fc8eb',GradientType=1 ); /* IE6-8 */
+		background-position: -50px 0;
+		
+		
+		h1 {
+			margin: 0 0 10px;
+		}
+		.row {
+			margin-bottom: 0;
+			position: relative;
+			height: auto;
+			background: transparent;
+		}
+	}
+	
+	
+	.styleguide-h2 {
+		background: #eff6fc;
+		border-bottom: 1px solid grey;
+		font-family: gothamlight, verdana, sans-serif;
+		color: #999;
+		
+		font-weight: normal;
+		padding: 10px 0;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		
+		h2 {
+			margin: 0;
+			font-size: 2rem;
+		}
+	}
+	
+	.styleguide-h3 {
+		border-bottom: 1px solid grey;
+		font-family: gothamlight, verdana, sans-serif;
+		text-transform: uppercase;
+		color: #999;
+		font-size: 1.5rem;
+		font-weight: normal;
+		padding: 3px 20px;
+		margin-bottom: 20px;
+	}
+	.styleguide-description p {
+		margin-top: 0;
+		border-left: 5px solid #e1e1e1;
+		padding-left: 10px;
+		margin-left: 30px;
+	}
+	.color-tile {
+		height: 50px;
+	}
+	.color-tile.primary1 {
+		background-color: $primary-color;
+	}
+	.color-tile.accent1 {
+		background-color: $accent1-color;
+	}
+	.color-tile.accent2 {
+		background-color: $accent2-color;
+	}
+	.color-tile.header-color {
+		background-color: $header-color;
+	}
+	.color-tile.font-color {
+		background-color: $font-color;
+	}
+	.row {
+		margin-bottom: 30px;
+	}	
+	.hero {
+		background: none;
+	}
+	.testimonial.quote-3 {
+		background: url(../images/testimonial-user-sm-3.png) no-repeat 30px 0;
+	}
+}
+
+@media (max-width: 992px) {
+	
+	.styleguide	.header-img {
+		background-position: 100px;
+	}
+}
+@media (max-width: 767px) {
+	.styleguide .styleguide-description p {
+		margin-top: 20px;
+	}
+	
+}
+@media (max-width: 520px) {
+	.styleguide	.inside-header {
+		background: #fff !important;
+	}
+	
+}

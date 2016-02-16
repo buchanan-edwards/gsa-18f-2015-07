@@ -1,0 +1,9 @@
+
+define(['underscore', 'module'], function (_, module) {
+	var brie = <%- JSON.stringify(brie, null, '\t') %>;
+
+	// Extend page config with any provided local config
+	_.extend(brie.page, module.config());
+
+	return brie;
+});

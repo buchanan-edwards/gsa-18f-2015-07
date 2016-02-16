@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/stylebundles/bootstrap", "~/stylebundles/site")
+    @Scripts.Render("~/scriptbundles/bootstrap", "~/scriptbundles/site")
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+    @RenderSection("head", required: false)
+</head>
+<body>
+	@Html.Partial("~/Views/Shared/_MainMenu.cshtml")
+	<div class="col-sm-12">
+		@Html.Partial("~/Views/Shared/_BetaWarning.cshtml")
+		<div class="row">
+			<div class="form-group">
+				<div class="col-sm-3 hidden-xs">
+					<h2>@ViewBag.ReportType</h2>
+				</div>
+				<div class="col-sm-9">
+					<h2 id="reportTitle"></h2>
+					<h4 id="reportSubtitle"></h4>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group">
+				<div class="col-sm-3 hidden-xs">
+					<hr/>
+				</div>
+				<div class="col-sm-9">
+					<hr/>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group">
+				<div class="col-sm-3">
+					@Html.Partial("~/Views/Shared/_FilterList.cshtml")
+				</div>
+				<div class="col-sm-9">
+					@RenderBody()
+				</div>
+			</div>
+		</div>
+		@Html.Partial("~/Views/Shared/_Footer.cshtml")
+	</div>
+	@Html.Partial("~/Views/Shared/_ContactModal.cshtml")
+	@RenderSection("bodybottom", required: false)
+</body>
+</html>
+
+<script>
+	function SetTitle(title) {
+		$('#reportTitle').text(title);
+	}
+
+	function SetSubtitle(subtitle) {
+		$('#reportSubtitle').text(subtitle);
+	}
+</script>

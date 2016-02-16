@@ -1,0 +1,424 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+  url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+  url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body,html {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height:100%;
+  width:100%;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.light {
+  font-weight: 300;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+#logo {
+  display:none;
+}
+
+#nprogress .spinner {
+  right: 85px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  #logo {
+    display: block;
+  }
+
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+//MAP STUFF
+#map {
+  width:100%;
+  height:100%;
+  .leaflet-top {
+    top: 50px;
+  }
+}
+
+#list-container {
+  background:#f8f8f8;
+  position: absolute;
+  z-index: 100;
+  top:60px;
+  padding:15px;
+  right:20px;
+  width:400px;
+  bottom:70px;
+  border-radius:2px;
+  overflow: hidden;
+  //overflow-y:auto;
+  #filter-container {
+    margin-top: -30px;
+    margin-bottom: 8px;
+    position:relative;
+  }
+  #download-button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 1.2em;
+    color: #444;
+    display: block;
+    &:hover {
+      color:#000;
+      cursor:pointer;
+    }
+  }
+  .detail-list {
+    height: 200px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  #home-chart {
+    margin-top:-25px;
+  }
+  .caps {
+    text-transform:uppercase;
+  }
+  hr {
+    margin-top:0px;
+  }
+  ul#list {
+    margin-top:-10px;
+  }
+  .nav-tabs li {
+    font-size: 0.72em;
+  }
+  ul#list,ul#danger-list,ul#slight-list,ul#unlikely-list {
+    list-style: none;
+    padding-left: 0px;
+    margin-top:10px;
+    margin-bottom:35px;
+    li {
+      border-bottom: 1px solid #CFCFCF;;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color:#9A9A9A;
+      .col-md-6 {
+        padding-left:0px;
+      }
+      .ongoing {
+        color:#e35956;
+      }
+      .completed {
+        color:#5DB986;
+      }
+    }
+    .list-element {
+      padding:3px;
+      &.selected {
+        background-color:#EEE;
+      }
+      &:hover {
+        background-color:#EEE;
+      }
+    }
+  }
+  .recalling-firm {
+    font-weight: 600;
+    color:#444;
+  }
+  .recall-reason {
+    //color:#999;
+    //white-space: nowrap;
+    //overflow: hidden;
+    //text-overflow: ellipsis;
+  }
+  .recall-number-title, .recall-item-description-title, .list-title {
+    font-weight:400;
+    color:#666;
+  }
+  .recall-item-description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .show-details {
+    color: #337ab7;
+    cursor: pointer;
+    font-size:0.85em;
+    margin-top:8px;
+  }
+  #detail-item {
+    margin-bottom:40px;
+    margin-top:-30px;
+    overflow:hidden;
+    overflow-y: auto;
+  }
+  .detail-section {
+    margin-bottom:15px;
+    .col-md-6 {
+      margin-bottom:15px;
+    }
+  }
+  .detail-title {
+    color:#999;
+  }
+  li.active > a {
+    background-color:#f8f8f8;
+  }
+  #close-list {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color:#444;
+    :hover {
+      cursor: pointer;
+      color:#000;
+    }
+  }
+  #back {
+    cursor: pointer;
+    color: #888;
+    font-weight: 100;
+    font-size: 0.8em;
+    &:hover {
+      color:#444;
+    }
+  }
+}
+
+//search
+.geocoder-control.leaflet-control {
+  left:40px;
+  top:-62px;
+  .leaflet-bar {
+    box-shadow:none;
+    border-radius: 0px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+  }
+}
+
+.geocoder-control-suggestions {
+  margin-top:0px;
+}
+
+.geocoder-control-input {
+  background-color:#f8f8f8;
+  border-bottom:1px solid #EEE;
+}
+
+.leaflet-control-zoom-in,.leaflet-control-zoom-out {
+  background-color:#f8f8f8 !important;
+}
+
+#search-helper {
+  margin-top: 25px;
+  background-color:#f8f8f8;
+  padding:5px;
+  padding-top:4px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+}
+
+
+#legend, #census {
+  width: 100%;
+  bottom: 0px;
+  height: 44px;
+  position: absolute;
+  background-color: #FFF;
+  right: 0px;
+  border-top: 1px solid #DDD;
+  z-index: 100;
+  right:20px;
+  width:400px;
+  bottom:70px;
+  border-radius:2px;
+  overflow: hidden;
+  #legend-title {
+    margin-top:5px;
+    font-size: 0.8em;
+  }
+  #legend-min,#legend-max {
+    font-size:0.6em;
+  }
+  #legend-min {
+    position: absolute;
+    left:35px;
+    bottom:2px
+  }
+  #legend-max {
+    position: absolute;
+    right:35px;
+    bottom:2px
+  }
+  .legend-item {
+    height:6px;
+    opacity:0.6;
+  }
+}
+
+#census {
+  display:none;
+  #total-pop {
+    font-weight: 600;
+  }
+  #percent-of-total {
+    font-weight: 400;
+    font-size: 2.3em;
+    text-align: right;
+  }
+  #of-pop {
+    font-size: 0.76em;
+    line-height: 0.9em;
+    margin-top: 8px;
+  }
+}
+
+//mobile
+@media screen and (max-width: 768px) {
+
+  .tagline {
+    display: none;
+  }
+
+  .leaflet-control-zoom-in, .leaflet-control-zoom-out {
+    display: none !important;
+  }
+
+  .geocoder-control.leaflet-control {
+    top:-25px;
+    left:-10px;
+    width:100% !important;
+    border:none;
+    box-shadow:none;
+  }
+
+  .geocoder-control-input {
+    border-bottom:none !important;
+    border:none !important;
+    box-shadow: none !important;
+  }
+
+  #search-helper {
+    background-color:#f8f8f8;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: none !important;
+    border:none !important;
+  }
+
+
+  #map .leaflet-top {
+    right: 0px;
+    left:0px;
+  }
+
+  #legend, #census {
+    bottom:30px;
+    left: 20px;
+    right: 20px;
+    width: auto;
+  }
+
+  #list-container {
+    display: none;
+    left: 0px;
+    right: 0px;
+    bottom:0px;
+    width: auto;
+    top:100px;
+  }
+
+  .leaflet-bottom.leaflet-right {
+    display: none !important;
+  }
+
+  .nav-tabs li {
+    font-size: 0.65em !important;
+  }
+
+  #legend, #census {
+    right:0px;
+    left:0px;
+    bottom:0px;
+  }
+  #census {
+    #legend-title {
+      font-size: 0.7em;
+    }
+  }
+  #download-button {
+    display: none !important;
+  }
+}

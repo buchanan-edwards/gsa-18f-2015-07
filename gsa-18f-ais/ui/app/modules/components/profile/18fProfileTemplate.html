@@ -1,0 +1,31 @@
+
+<div class="profile">
+    <div class="row">
+        <div class="col-xs-12">
+
+            <div class="profile-photo">
+                <!-- img src="images/profile-placeholder.jpg"
+                    alt="{{ ProfileService.user.firstName }} {{ ProfileService.user.lastName }}"
+                    title="{{ ProfileService.user.firstName }} {{ ProfileService.user.lastName }}" / -->
+                <i class="fa fa-user fa-4"></i>
+            </div>
+            <div class="profile-info">
+                <p class="name">
+                    {{ ProfileService.user.firstName }}
+                    {{ ProfileService.user.lastName }}
+                </p>
+                <p class="details">
+                    {{ ProfileService.user.email }}
+                </p>
+
+                <p class="tools" ng-show="showTools">
+                    <a href="#/profile">
+                        <i class="glyphicon glyphicon-edit"></i>
+                        Edit Profile
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>

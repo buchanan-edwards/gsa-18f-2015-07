@@ -1,0 +1,23 @@
+description "Start Techflow ADS BPA Application"
+
+start on runlevel [345]
+stop on runlevel [0126]
+
+env PROXY_HOST=172.31.22.173
+export PROXY_HOST
+env PROXY_PORT=3128
+export PROXY_PORT
+env HTTP_PROXY=http://${PROXY_HOST}:${PROXY_PORT}
+export HTTP_PROXY
+env HTTPS_PROXY=${HTTP_PROXY}
+export HTTP_PROXY
+env NO_PROXY=localhost,127.0.0.1,/var/run/docker.sock
+export NO_PROXY
+
+# Respawn the process if it dies:
+respawn
+
+# If it fails five times in a one-minute interval, stop trying:
+respawn limit 5 60
+
+exec /usr/bin/docker run -p 8080:8080 -e "PROXY_HOST=$PROXY_HOST" -e "PROXY_PORT=$PROXY_PORT" -i techflow/openfda-web > /home/tf-ads-bpa/logs/app_$(/bin/date +%F_%H%M%S).log 2>&1

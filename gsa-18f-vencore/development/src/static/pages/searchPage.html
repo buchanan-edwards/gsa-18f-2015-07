@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="searchApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Vencore</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Angular Select CSS -->
+    <link href="/bower_components/angular/select.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Select2 theme -->
+    <link rel="stylesheet" href="/bower_components/angular/select2.css">
+
+    <link rel="stylesheet" href="/bower_components/angular/selectize.default.css">
+
+    <link rel="stylesheet" href="/bower_components/bootstrap-daterangepicker/daterangepicker-bs3.css"/>
+
+    <link rel="stylesheet" href="/bower_components/angularjs-datepicker/dist/angular-datepicker.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+    body {
+      padding: 15px;
+    }
+
+    .select2 > .select2-choice.ui-select-match {
+      /* Because of the inclusion of Bootstrap */
+      height: 29px;
+    }
+
+    .selectize-control > .selectize-dropdown {
+      top: 36px;
+    }
+
+    #container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    #visualization {
+        position: relative;
+        width: 100%;
+        height: 80%;
+    }
+
+    { 
+            margin: 0; 
+            padding: 0; 
+        }
+       
+        #page-wrap {
+            margin: 50px;
+        }
+        p {
+            margin: 20px 0; 
+        }
+        .brightness {
+            background-color: inherit;
+            display: inline-block;
+            border-radius: 51%;
+        }
+        .brightness img {
+            opacity: .9;
+        }
+        .brightness img:hover {
+            opacity: 1.0;
+        }
+   </style>
+
+</head>
+
+<body id="page2">
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a  href="/" title="Vencore"><img src="/img/logo_vencore_page.jpg" alt="Vencore"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#/" title="Map View">Map View </a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#listSearch" title="List View">List View &nbsp;&nbsp;</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div data-asm-control="slideLeft" class="affix hideThis" style="z-index: 2000;">
+        <img src="/img/search_tab_2.png" title="Search">
+    </div>
+    <div id="wrapper">
+    <div ng-view></div>
+    </div>
+
+
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/sb-admin-2.js"></script>
+
+    <!-- angular -->
+    <script src= "/bower_components/angular/angular.min.js"></script>
+
+    <script src= "/bower_components/angular/angular-route.js"></script>
+
+    <script src="/bower_components/angular/angular-slide-menu.min.js"></script>
+
+    <script src= "/bower_components/angular/select.js"></script>
+
+    <script src= "/bower_components/angular/angular-sanitize.js"></script>
+
+    <script src="/bower_components/moment/moment.js"></script>
+
+    <script src="/bower_components/shalotelli-angular-multiselect/release/multiselect.min.js"></script>
+    
+    <link rel="stylesheet" href="/bower_components/shalotelli-angular-multiselect/release/styles/multi-select.css" />
+
+    <script src="/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <script src="/bower_components/angularjs-datepicker/dist/angular-datepicker.min.js"></script>
+
+    <script src="/bower_components/angular-daterangepicker/js/angular-daterangepicker.js"></script>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['geochart']}]}"></script>
+
+    <script src= "/static/js/config.js"></script>
+    
+    <script src= "/static/js/search.js"></script>
+
+    <script src= "/static/js/mapSearch.js"></script>
+
+    <script src= "/static/js/listSearch.js"></script>
+    <script>
+    /*function to colapse nav bar after menu item selection*/
+     $(document).on('click.nav','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).removeClass('in').addClass('collapse');
+    }
+});</script>
+</body>
+
+</html>

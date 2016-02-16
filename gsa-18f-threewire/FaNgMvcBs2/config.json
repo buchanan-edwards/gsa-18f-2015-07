@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "Med"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-FaNgMvcBs2-505e8132-a9d1-4e31-a2a3-80450a5e9a5b;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}

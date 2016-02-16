@@ -1,0 +1,299 @@
+@import 'settings';
+@font-face {
+    font-family: 'montserratbold';
+    src: url(asset_path('montserrat-bold-webfont.eot'));
+    src: url(asset_path('montserrat-bold-webfont.eot?#iefix')) format('embedded-opentype'),
+         url(asset_path('montserrat-bold-webfont.woff2')) format('woff2'),
+         url(asset_path('montserrat-bold-webfont.woff')) format('woff'),
+         url(asset_path('montserrat-bold-webfont.ttf')) format('truetype'),
+         url(asset_path('montserrat-bold-webfont.svg#montserratbold')) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url(asset_path('montserrat-regular-webfont.eot'));
+    src: url(asset_path('montserrat-regular-webfont.eot?#iefix')) format('embedded-opentype'),
+         url(asset_path('montserrat-regular-webfont.woff2')) format('woff2'),
+         url(asset_path('montserrat-regular-webfont.woff')) format('woff'),
+         url(asset_path('montserrat-regular-webfont.ttf')) format('truetype'),
+         url(asset_path('montserrat-regular-webfont.svg#montserratregular')) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: 'montserratregular', Helvetica, Arial, sans-serif;
+  padding-bottom: 2em;
+
+  &:after {
+    content: "\f071  Demo only. Not meant for medical advice, diagnosis, or treatment.";
+    font-family: FontAwesome, 'montserratregular';
+    display: block;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    padding: .75em;
+    text-transform: uppercase;
+    background-color: #C6C6C6;
+    background-image: url(asset_path('bg-lines.png'));
+  }
+
+  > .row:last-child {margin-bottom: 6em;}
+}
+
+a.icon.fa {
+  font-family: FontAwesome, 'montserratregular', Helvetica, Arial, sans-serif;
+
+  &:before {
+    margin-right: .25em;
+  }
+}
+
+strong {
+  font-family: 'montserratbold', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+p.intro {text-align: center;}
+
+.top-nav {
+  border-bottom: 0.7rem solid $app-primary-color;
+  height: 8rem;
+  width: 100%;
+  background-color: #353535;
+}
+
+.top-box {
+  width: 87px;
+  height: 98px;
+  margin: -4rem auto 1.5em;
+}
+
+h1.medication-header {
+	font-size: 1.5em;
+	text-align: center;
+  font-family: 'montserratbold', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  margin: 0 0 1em 0;
+}
+
+h4 {
+	font-size: 1.25em;
+  font-family: 'montserratbold', Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid $line-color;
+  padding-bottom: .3em;
+  text-transform: uppercase;
+  margin: 2em 0 1em;
+}
+
+.warnings {
+  padding: 10px 10px;
+  background-color: #DE5353;
+  background-image: url(asset_path('bg-lines.png'));
+  position: relative;
+  text-align: center;
+}
+
+.highcharts-container {
+  width:100% !important;
+}
+
+
+.search-field-container {
+  position: relative;
+
+  button {
+    background: none;
+    border: 0;
+    width: auto !important;
+    display: inline-block !important;
+    position: absolute;
+    left: 0;
+    font-size: 1.5em;
+    color: #353535;
+    padding: 0 .5em;
+  }
+
+  .searchbox {
+    text-indent: 3em;
+    background-color: #C6C6C6;
+    border: 0;
+    font-family: 'montserratbold', Helvetica, Arial, sans-serif;
+
+
+    &:focus, &:active {
+      background-color: #E8E8E8;
+    }
+  }
+}
+
+.accordion {
+  margin: 0;
+
+  .accordion-navigation > a, dd > a {
+    font-family: 'montserratbold', Helvetica, Arial, sans-serif;
+    padding: 1rem 2.5rem;
+    position: relative;
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .accordion-navigation.active > a, dd.active > a {
+    background-color: transparent;
+  }
+
+  .accordion-navigation {
+    position: relative;
+    border-bottom: 1px solid $line-color;
+    background-color: #E8E8E8;
+
+    &:before, dd:before {
+      position: absolute;
+      left: .5em;
+      top: .35em;
+    }
+
+    &.warnings {
+      background-color: #DE5353;
+
+      &:before {
+        color: #FFF;
+        top: 1em;
+      }
+
+      .content {text-align:left;}
+    }
+  }
+
+  .accordion-navigation:before, dd:before, .accordion-navigation.warnings > a:before {
+    content: "\f13a";
+    font-size: 1.5em;
+    vertical-align: middle;
+    font-family: FontAwesome, 'montserratregular';
+    transition: all 200ms ease;
+  }
+
+  .accordion-navigation.active:before, dd.active:before {
+    -webkit-transform: rotate(-180deg); /* Safari */
+    -moz-transform: rotate(-180deg); /* Firefox */
+    -ms-transform: rotate(-180deg); /* IE */
+    -o-transform: rotate(-180deg); /* Opera */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); /* Internet Explorer */
+  }
+
+  .accordion-navigation.warnings > a, .warnings dd > a {
+    color: #FFF;
+    font-family: 'montserratbold', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    line-height: 1;
+
+    &:before {
+      content: "\f071";
+    }
+  }
+
+  .accordion-navigation > .content.active, dd > .content.active {
+    background-color: rgba(255,255,255,.75);
+  }
+}
+
+h4 + ul.accordion {margin-top:-1.25em;}
+
+ul.search-results {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    border-bottom: 1px solid $line-color;
+    display: block;
+
+    &:first-child {
+      border-top: 1px solid $line-color;
+    }
+
+    a {
+      display: block;
+      padding: 1em 0;
+      color: $body-font-color;
+
+      &:hover {background: #C6C6C6;}
+    }
+  }
+}
+
+.searchbox {
+  &::-webkit-input-placeholder { /* WebKit browsers */
+    color:    $searchbox-placeholder-color;
+  }
+
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    $searchbox-placeholder-color;
+    opacity:  1;
+  }
+
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    $searchbox-placeholder-color;
+    opacity:  1;
+  }
+
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    $searchbox-placeholder-color;
+  }
+
+  &:focus {
+     &::-webkit-input-placeholder {color: #e8e8e8;}
+     &:-moz-placeholder  {color: #e8e8e8;}
+     &::-moz-placeholder {color: #e8e8e8;}
+     &:-ms-input-placeholder { color: #e8e8e8; }
+  }
+}
+
+.pagination-centered {
+  margin: 1em 0;
+
+  ul.pagination li {
+    margin-bottom: 1em;
+
+    a, button {
+      background-color: #E8E8E8;
+      color: $body-font-color;
+    }
+
+    &.current a {
+      background-color: $app-primary-color;
+      color: #FFF;
+    }
+
+    &.unavailable a {background-color: rgba(255,255,255,.1);}
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  ul.search-results li a, .row > p {padding: 1em;}
+}
+
+@media only screen and (max-width:480px) {
+  .top-nav {height:10rem;}
+
+  .pagination-centered {
+    text-align: left;
+
+    ul.pagination {
+      li a, li button {font-size: 1.25em;}
+    }
+  }
+}
+

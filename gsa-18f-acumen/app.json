@@ -1,0 +1,10 @@
+{
+  "name": "GSA Agile Prototype",
+  "description": "An open source prototype for GSA",
+  "repository": "https://github.com/AcumenSolutions/acumen-gsa-agile-prototype",
+  "logo": "http://www.acumensolutions.com/media/images/logos/acumen_logo_white.png",
+  "keywords": ["node", "express", "OpenFDA"],
+  "env": {
+  	"OpenFDAAPIKey": ""
+  }
+}

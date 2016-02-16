@@ -1,0 +1,308 @@
+ @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,300,600,700,800);
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+a, input, textarea, button {
+	transition: all 0.2s linear;
+	text-transform: none;
+}
+a {
+	color: #20a7e0;
+}
+a:hover, a:focus {
+	color: #1c489a;
+	text-decoration: none !important;
+	outline: none !important
+}
+.center {
+	text-align: center;
+}
+img.logo {
+	width: 250px;
+}
+a.logoLink {
+	display: inline-block;
+	margin-top: 30px;
+}
+:focus, input:focus {
+	outline: none !important;
+}
+input[type="text"] {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+input[type="text"]:focus {
+	border-color: #20a7e0;
+	box-shadow: 0 0 8px #20a7e0;
+}
+form {
+	border-top: 1px solid #ddd;
+	padding: 30px 0;
+	border-bottom: 1px solid #ddd;
+}
+input#termText {
+	position: relative
+}
+input#termText:after {
+	font-family: FontAwesome;
+	content: "\f002";
+	left: 20px;
+	top: 10px;
+	font-size: 24px;
+	color: #ddd;
+}
+form > div {
+	text-align: center;
+}
+.btn.btn-primary {
+	padding: 10px 25px;
+	border: none;
+	vertical-align: middle;
+	background: #20a7e0;
+	font-weight: bold;
+}
+.btn.btn-primary:hover {
+	background: #1c489a;
+}
+.dataTable {
+	width: 100% !important;
+	border-bottom: 1px solid #ddd;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.dataTable td.sorting_1 {
+	border-top: 1px solid #ddd;
+	padding: 5px 0 25px 0
+}
+i.fa.fa-question-circle {
+	color: #aaa;
+	font-size: 24px;
+	margin-left: 25px;
+	cursor: pointer;
+}
+input#searchButton {
+	margin-bottom: 2px;
+	margin-left: 5px;
+}
+a.labelDetails {
+	font-size: 22px;
+	font-weight: bold;
+	padding-top: 20px;
+	display: block;
+	padding-bottom: 10px;
+	line-height: 24px;
+}
+h3 {
+	font-weight: bold;
+}
+h2 {
+	font-size: 24px;
+}
+img.help {
+	margin-left: 20px;
+}
+ul.nav.nav-pills.pull-right {
+	margin: 20px 20px 0 0;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+	text-decoration: none;
+	background-color: white !important;
+}
+ul.nav.nav-pills.pull-right {
+	font-size: 13px;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+div#labelTable_info {
+	font-size: 13px;
+	color: #999;
+	font-style: italic;
+}
+.progress-bar {
+	background: #20a7e0;
+}
+a.paginate_button {
+	padding: 5px;
+	cursor: pointer;
+	min-width: 30px;
+	height: 30px;
+	text-align: center;
+	display: inline-block;
+	font-size: 13px;
+}
+a.paginate_button.current {
+	padding: 5px;
+	cursor: pointer;
+	min-width: 30px;
+	height: 30px;
+	background-color: #eee;
+	border-radius: 100%;
+	display: inline-block;
+	text-align: center;
+	color: #222;
+	font-weight: bold;
+}
+a.paginate_button.disabled, span.ellipsis {
+	cursor: default;
+	color: #ccc;
+}
+a.paginate_button.previous {
+	margin-right: 15px;
+}
+a.paginate_button.next {
+	margin-left: 15px;
+}
+.table#labelTable > tbody > tr:first-child > td {
+	border-top: none;
+}
+.table#labelTable > tbody > tr > td {
+	padding: 8px 0;
+}
+p.labelDescription {
+	line-height: 24px;
+    max-height: 70px;
+    overflow: hidden;
+}
+.nav.nav-stacked > li.active > a {
+	color: #222;
+	font-weight: bold;
+	border-left: 2px solid #20a7e0;
+}
+.controls {
+	margin-bottom: 30px;
+}
+#clinical_pharmacology > p:first-child {
+	font-size: 18px;
+}
+span#overrideFile {
+	background-color: white;
+	color: #999;
+	font-weight: normal;
+	border: 2px solid #ddd;
+	border-radius: 6px;
+	margin-bottom: 20px;
+}
+span#overrideFile > span {
+	font-size: 20px;
+	color: #ddd;
+	display: block;
+	margin-bottom: 10px;
+}
+.hr-center-heading {
+	display: block!important;
+	max-width: 100%;
+	margin-top: 20px;
+}
+.hr-center-heading span {
+	position: relative;
+	z-index: 5;
+	color: #aaa;
+}
+.hr-center-heading span:before, .hr-center-heading span:after {
+	content: "";
+	position: absolute;
+	height: 5px;
+	border-top: 1px solid #ddd;
+	top: 9px;
+	width: 25px;
+}
+.hr-center-heading span:before {
+	right: 100%;
+	margin-right: 15px;
+}
+.hr-center-heading span::after {
+	left: 100%;
+	margin-left: 15px;
+}
+.col-sm-9 > div {
+	margin-bottom: 50px;
+}
+
+@media (max-width: 520px) {
+input#termText {
+	margin-bottom: 20px;
+    width: 100%;
+}
+input#searchButton {
+	margin-left: 45px;
+}
+div#labelTable_info {
+	display: block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.col-md-6 .pull-right {
+	float: none !important
+}
+div#labelTable_paginate {
+	width: 100%;
+	text-align: center;
+}
+}
+/*
+* To fit pagination in single line on iPhone 5
+*/
+@media (max-width: 320px) {
+ a.paginate_button.previous {
+     margin-right:0;
+ }
+ a.paginate_button.next {
+     margin-left:0;
+ }
+ a.paginate_button {
+     min-width: 25px;
+     height:25px
+ }
+ .col-sm-9 > div > div, .col-sm-9 .col-sm-4, .col-sm-9 .col-sm-11 {padding: 0}
+}
+
+
+ @media (min-width: 768px) {
+     .affix {
+         position: fixed;
+         z-index: 1;
+     }
+ }
+
+ @media (max-width: 768px) {
+     .affix {
+         position: static;
+     }
+ }
+
+ @media (max-width: 640px) {
+     .col-sm-9 > div > div, .col-sm-9 .col-sm-4, .col-sm-9 .col-sm-11 {padding: 0}
+ }
+
+ @media (min-width: 768px) {
+     .affix-top-size {
+         margin-top:100px;
+     }
+ }
+
+ @media (max-width: 768px) {
+     .affix-top-size {
+         margin-top:auto;
+     }
+ }
+
+@media (min-width: 768px) {
+    .backToSearch {
+        margin-top:-100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .stick {
+        position: fixed;
+        top: 0px;
+    }
+}
+ @media (min-width: 768px) {
+     .stickContent {
+         position: fixed;
+         top: 100px;
+     }
+ }

@@ -1,0 +1,115 @@
+<div>
+    <nav data-asm-slide-left class="navbar navbar-default">
+        <div style="margin-left:3%; margin-right:3%; margin-top:3%;">
+            <div class="symptom"><strong><label for="Date From">Date From</label></strong></div> 
+            <div class="form-group col-centered">
+                <datepicker date-format="MM/dd/yyyy" date-max-limit={{searchCriteria.endDate}} 
+                date-set={{searchCriteria.startDate}}
+                   button-prev="<i class='fa fa-arrow-left'></i>" button-next="<i class='fa fa-arrow-right'></i>">
+                    <input type="text" ng-model="searchCriteria.startDate" title="Date From" class="form-control" readonly="true" tabindex=1>
+                </datepicker>
+            </div>
+            <div class="symptom" title="Date To"><strong>Date To</strong></div> 
+            <div class="form-group col-centered">
+                <datepicker date-format="MM/dd/yyyy" date-min-limit={{searchCriteria.startDate}} date-set={{searchCriteria.endDate}} button-prev="<i class='fa fa-arrow-left'></i>" button-next="<i class='fa fa-arrow-right'></i>">
+                    <input type="text" ng-model="searchCriteria.endDate" title="Date To" class="form-control" readonly="true" tabindex=2 >
+                </datepicker>
+            </div>
+            <div class="symptom" title="Search Term"><strong>Search Term</strong></div> 
+            <div class="form-group col-centered">
+                <input class="form-control" type="text" title="Search Term" ng-model="searchCriteria.keyTerm" tabindex=3/> 
+            </div>
+            <div class="symptom" title="Recall Type"><strong>Recall Type</strong></div>    
+            <div class="form-group col-centered">
+                <multi-select
+                    name="recall_select"
+                    values="availableRecall"
+                    model="searchCriteria.selectedRecall"
+                    show-filters="true"
+                    value-field="code"
+                    label-field="name"
+                tabindex=4 title="Recall Type"></multi-select>
+            </div>
+            <div data-asm-control="slideLeft" class="inlineDiv" ng-click="searchData()" tabindex=5>
+                <a class="btn btn-primary" title="Search"><span style="color:white">Search</span></a>
+            </div>
+            <div data-asm-control="slideLeft" class="inlineDiv" tabindex=6>
+                <a class="btn btn-primary" title="Close">Close</a>
+            </div>
+        </div>
+    </nav>
+    <div class="page-header3 text-center">Product Recalls by General Area of Initial Distributions</div>
+
+    <div class="row">
+        <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-body text-left">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <strong>Recall for: </strong>  
+                            <span ng-repeat="x in searchCriteria.selectedRecall">
+                                <span ng-if="x.code == 'food'">
+                                    <i class="fa fa-cutlery" title="Food"></i>
+                                    {{x.name}}
+                                </span>
+                                <span ng-if="x.code == 'drug'">
+                                    <i class="fa fa-eyedropper" title="Drug"></i>
+                                    {{x.name}}
+                                </span>
+                                <span ng-if="x.code == 'device'">
+                                    <i class="fa fa-medkit" title="Device"></i>
+                                    {{x.name}}
+                                </span>
+                                <span ng-if="!$last">, </span>
+                            </span> 
+                        </div>
+                        <div class="col-sm-4">
+                            <strong>Date Range: </strong> {{formatDate(searchCriteria.startDate) |  date:"MM/dd/yyyy" }} - {{formatDate(searchCriteria.endDate) |  date:"MM/dd/yyyy" }} 
+                        </div>
+                        <div class="col-sm-4">
+                            <strong>Search Term: </strong>
+                            <span ng-if="searchCriteria.keyTerm == ''"> None </span>
+                            <span ng-if="searchCriteria.keyTerm != ''"> {{searchCriteria.keyTerm}} </span>
+                            <br>
+                        </div>
+                        <div class="col-sm-4">
+                            Please click on a state to view detail recall listing.
+                        </div>
+
+                        <div class="col-sm-8 text-left">
+                            <span style="color:red; font-style:italic;">*Results are based on the count pattern search API & excludes state combinations.</span>
+                        </div>
+                    </div>
+                    
+                    
+                    <div id='regions_div' style="width:100%, height:100%"></div>
+                    <strong>Nationwide* Recall for: </strong>  
+                            <span ng-repeat="x in searchCriteria.selectedRecall">
+                                <span ng-if="x.code == 'food'">
+                                    <i class="fa fa-cutlery" title="Food"> </i>
+                                    {{x.name}} [{{nationalFoodNumbers}}]
+                                </span>
+                                <span ng-if="x.code == 'drug'">
+                                    <i class="fa fa-eyedropper" title="Drug"> </i>
+                                    {{x.name}} [{{nationalDrugNumbers}}]
+                                </span>
+                                <span ng-if="x.code == 'device'">
+                                    <i class="fa fa-medkit" title="Device"> </i>
+                                    {{x.name}} [{{nationalDeviceNumbers}}]
+                                </span>
+                                <span ng-if="!$last">, </span>
+                            </span>
+                    <br>
+                    <div class="col-sm-6">
+                        *Please note that initial distribution states for nationwide recalls cannot be determined.
+                        </div>
+                        <div class="col-sm-6 text-left">
+                            <span style="color:red; font-style:italic;">*Results are based on the count pattern search API & excludes state combinations.</span>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    

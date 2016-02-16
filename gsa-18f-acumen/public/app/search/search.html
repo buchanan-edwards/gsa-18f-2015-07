@@ -1,0 +1,121 @@
+<!-- MENU SECTION END-->
+<div class="content-wrapper">
+    <div class="container">
+        <div ng-form="searchForm">
+            <div class="row">
+                <div class="col-md-12 page-head-line">
+                    <button class="btn btn-default pull-right" ng-show="search.pagination.totalPages > 0 && search.isCollapsed" ng-click="search.isCollapsed = !search.isCollapsed"><i class="fa fa-search"></i> Edit Search</button>
+                    <h1>Search Food Recalls</h1>
+                </div>
+            </div>
+
+            <div class="row" collapse="search.isCollapsed">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Select a Recall Category
+                        <button class="btn btn-default pull-right" ng-click="search.showCategoryHelp = !search.showCategoryHelp">Need Help?</button>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="well" collapse="!search.showCategoryHelp">
+                            <p>
+                                These guidelines categorize all recalls into one of three classes, according to the level of hazard involved:
+                            </p>
+                            <ul>
+                                <li>
+                                Class I: Dangerous or defective products that predictably could cause serious health problems or death. Examples include: food found to contain botulinum toxin, food with undeclared allergens, a label mix-up on a lifesaving drug, or a defective artificial heart valve.
+                                </li>
+                                <li>
+                                Class II: Products that might cause a temporary health problem, or pose only a slight threat of a serious nature. Example: a drug that is under-strength but that is not used to treat life-threatening situations.
+                                </li>
+                                <li>
+                                Class III: Products that are unlikely to cause any adverse health reaction, but that violate FDA labeling or manufacturing laws. Examples include: a minor container defect and lack of English labeling in a retail food.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group btn-group-justified">
+                            <div class="btn-group" role="group">
+                                <label ng-model="search.searchParams.classification" btn-radio="'Class I'" class="btn dashboard-div-wrapper bk-clr-two" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                    <h4>Class I</h4>
+                                    <h5 class="hidden-sm hidden-md hidden-lg">Dangerous</h5>
+                                    <h5 class="hidden-xs">Dangerous or Defective</h5>
+                                </label>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <label ng-model="search.searchParams.classification" btn-radio="'Class II'" class="btn dashboard-div-wrapper bk-clr-one" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                    <h4>Class II</h4>
+                                    <h5 class="hidden-sm hidden-md hidden-lg">Sickness</h5>
+                                    <h5 class="hidden-xs">Threat or Sickness</h5>
+                                </label>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <label ng-model="search.searchParams.classification" btn-radio="'Class III'" class="btn dashboard-div-wrapper bk-clr-three" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                    <h4>Class III</h4>
+                                    <h5 class="hidden-sm hidden-md hidden-lg">Legal</h5>
+                                    <h5 class="hidden-xs">Labeling or Legal </h5>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        Search Terms
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label for="states">Filter by State <small>(* Required)</small></label>
+                            <select class="form-control" id="states" ng-options="item for item in search.stateList" ng-model="search.searchParams.state" required>
+                                <option value="">-- All States --</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input id="searchTerm" type="text" class="form-control" placeholder="Filter by Keyword(s)" ng-model="search.searchParams.searchTerm">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-success" type="button" ng-click="search.searchClicked()" ng-disabled="!searchForm.$valid"><i class="fa fa-search" style="margin-right:10px"></i>Search!</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer text-muted">
+                        <strong>Note : </strong>OpenFDA is a beta research project and not for clinical or production use
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+   	<div class="row">
+        <div class="container">
+    		<div ng-show="search.searchResults" class="panel panel-default">
+    			<!-- Default panel contents -->
+    		  	<div class="panel-heading">Search Results <small>(Click item to view more details)</small></div>
+    		  	<div class="panel-body">
+    		    	<div ng-show="!search.pageLoading" class="list-group">
+    					<a ui-sref="foodDetails" ng-click="search.setSelectedFoodItem(result)" class="list-group-item" ng-repeat="result in search.searchResults.results | orderBy : recall_initiation_date : reverse">
+                            <b>{{result.recalling_firm}}</b> - {{result.product_description|truncate}}
+                            <i class="fa fa-chevron-right pull-right"></i>
+                        </a>
+    				</div>
+    				<div class="col-md-12 text-center">
+    					<i ng-show="search.pageLoading" class="fa fa-spinner fa-spin fa-5x"></i>
+    				</div>
+                    <div class="col-md-12 text-left text-muted">
+                        <strong ng-show="search.searchResults.results.length === 0 && !search.pageLoading">No data meets your selection criteria</strong>
+                    </div>
+    		  	</div>
+
+
+    			<div class="text-center" ng-show="search.pagination.totalPages > 0 && search.searchResults.results.length > 0">
+    				<pagination total-items="search.pagination.totalItems" ng-model="search.pagination.currentPage" max-size="search.pagination.maxPageDisplay" class="pagination-sm" boundary-links="true" ng-change="search.pageChanged()"></pagination>
+    			</div>
+            </div>
+		</div>
+	</div>
+</div>

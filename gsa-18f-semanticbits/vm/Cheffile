@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'https://supermarket.getchef.com/api/v1'
+cookbook 'tomcat', '~> 0.17.3'
+cookbook 'postgresql', '~> 3.4.18'
+cookbook 'mongodb', '~> 0.16.2'
+cookbook 'jenkins', '~> 2.2.2'

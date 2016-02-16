@@ -1,0 +1,27 @@
+{
+  "name": "acumen-gsa-agile-prototype",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mheim-acumen/acumen-gsa-agile-prototype",
+  "authors": [
+    "Matt Heim <mheim@acumensolutions.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.1",
+    "bootstrap": "~3.3.5",
+    "angular-bootstrap": "~0.13.0",
+    "angular-ui-router": "~0.2.15",
+    "font-awesome": "~4.3.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.1"
+  }
+}
