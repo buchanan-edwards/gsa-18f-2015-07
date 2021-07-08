@@ -20,7 +20,7 @@ gem 'chartkick'
 gem "highcharts-rails"
 
 group :test do
-  gem 'webmock'
+  gem 'webmock', '>= 1.21.0'
   gem 'i18n-tasks'
 end
 
