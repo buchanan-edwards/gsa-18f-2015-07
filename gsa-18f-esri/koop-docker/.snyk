@@ -1,0 +1,8 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.21.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:http-signature:20150122':
+    - koop-fda > request > http-signature:
+        patched: '2021-08-01T20:27:15.047Z'
