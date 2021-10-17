@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:trusty-20190515
  
 RUN mkdir /usr/src/app
 RUN mkdir /usr/src/app/client
