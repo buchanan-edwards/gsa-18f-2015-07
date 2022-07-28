@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.2.2'
 
-gem 'rails', '4.2.1'
+gem 'rails', '5.2.8.1'
 
 gem 'rails-api'
 
@@ -37,7 +37,7 @@ gem 'pg', '~> 0.18.2'
 gem 'dotenv-rails'
 
 gem 'rest-client'
-gem 'acts-as-taggable-on'
+gem 'acts-as-taggable-on', '>= 4.0.0'
 
 # Documentation
 gem 'apipie-rails', '~> 0.2.6'
