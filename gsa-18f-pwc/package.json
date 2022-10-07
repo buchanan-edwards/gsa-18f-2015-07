@@ -8,25 +8,28 @@
   "main": "index.js",
   "scripts": {
     "test": "grunt test",
-    "postinstall": "./node_modules/.bin/grunt build"
+    "postinstall": "./node_modules/.bin/grunt build",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "engines": {
-   "node": "0.12.6",
-   "npm": "2.11.2"
+    "node": "0.12.6",
+    "npm": "2.11.2"
   },
   "dependencies": {
     "adaro": "^0.1.5",
     "dustjs-helpers": "~1.6.2",
-    "dustjs-linkedin": "~2.6.2",
+    "dustjs-linkedin": "~3.0.1",
     "engine-munger": "^0.2.0",
     "express": "^4.3.0",
     "kraken-devtools": "^1.0.0",
-    "kraken-js": "^1.0.1",
+    "kraken-js": "^2.0.0",
     "localizr": "^0.1.0",
-    "lodash": "^3.9.3",
-    "newrelic": "^1.20.2",
-    "stylus": "^0.50.0",
-    "xml2js": "^0.4.9"
+    "lodash": "^4.17.21",
+    "newrelic": "^4.0.0",
+    "stylus": "^0.54.3",
+    "xml2js": "^0.4.9",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "browserify": "^3.46.1",
@@ -61,5 +64,6 @@
     "css": "stylus",
     "js": "browserify",
     "task": "grunt"
-  }
+  },
+  "snyk": true
 }
