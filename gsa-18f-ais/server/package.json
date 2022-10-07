@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -18,14 +20,15 @@
   "homepage": "https://github.com/AppliedIS/AgileBPA",
   "dependencies": {
     "bcryptjs": "^2.1.0",
-    "hapi": "^8.6.1",
+    "hapi": "^13.4.0",
     "hapi-require-https": "^2.0.0",
-    "joi": "^6.4.3",
-    "lodash": "^3.9.3",
-    "mongoose": "^4.0.5",
-    "newrelic": "^1.20.2",
+    "joi": "^8.1.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.13.15",
+    "newrelic": "^4.0.0",
     "randomstring": "^1.0.6",
-    "request": "^2.58.0"
+    "request": "^2.58.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
@@ -34,5 +37,6 @@
     "mocha": "^2.2.5",
     "mockgoose": "^2.0.3",
     "should": "^7.0.1"
-  }
+  },
+  "snyk": true
 }
