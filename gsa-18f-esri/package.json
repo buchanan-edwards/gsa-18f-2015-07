@@ -28,15 +28,19 @@
   },
   "dependencies": {
     "gulp-gh-pages": "^0.5.2",
-    "jasmine-core": "^2.3.4",
-    "karma": "^0.12.37",
+    "jasmine-core": "^3.1.0",
+    "karma": "^6.3.16",
     "karma-beep-reporter": "^0.1.4",
     "karma-chrome-launcher": "^0.2.0",
     "karma-jasmine": "^0.3.6",
-    "karma-phantomjs-launcher": "^0.2.0",
-    "phantomjs": "^1.9.17"
+    "karma-phantomjs-launcher": "^1.0.0",
+    "phantomjs": "^2.1.1",
+    "@snyk/protect": "latest"
   },
   "scripts": {
-    "test": "gulp test"
-  }
+    "test": "gulp test",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
