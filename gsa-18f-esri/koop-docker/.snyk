@@ -1,0 +1,36 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - koop-fda > request > hawk:
+        patched: '2022-10-07T14:49:01.468Z'
+  'npm:hoek:20180212':
+    - koop-fda > request > hawk > hoek:
+        patched: '2022-10-07T14:49:01.468Z'
+    - koop-fda > request > hawk > boom > hoek:
+        patched: '2022-10-07T14:49:01.468Z'
+    - koop-fda > request > hawk > sntp > hoek:
+        patched: '2022-10-07T14:49:01.468Z'
+    - koop-fda > request > hawk > cryptiles > boom > hoek:
+        patched: '2022-10-07T14:49:01.468Z'
+  'npm:http-signature:20150122':
+    - koop-fda > request > http-signature:
+        patched: '2022-10-07T14:49:01.468Z'
+  'npm:lodash:20180130':
+    - koop-pgcache > lodash:
+        patched: '2022-10-07T14:49:01.468Z'
+    - koop-escache > elasticsearch > lodash:
+        patched: '2022-10-07T14:49:01.468Z'
+  'npm:request:20160119':
+    - koop-fda > request:
+        patched: '2022-10-07T14:49:01.468Z'
+  'npm:tunnel-agent:20170305':
+    - koop-fda > request > tunnel-agent:
+        patched: '2022-10-07T14:49:01.468Z'
+  'npm:uglify-js:20151024':
+    - koop > kue > jade > constantinople > uglify-js:
+        patched: '2022-10-07T14:49:01.468Z'
+    - koop > kue > jade > transformers > uglify-js:
+        patched: '2022-10-07T14:49:01.468Z'
