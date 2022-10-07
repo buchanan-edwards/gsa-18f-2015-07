@@ -8,8 +8,8 @@
 
 
 	<properties>
-		<version.testng>6.8.8</version.testng>
-		<version.selenium-java>2.46.0</version.selenium-java>
+		<version.testng>7.3.0</version.testng>
+		<version.selenium-java>3.0.0</version.selenium-java>
 		<version.selenium-server>2.46.0</version.selenium-server>
 		<version.maven-resources-plugin>2.6</version.maven-resources-plugin>
 		<version.maven-compiler-plugin>3.2</version.maven-compiler-plugin>
@@ -86,19 +86,19 @@
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
-			<version>20140107</version>
+			<version>20180130</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
-			<version>3.12</version>
+			<version>4.1.1</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
-			<version>3.12</version>
+			<version>4.1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.inject</groupId>
@@ -184,13 +184,13 @@
 			<id>local</id>
 			<properties>
 				<env>local</env>
-				<user.username></user.username>
-				<user.password></user.password>
-				<grid2.hub></grid2.hub>
+				<user.username/>
+				<user.password/>
+				<grid2.hub/>
 				<site.url> http://openfdatest.ventera.com/web/#/</site.url>
 				<browser.name>ghost</browser.name>
-				<browser.version></browser.version>
-				<browser.platform></browser.platform>
+				<browser.version/>
+				<browser.platform/>
 			</properties>
 			<activation>
 				<activeByDefault>true</activeByDefault>
