@@ -2,9 +2,10 @@
   "name": "www",
   "version": "0.0.0",
   "dependencies": {
-    "connect-modrewrite": "^0.8.1",
+    "connect-modrewrite": "^0.10.1",
     "grunt-contrib-livereload": "^0.1.2",
-    "grunt-ngdocs": "^0.2.7"
+    "grunt-ngdocs": "^0.2.7",
+    "@snyk/protect": "latest"
   },
   "repository": {},
   "devDependencies": {
@@ -45,6 +46,9 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test"
-  }
+    "test": "grunt test",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
