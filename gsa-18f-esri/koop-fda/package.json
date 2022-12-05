@@ -11,7 +11,7 @@
     "config": "~0.4.35",
     "crypto": "0.0.3",
     "ejs": "~1.0.0",
-    "request": "~2.53.0",
+    "request": "~2.73.0",
     "turf-merge": "^1.0.2"
   },
   "devDependencies": {
