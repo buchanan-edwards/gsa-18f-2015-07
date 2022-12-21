@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:bullseye
 
 MAINTAINER Tim Weckx <timw@dsoft-tech.com>
 
