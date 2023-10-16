@@ -86,7 +86,7 @@
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
-			<version>20140107</version>
+			<version>20231013</version>
 		</dependency>
 
 		<dependency>
@@ -184,13 +184,13 @@
 			<id>local</id>
 			<properties>
 				<env>local</env>
-				<user.username></user.username>
-				<user.password></user.password>
-				<grid2.hub></grid2.hub>
+				<user.username/>
+				<user.password/>
+				<grid2.hub/>
 				<site.url> http://openfdatest.ventera.com/web/#/</site.url>
 				<browser.name>ghost</browser.name>
-				<browser.version></browser.version>
-				<browser.platform></browser.platform>
+				<browser.version/>
+				<browser.platform/>
 			</properties>
 			<activation>
 				<activeByDefault>true</activeByDefault>
