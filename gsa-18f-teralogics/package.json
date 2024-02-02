@@ -38,7 +38,7 @@
     "newrelic": "^1.20.2",
     "node-sass": "3.2.0",
     "object-path": "^0.9.2",
-    "request-promise": "^0.4.2",
+    "request-promise": "^4.2.6",
     "sanitize-html": "^1.7.0",
     "serve-favicon": "^2.3.0",
     "underscore": "^1.8.3"
