@@ -21,7 +21,7 @@
     "hapi": "^8.6.1",
     "hapi-require-https": "^2.0.0",
     "joi": "^6.4.3",
-    "lodash": "^3.9.3",
+    "lodash": "^4.17.17",
     "mongoose": "^4.0.5",
     "newrelic": "^1.20.2",
     "randomstring": "^1.0.6",
