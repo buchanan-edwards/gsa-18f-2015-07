@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:12.6
 
 MAINTAINER Tim Weckx <timw@dsoft-tech.com>
 
