@@ -37,7 +37,7 @@ gem 'pg', '~> 0.18.2'
 gem 'dotenv-rails'
 
 gem 'rest-client'
-gem 'acts-as-taggable-on'
+gem 'acts-as-taggable-on', '>= 12.0.0'
 
 # Documentation
 gem 'apipie-rails', '~> 0.2.6'
