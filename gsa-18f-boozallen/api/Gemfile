@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.2.2'
 
-gem 'rails', '4.2.1'
+gem 'rails', '7.0.0'
 
 gem 'rails-api'
 
@@ -18,7 +18,7 @@ group :development, :test do
   gem 'pry'
 end
 
-gem 'puma'
+gem 'puma', '>= 2.12.0'
 
 gem 'pg', '~> 0.18.2'
 
