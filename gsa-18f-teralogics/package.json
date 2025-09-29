@@ -11,7 +11,7 @@
     "jshint": "node ./node_modules/jshint/bin/jshint app/ test/"
   },
   "dependencies": {
-    "apidoc": "^0.13.1",
+    "apidoc": "^0.50.0",
     "bluebird": "^2.9.30",
     "body-parser": "^1.13.1",
     "bower": "1.4.1",
