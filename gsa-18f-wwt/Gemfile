@@ -12,7 +12,7 @@ gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem "haml-rails", "~> 0.9"
 gem 'foundation-rails'
-gem 'faraday'
+gem 'faraday', '>= 2.14.1'
 gem 'json'
 gem 'hashie'
 gem 'kaminari'
