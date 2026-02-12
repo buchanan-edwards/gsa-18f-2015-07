@@ -8,7 +8,7 @@
     "cors": "^2.5.3",
     "express": "^4.12.3",
     "js-yaml": "^3.3.1",
-    "koop": "^2.1.12",
+    "koop": "^5.1.1",
     "koop-escache": "^0.0.7",
     "koop-gist": "^0.0.2",
     "koop-github": "^0.1.12",
